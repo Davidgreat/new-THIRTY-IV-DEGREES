@@ -1,9 +1,21 @@
-# School OS 5.3.1 audit update
+# School OS downloads
 
-Download [SchoolOS_5.3.1_Audit_Update.zip](SchoolOS_5.3.1_Audit_Update.zip?raw=true).
+## Latest: 5.3.2
 
-SHA-256: `657483067da955a00af98ef2524d9e1231ddfe1664f6c05abee934e320e72438`
+[Download the installable School OS 5.3.2 update](SchoolOS_5.3.2_Classroom_Notifications_Update.zip?raw=true)
 
-Back up application files, database and private encryption keys, then test on staging. Install via **Platform Super Admin → Updates & Plugins → Core updates**, not the plugin installer.
+[Installation and full-class video setup guide](SchoolOS_5.3.2_README.md)
 
-This is a maintenance update for the audited School OS 5.3.0 source. It contains no configuration file, live database or private encryption keys. Production acceptance remains pending. Verify real account links, hosting, payment configuration and cross-network live video before launch. The built-in live classroom supports eight participants including the teacher and needs a tested TURN relay for reliable remote use.
+Includes class notifications/reminders with persistent read state, notification and confirmed-save sounds, separated teacher Employment menu buttons, and optional built-in LiveKit media-server support for the full enrolled class.
+
+**Full-class mode requires a configured LiveKit server/project.** It has no eight-person School OS cap; actual capacity follows your hosting plan. Until configured, the existing direct fallback keeps its eight-person limit. Click **Enable sound** once to allow browser audio.
+
+Back up files, database and encryption keys, end active classes, test on staging, then install using **Platform Super Admin → Updates & Plugins → Core updates**.
+
+SHA-256: `532d5137f02665898e6c06478c823c31dfd5532acd98d0a8d6688f3f3dcf75c0`
+
+Local validation: 587 role-page checks; desktop/mobile menu and Web Audio checks; one teacher and nine students simultaneously receiving real video/audio through a local SFU; update install/recovery/rollback checks. Production provider/network acceptance is still required.
+
+## Previous release
+
+[School OS 5.3.1 audit repair](SchoolOS_5.3.1_Audit_Update.zip?raw=true)
