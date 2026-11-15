@@ -1,17 +1,18 @@
 # School OS — latest update
 
-**5.3.19: Regular collectors**
+**5.3.20: Your family compass**
 
-[Download the installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.19_Regular_Collectors_Update.zip)
+[Download the parent portal update ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.20_Parent_Family_Portal_Update.zip)
 
-Parents register regular school-bus collectors once for school approval, covering a date range of up to one year. Drivers select the approved adult and verify identity on every drop-off. No fresh daily request is needed while approval remains valid.
+A redesigned parent dashboard with glass surfaces, mobile-friendly child cards, attendance/fee donuts and direct chats with every linked child. Published reports now connect weighted CA/exam results to branded print/PDF cards in the school's approved format. Includes school-managed comments/term dates, current timetables, library loans and online homework progress.
 
-One-day changes still need school approval and take priority on the selected date. Revocation and expiry are checked at handover, including stale forms. School-required one-time pickup credentials remain enforced. Daily handover records and notifications are preserved.
+The audit also tightened report completeness/format checks and staff-only document/consent access. Existing accounts, records, chat permissions and regular collector workflows are preserved.
 
-Back up the platform, then install through Platform Admin → Core updates and refresh the pages. Existing daily approvals keep their original dates; register regular collectors explicitly in Family Space → Collectors & pickup. School administrators approve them in Family Space → Collector approval desk.
+Back up the platform, then install through Platform Admin → Core updates and refresh. Schools must approve/assign their class report format and publish complete results before parents can print cards. See setup instructions below.
 
-- [Setup and usage](SchoolOS_5.3.19_README.md)
-- [Validation report](SchoolOS_5.3.19_Validation.md)
-- [SHA256 checksum](SchoolOS_5.3.19_SHA256SUMS.txt)
+- [Installation and school report setup](SchoolOS_5.3.20_README.md)
+- [Parent portal audit](SchoolOS_5.3.20_Parent_Audit.md)
+- [Validation and limitations](SchoolOS_5.3.20_Validation.md)
+- [SHA256 checksum](SchoolOS_5.3.20_SHA256SUMS.txt)
 
-The update passed local workflow, browser, role-page and installer/rollback checks. It has not been installed on your live platform by this session.
+Validated locally; this session has not installed the update on your live server.
