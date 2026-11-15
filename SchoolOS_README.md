@@ -1,18 +1,18 @@
 # School OS — latest update
 
-**5.3.20: Your family compass**
+**5.3.21: Parent books & access**
 
-[Download the parent portal update ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.20_Parent_Family_Portal_Update.zip)
+[Download the installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.21_Parent_Books_Access_Update.zip)
 
-A redesigned parent dashboard with glass surfaces, mobile-friendly child cards, attendance/fee donuts and direct chats with every linked child. Published reports now connect weighted CA/exam results to branded print/PDF cards in the school's approved format. Includes school-managed comments/term dates, current timetables, library loans and online homework progress.
+The parent menu now uses **Family Space → My children’s books** instead of the general Library & school store workspace. Parents see their own children's borrowed books, due dates, previous borrowing, existing reservation status and school-issued charges. Catalogue scanning, lending/return processing, fine-setting and other staff tools are excluded and guarded on the server.
 
-The audit also tightened report completeness/format checks and staff-only document/consent access. Existing accounts, records, chat permissions and regular collector workflows are preserved.
+Customer school-shop orders and contact/message preferences remain available under separate family labels. Librarian, student and staff workspaces retain their authorized features. Existing records and prior parent dashboard/report-card/collector improvements are preserved.
 
-Back up the platform, then install through Platform Admin → Core updates and refresh. Schools must approve/assign their class report format and publish complete results before parents can print cards. See setup instructions below.
+Back up the platform, install through Platform Admin → Core updates, then refresh the parent portal.
 
-- [Installation and school report setup](SchoolOS_5.3.20_README.md)
-- [Parent portal audit](SchoolOS_5.3.20_Parent_Audit.md)
-- [Validation and limitations](SchoolOS_5.3.20_Validation.md)
-- [SHA256 checksum](SchoolOS_5.3.20_SHA256SUMS.txt)
+- [Installation, feature limits and link mapping](SchoolOS_5.3.21_README.md)
+- [Validation report](SchoolOS_5.3.21_Validation.md)
+- [SHA256 checksum](SchoolOS_5.3.21_SHA256SUMS.txt)
+- [Earlier parent/report-card setup instructions](SchoolOS_5.3.20_README.md)
 
-Validated locally; this session has not installed the update on your live server.
+Validated locally. This session has not installed the update on your live server.
