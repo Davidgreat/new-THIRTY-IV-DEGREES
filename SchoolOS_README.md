@@ -1,48 +1,37 @@
-# School OS 5.3.28 — Admissions desk
+# School OS 5.3.29 — Glass dashboards
 
-[Get the admin-installable ZIP on GitHub](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.28_Admissions_Desk_Update.zip)
+[Download the admin-installable update](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.29_Glass_Dashboards_Update.zip)
 
-Admissions welcomes prospective families, follows up enquiries, reviews pupil applications and documents, arranges assessments and visits, issues offers and hands accepted pupils into the school’s student records. The rebuilt desk keeps those tasks together with clear wording, glass panels, actionable totals, a stage doughnut and a 14-day application chart.
+[Light-mode preview](SchoolOS_5.3.29_light_preview.jpg) · [Dark-mode preview](SchoolOS_5.3.29_dark_preview.jpg)
+
+The dashboard finish now follows the supplied visual references: translucent frosted panels, reflective edges, layered shadows, soft 3D spheres and a bright cyan/violet/peach palette. Colour passes through the panels while forms, data and chart labels retain readable contrast. These are working portal screenshots with fictional demo records, not static dashboard mockups.
 
 ## Install
 
-1. Back up school files and database.
-2. Open the ZIP link and use GitHub’s **Download raw file** button.
-3. Upload the ZIP in **Platform Admin → Core updates**, install and refresh the portal.
-4. Sign in to the existing admissions account. Open **Admissions overview** or **Admissions desk**.
+1. Back up application files and database.
+2. Download the ZIP from GitHub using **Download raw file**.
+3. Install it through **Platform Admin → Core updates**, then refresh the portal.
+4. Open the existing account and try both themes using the header’s theme button. If an old browser tab retains cached styles, reload it.
 
-This cumulative package contains 34 application files and `release.json`. It keeps earlier updates and existing records; it adds no configuration, credentials, test data, new database tables or paid services. Installation and rollback were checked with the 5.3.27 updater. Existing admissions logins receive the new screens without being recreated. The school administrator must activate the existing admissions/CRM tables if not already active, and Student Records must be active before enrollment. Staff attendance continues to require HR’s verified employee-account link.
+This is a cumulative update containing 34 approved application files and `release.json`, including the preceding admissions update. Existing real/demo accounts use the finish through the shared dashboard shell; no account recreation or per-school activation is needed. It adds no database tables, configuration, credentials, paid services or external image/font downloads. Individual module feature-version labels may remain at their preceding release; the installed core version is 5.3.29.
 
-## The seven sections
+## What changes
 
-- **Overview:** New applications, open offers, accepted files, unchecked documents, due reminders and unread family messages. Each total opens the corresponding work list. Charts have numeric breakdowns, including empty states.
-- **Applications:** Search and paginated pupil cards. Each file has Review, Documents, Family conversation, Offer, Enrollment and Activity tabs. Pupil and guardian details are separate; actual school classes replace free-text class names. Office staff can correct pre-offer details with a reason. A changed guardian email revokes old private links and produces a replacement for identity-checked sharing.
-- **Enquiries:** Capture a family’s contact and interest or follow a website enquiry. Conversion asks for the child’s own name, creates one application and retains the enquiry connection.
-- **Reminders:** Follow-up dates, clear overdue/upcoming states and completion controls. Due reminders and new family application messages appear in the admissions account’s notifications.
-- **Entrance tests:** Individual private invitations and a question bank controlled by the school administrator. A preparation page appears before the applicant presses Start. Each invitation retains its question set; the test allows one final submission within 45 minutes of starting.
-- **Application form:** School-branded public application link, class selection, optional pupil background details and school questions. The administrator controls form opening and fee policy.
-- **Reports:** Current-stage totals, enrollment share, application trend and how families found the school. These report recorded data rather than predicting admission quality.
+- **The dashboard shell:** A frosted sidebar and header, restrained cyan/violet active-navigation treatment and a shared decorative background. The three shaded colour forms sit behind the working page and remain stationary.
+- **Working panels:** Frosted cards with brighter top edges, translucent fills, rounded corners and layered inner/outer shadows. The shared treatment covers the general overview and existing HR, driver, parent, student, teacher, library, school-store, communications and admissions components.
+- **Overview and report cards:** Existing charts retain their original values, segments and meanings. Doughnut centres use a readable solid surface with subtle depth rather than letting ring colours show through their numbers. Metric and action cards receive the same visual finish.
+- **Light and dark modes:** Pale, luminous glass in light mode and deeper navy glass in dark mode. Dark-mode forms, menus, table headers, secondary labels and errors have explicit surfaces/colours. The existing theme switch and preference persistence remain in use.
+- **Phones:** Smaller blur radius, restrained decoration, readable controls and 16px text-entry fields to avoid automatic text-field zoom on supporting mobile browsers. Mobile navigation and form layouts continue to use the existing responsive behavior.
+- **Accessibility and printing:** Background shapes are hidden from assistive technologies and cannot intercept clicks. Hover lifting is restricted to fine-pointer devices without a reduced-motion preference. Reduced-transparency users get opaque panels; forced-colour mode removes decoration/filter effects. Printing removes the scene and uses dark text on white panels.
 
-On phones, navigation wraps into accessible buttons, forms stack, and the seven main sections and six file tabs were checked at 360px. Light and dark layouts retain readable text and chart labels.
+The background is made with local CSS gradients; no supplied stock-image watermark/artwork is copied into the application. There is no animation loop, mouse-following tilt or new JavaScript processing for the decorative scene. Blur is lighter on smaller screens, although actual performance still depends on the device/browser. Browsers without backdrop-filter support receive an opaque fallback.
 
-## A family can participate before receiving a school login
+## Scope
 
-Submitting a public application produces a private tracking link. Families can use it to see progress, review admission charges, upload supporting documents, exchange messages with admissions, see an interview time, open an entrance test and read/print a branded offer letter. They can accept or decline an unexpired offer there. Internal notes, interview comments and staff activity are kept out of this page.
+The active change from 5.3.28 affects four files: `index.php` (dashboard decoration/scope), `portal_experience.php` (stylesheet cache version), `portal_experience.css` and `VERSION.txt`. Admissions, finance, permissions, account linking and other workflow logic are unchanged. The ZIP includes previous cumulative files so earlier fixes are retained.
 
-Treat the private link as access to that application. The system stores its token hash; replacing the link revokes older copies. Share it only with the verified guardian. Documents are restricted to the school’s authorized admissions/admin accounts or that application’s private link, and are served as downloads. Allowed uploads are PDF/JPEG/PNG up to 3 MB. Existing old applications need an officer to issue their private family link.
+This release styles authenticated dashboard pages. It does not redesign the public website, login screen, standalone printable documents or standalone live-class player. The teaching dashboard and embedded lesson cards receive the shared treatment.
 
-School chat remains available for school colleagues and the relevant registered parent. Parents can contact the admissions office associated with their application or enrolled child. This does not grant unrestricted private chat with pupils or unrelated parents. The private application message page requires a refresh to show later replies; registered school chat retains its existing real-time behavior.
+[Validation details](SchoolOS_5.3.29_Validation.md) · [SHA-256 checksum](SchoolOS_5.3.29_SHA256SUMS.txt)
 
-## Checked enrollment and finance boundaries
-
-Enrollment requires an issued accepted offer, reviewed uploaded documents, administrator-confirmed admission charges, the offered school class and a staff review note. It creates the pupil, Student Records details, guardian relationship and admission event in one transaction. Approved parent/student logins can be linked during enrollment or afterward. Parent linking requires the recorded guardian email; student selection searches active, available school logins. Account approval and identity checks remain school responsibilities. No passwords or automatic account approvals are created.
-
-Existing enrolled records are preserved; installing this update does not retrospectively create missing logins or rewrite pupil details. Older accepted applications without an offer require administrator review, a documented offer and renewed guardian acceptance.
-
-Application and acceptance fees are snapshotted for new applications. The administrator checks actual payment externally, then records its reference; a reference cannot be reused for a different charge. **Finance → Admission payments** exposes the admission charge log. These confirmations do not automatically create student invoices, receipts, payment-gateway confirmations or accounting entries. Reconcile pre-enrollment money through the school’s approved Finance process.
-
-The everyday desk no longer offers a queue-only email button or unrelated generic task creation. Family updates are explicitly posted in-platform; they are not presented as delivered email/SMS. Later changes to fees do not silently change existing applications.
-
-[Audit findings](SchoolOS_5.3.28_Admissions_Audit.md) · [Validation](SchoolOS_5.3.28_Validation.md) · [Checksum](SchoolOS_5.3.28_SHA256SUMS.txt)
-
-Validated locally with fictional school records. The update has not been installed or tested on the hosted school in this session.
+Tested locally with demo accounts. This session did not install the update on the hosted school.
