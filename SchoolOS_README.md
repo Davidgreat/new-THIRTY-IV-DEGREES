@@ -1,33 +1,37 @@
-# School OS 5.3.32 — Desktop motion and hover
+# School OS 5.3.33 — Desktop background motion recovery
 
-[Download the installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.32_Desktop_Motion_Update.zip)
+[Download the installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.33_Desktop_Motion_Recovery_Update.zip)
 
-[Desktop motion preview — MP4](SchoolOS_5.3.32_desktop_preview.mp4) · [Dark screenshot](SchoolOS_5.3.32_dark_preview.jpg) · [Light screenshot](SchoolOS_5.3.32_light_preview.jpg)
+[Reproduction and Play/Pause preview — MP4](SchoolOS_5.3.33_PC_Play_Background_Demo.mp4) · [Desktop Play control](SchoolOS_5.3.33_play_control.jpg)
 
-The mobile circles keep the size, speed, transparency and colour cycle from 5.3.31. The new visual rules apply at desktop widths of 851px and above. Narrower windows continue to use the mobile profile.
+This update addresses conditions that can leave the PC background stationary even though it moves in a recording or on another device. It adds a clear desktop Play/Pause control, isolates animation startup, and recovers from a stalled browser animation-frame loop. The exact condition on the user's PC was not remotely confirmed.
 
-## Desktop changes
+## Use it on the PC
 
-- **Larger circles:** Desktop circles can reach 650px across, restoring the larger background shapes. The mobile sizing formula is unchanged.
-- **Wide travel:** A larger movement area extends beyond the visible content, allowing the big circles to travel across the background, move partly off-screen and return. Elastic collisions push circles apart. The simulation no longer confines oversized circles to a tight visible rectangle.
-- **Clearer colour changes:** Desktop blend cycles are approximately 3.8–5.2 seconds. Mobile retains the previous 6–8 second cycles. Transparency stays the same.
-- **Native hover:** The Applications tab and other desktop buttons/menus now use direct CSS `:hover` rules. A coloured highlight, 7% enlargement, stronger glow and outward breathing outline are visible without relying on the JavaScript pointer handler. The hover rules do not depend on the browser identifying its pointer as a fine-pointer device.
-- **Stable clicking:** Enlargement settles after its short transition; the continuing breathing effect expands the outline rather than continuously moving/resizing the clickable target.
-- **Fresh assets:** Dashboard CSS and JavaScript load through fixed, uncached PHP asset routes with new version references. This avoids reusing the preceding static asset URL. Only the two public dashboard asset files can be served by this route; it does not expose arbitrary files or start an application session/database connection.
+1. Back up files and database, then install the ZIP through **Platform Admin → Core updates**.
+2. Refresh the dashboard.
+3. Look beside **School chat** in the role strip near the top of the dashboard.
+4. If the button says **Play background**, click it. When the circles are enabled it changes to **Pause background**.
 
-Reduced-motion preferences still stop the decorative movement and hover enlargement. Touch behavior, the restored personal greetings and school workflows remain included. The hosted PC's exact previous cache state was not confirmed; fresh asset loading is a protective change, not a claim that caching was proven to be the cause.
+No Windows setting change is required. The choice is saved locally for the current account/browser when browser storage is available. It does not create a school-wide setting or change another account's motion preference. Clicking Pause stops the decorative movement and colour cycling. A page reload keeps the saved choice.
 
-## Install
+## What was changed
 
-1. Back up the application files and database.
-2. Open the ZIP link and select **Download raw file** on GitHub.
-3. Install through **Platform Admin → Core updates**.
-4. Refresh the PC dashboard. No extra school configuration or account recreation is required.
+- **Reduced-motion handling:** Computer/browser preferences can intentionally stop the preceding animation. The control explains this in its title and allows an explicit desktop-only choice to play the background. This overrides reduced motion for the background circles only; other interface reduced-motion behavior remains respected.
+- **Independent startup:** Background initialization now runs before the other shared dashboard helpers. A later helper error cannot prevent the animation from starting. The module contains its own startup failure and exposes a clear unavailable status rather than leaving an empty control.
+- **Stalled-frame recovery:** If an enabled desktop background is not advancing through its normal frame callbacks, a watchdog switches to a timer-based animation driver. Hidden tabs, print, reduced transparency and forced-colour display still suspend the simulation. Resume resets timing to avoid a large jump.
+- **Mobile preserved:** The new control is hidden on phone-sized layouts. Desktop Play/Pause choices do not override the mobile behavior. The existing mobile size, speed, colours and collision profile are retained; the desktop watchdog is not started on mobile.
 
-The cumulative archive contains 34 approved application files plus `release.json`. It includes the preceding admissions, welcome and glass updates. Five files differ from 5.3.31: `index.php`, `portal_experience.php`, the shared dashboard CSS/JavaScript and `VERSION.txt`. No configuration, credentials, new database tables or paid services are added. Admissions processing, finance handlers and account permissions are unchanged.
+The larger PC circles, wide travel and native CSS hover effects from 5.3.32 remain included. The shared CSS/JavaScript use a new version reference through the existing uncached asset route.
 
-The preview is a recording of the local desktop implementation with fictional account records. The video and screenshots are repository documentation outside the installable ZIP.
+If the control shows **Background hidden**, display preferences are hiding the decorative scene and the control is disabled. **Background unavailable** indicates a contained startup problem; reload the page to retry. These states provide information for follow-up rather than assuming every stationary background has the same cause.
 
-[Validation](SchoolOS_5.3.32_Validation.md) · [Archive checksum](SchoolOS_5.3.32_SHA256SUMS.txt)
+## Package scope
 
-Validated locally. This session did not install the update on the hosted school.
+This cumulative ZIP contains 34 approved application files plus `release.json`. Compared with 5.3.32, only `portal_experience.php`, `portal_experience.css`, `portal_experience.js` and `VERSION.txt` change. No database tables, credentials, configuration, permissions or school transaction handlers are changed. The desktop control stores its preference in the browser rather than sending a server request.
+
+The preview records a local browser with reduced motion deliberately enabled: the scene starts stationary, Play starts it, Pause stops it, and Play resumes it. It uses fictional account records. Preview files are repository documentation and are not installed into the application.
+
+[Validation details](SchoolOS_5.3.33_Validation.md) · [Archive checksum](SchoolOS_5.3.33_SHA256SUMS.txt)
+
+Validated locally. This session did not install the update on the hosted school or inspect the user's actual PC settings.
