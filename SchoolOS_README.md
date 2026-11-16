@@ -1,16 +1,18 @@
 # School OS — latest update
 
-**5.3.23: Empty-chart hotfix**
+**5.3.24: School-store workspace**
 
-[Download the installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.23_Empty_Charts_Hotfix_Update.zip)
+[Download the installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.24_School_Store_Workspace_Update.zip)
 
-Corrects the librarian dashboard's max() error when there are no recent loan requests or returns. Empty periods now show zero bars and a clear no-activity message. The equivalent empty teacher timetable chart is also fixed.
+A focused, mobile-friendly store dashboard with glass surfaces, stock-health pie, movement charts and actionable totals. Includes opening stock/item variants/codes, searchable family orders, payment-gated collection, physical returns, reviewed unpaid cancellations, independent restock approvals, partial receipts, suppliers, stock history and safe physical-count corrections.
 
-Back up, install through Platform Admin → Core updates and refresh. Existing records and prior updates are preserved; no data reset or reactivation is needed.
+Parent orders, student records, Finance invoices/payments and internal notifications use the existing connected data. Asset accounting stays separately authorized. Existing records and prior updates are preserved; no new tables or paid providers are added.
 
-- [Cause, installation and verification](SchoolOS_5.3.23_README.md)
-- [Validation report](SchoolOS_5.3.23_Validation.md)
-- [SHA256 checksum](SchoolOS_5.3.23_SHA256SUMS.txt)
-- [Librarian workflow guide](SchoolOS_5.3.22_README.md)
+Back up files/database, install through Platform Admin → Core updates, then refresh. Stock manager access is required; procurement review uses its existing separate permission.
 
-Reproduced and fixed locally, including empty and populated datasets. This session has not installed the update on your live site.
+- [Installation and workflow guide](SchoolOS_5.3.24_README.md)
+- [Store audit and boundaries](SchoolOS_5.3.24_Store_Audit.md)
+- [Validation report](SchoolOS_5.3.24_Validation.md)
+- [SHA256 checksum](SchoolOS_5.3.24_SHA256SUMS.txt)
+
+Validated locally; this session has not installed the update on your live site or moved real money.
