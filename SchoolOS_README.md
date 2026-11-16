@@ -1,15 +1,15 @@
 # School OS — latest update
 
-**5.3.25: Store product photos**
+**5.3.26: Product options and stock studio**
 
-[Download the admin-installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.25_Store_Product_Photos_Update.zip)
+[Download the admin-installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.26_Store_Product_Options_Update.zip)
 
-Add, replace or remove product images in the school-store item forms. Parents and students see product cards and can enlarge photos without leaving the shop. Includes mobile image preparation, upload validation and school-scoped image access. Existing stock, family orders and Finance connections are preserved.
+A cleaner product form with category-specific fields, preset sizes, multiple colours, automatic colour-family names and opening stock per combination. New products appear as grouped cards in the parent/student shops, where the selected option determines the exact stock, price, photo and order record.
 
-Back up files/database, install through Platform Admin → Core updates, then refresh. Existing items show a placeholder until their school adds photos. No new paid service or database table is required.
+Back up application files/database, install through Platform Admin → Core updates, then refresh. Existing standalone items and their history are preserved. No new database table or paid service is required.
 
-- [Photo workflow, installation and validation](SchoolOS_5.3.25_README.md)
-- [SHA256 checksum](SchoolOS_5.3.25_SHA256SUMS.txt)
-- [Previous store workspace audit](SchoolOS_5.3.24_Store_Audit.md)
+- [Installation and product workflow](SchoolOS_5.3.26_README.md)
+- [Validation report](SchoolOS_5.3.26_Validation.md)
+- [SHA256 checksum](SchoolOS_5.3.26_SHA256SUMS.txt)
 
 Validated locally; not installed on your hosted site during this session.
