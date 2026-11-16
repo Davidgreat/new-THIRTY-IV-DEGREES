@@ -1,35 +1,36 @@
-# School OS 5.3.30 — Living glass dashboards
+# School OS 5.3.31 — Bubble motion and visible hover feedback
 
-[Download the admin-installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.30_Living_Glass_Dashboards_Update.zip)
+[Download the installable ZIP](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.31_Bubble_Motion_Update.zip)
 
-[Light preview](SchoolOS_5.3.30_light_preview.jpg) · [Dark preview](SchoolOS_5.3.30_dark_preview.jpg)
+[Motion preview — MP4](SchoolOS_5.3.31_motion_preview.mp4) · [Dark screenshot](SchoolOS_5.3.31_dark_preview.jpg) · [Light screenshot](SchoolOS_5.3.31_light_preview.jpg)
 
-This update adds subtle movement and responsive feedback to the shared glass dashboard finish, softens the background colours, and restores the personal welcome on specialist dashboard homes.
+The background circles retain the transparency from 5.3.30, with their blur removed so colours and edges are clearer. They now travel visibly around the dashboard and bounce apart when they meet. Hover feedback also covers ordinary text links, with stronger rings and glows on buttons and menus.
 
-## What changes
+## Changes
 
-- **Softer colour:** Background circles now use approximately 22–23% opacity, down from 58–68%, with softer edges and less intense shading. Small decorative forms within dashboard banners are faded too. Light and dark themes retain their own readable surfaces.
-- **Slow ambient movement:** The circles gently float over 38–48 second cycles. A second gradient layer gradually fades between soft colour blends. Shapes move only a small distance and cannot intercept clicks. No mouse-following effect or JavaScript frame loop is added.
-- **Menus that respond:** Fine-pointer hover adds a gentle lift, soft glow and breathing shadow to navigation, buttons and actionable cards across the authenticated dashboards. Selected states and status colours retain their meaning. Disabled controls do not glow. Touch devices use a small press response without persistent hover animation.
-- **Personal welcome restored:** Every account’s home now renders the shared greeting before opening its specialist workspace. It includes the account name, role-specific introduction, school and the existing date treatment. Admissions, parent, driver, library, school-store and communications homes previously returned into specialist renderers before reaching this greeting.
-- **A cleaner admissions home:** The personal greeting replaces the additional generic admissions introduction on the home dashboard. The Add an application shortcut stays available. The full Applications workspace still has its contextual heading and connected application form.
-- **Motion preferences:** Reduced-motion users receive stationary backgrounds and no breathing/hover animation. The new ambient movement pauses while the browser reports that the tab is hidden. Reduced transparency and forced-colour preferences retain the preceding opaque/accessible treatments. Printing hides decoration and uses readable surfaces.
+- **Clearer circles:** No blur filter on the background bubbles or the decorative banner circles. The working glass panels keep their frosted finish. Circle transparency remains at approximately 22–23%.
+- **Visible movement:** A small local simulation moves the three background bubbles within the visible content area. Their sizes adapt to the viewport. They bounce off the boundaries and use elastic collision responses to separate after contact, rather than passing through one another.
+- **Quicker colour shifts:** A contrasting gradient fades in/out over 6–8 second cycles. Each bubble has its own phase. The circles stay transparent while their colours change.
+- **Stronger hover feedback:** Buttons, menu items and actionable cards receive a visible outline/glow and a small lift. The outline pulses while the target stays stable enough to click. Ordinary text links get a stronger underline and text glow. Existing card shadows no longer hide the feedback.
+- **Dynamic menus:** Delegated pointer/focus handling also covers links and buttons inserted by existing dashboard refreshes. It does not intercept clicks or change their destinations.
+- **Touch and keyboard:** Touch devices avoid sticky hover effects; keyboard focus has a steady visible ring. Disabled controls are excluded from the new hover feedback.
+- **Motion preferences:** Reduced motion freezes the bubbles at separated positions and stops colour/hover animation. The simulation pauses in hidden tabs, print view, reduced-transparency mode and forced-colour mode. It resumes without advancing through the whole hidden interval.
 
-The account greeting uses the authenticated account and school records; it does not use one shared generic account name. These changes apply through the shared dashboard code without recreating existing accounts or requiring a setting for each school.
+Background animation is capped at roughly 30 updates per second. It uses three local elements and does not add network traffic or an animation library. Actual smoothness depends on the device and browser. Collision movement applies to the decorative background bubbles; the dashboard's working layout stays organized.
+
+The personal welcomes restored in 5.3.30 remain included. This release changes styling, decorative movement and interaction feedback; it does not change school transactions, account permissions or admissions processing.
 
 ## Install
 
 1. Back up application files and database.
-2. Open the ZIP link and use GitHub’s **Download raw file** button.
-3. Upload and install through **Platform Admin → Core updates**.
-4. Refresh an existing account’s dashboard and try both themes. A browser tab retaining older assets may need a reload.
+2. Open the ZIP on GitHub and choose **Download raw file**.
+3. Install through **Platform Admin → Core updates**.
+4. Refresh the dashboard. The new stylesheet and JavaScript both use a new cache version.
 
-This cumulative ZIP contains 34 approved application files plus `release.json`. It includes the preceding admissions and glass updates. It adds no configuration, credentials, database tables, paid services or external artwork/fonts. Compared with 5.3.29, six files change: the shared welcome renderer, admissions presentation renderer, shared CSS/JavaScript, asset versions and core version. Admissions processing, payments and account permissions are not changed.
+The cumulative ZIP contains 34 approved application files plus `release.json`. Only four files differ from 5.3.30: shared dashboard CSS, shared dashboard JavaScript, the asset-version references and `VERSION.txt`. No database tables, configuration, credentials, external artwork or paid services are added. Existing accounts use the effects through the shared dashboard shell; no per-school configuration is required.
 
-The shared personal welcome is on the home dashboard. Individual working pages continue to use their task-specific headings, rather than repeating a large personal greeting on every form. The public website, login page and standalone live-class player are outside this dashboard styling update.
+The motion preview is a recording of the local implementation with fictional account data, not a separate animated mockup. It shows bubble movement, colour changes and hover feedback in both themes. The preview files are repository documentation and are not installed into the application.
 
-Animation is restrained, uses CSS transform/opacity for the background, and has no background network requests. Smaller screens retain the lighter blur from 5.3.29. Actual animation smoothness depends on the browser/device; reduced motion is supported directly.
+[Validation details](SchoolOS_5.3.31_Validation.md) · [Archive checksum](SchoolOS_5.3.31_SHA256SUMS.txt)
 
-[Validation](SchoolOS_5.3.30_Validation.md) · [Archive checksum](SchoolOS_5.3.30_SHA256SUMS.txt)
-
-Validated locally with fictional role accounts. This session did not install the update on the hosted school.
+Validated locally. This session did not install the update on the hosted school.
