@@ -1,60 +1,70 @@
-# SchoolOS 5.4.1 — Modular roles and connected staff workflows
+# SchoolOS 5.4.2 — A calmer school start, connected leadership
 
-Cumulative update for the existing SchoolOS updater, including 5.3.40 and earlier changes. No configuration file, database credentials, private encryption keys or test records are included.
+This cumulative update retains the modular roles and connected workflows from 5.4.1. It reorganises the School Admin home around three clear places and extends the Principal workspace with scoped financial reports and reviewed chat drafts.
 
-## Install and start
+## Install and open
 
-1. Keep a database backup and install `SchoolOS_5.4.1_Modular_Roles_and_Connected_Workflows_Update.zip` through the real Platform Super Admin updater. Upload the ZIP without extracting it. The current updater can install this package in one step.
-2. Sign in as a School Admin and open **Roles & permissions**. If prompted, choose **Prepare roles & permissions**. On an existing school, services remain enabled initially to preserve availability. Choose the services the school actually uses; a small-school starting selection is provided.
-3. Add only the role templates you need, review their permissions, then use **People & access** to assign one or several responsibilities to an existing employee. Use **Staff & access** to create a new employee login and HR connection first. Search employees by name or email instead of scrolling through the whole directory.
+1. Keep a database backup. Upload `SchoolOS_5.4.2_Calm_Admin_and_Principal_Followups_Update.zip` unchanged through the real Platform Super Admin updater.
+2. Sign in as School Admin. Open **Start my school**. Schools with incomplete start-up records see the guide by default.
+3. Work through one step at a time. Use **My school day** whenever you want daily tools. You can choose it as your default home even while setup is in progress; the remaining progress stays visible. Once all six checks are ready, the daily home becomes the default automatically.
+4. Open **More tools** to search the full school toolkit. Existing pages and record links remain available; optional jobs and services are still selected in Roles & permissions.
 
-Creating a template does not create an account. Create Teacher identities through Staff & access and verify their class/subject allocations; a generic employee template does not create teaching access. The production school is never populated with all demo roles. Family identities, staff job responsibilities, partner accounts and platform administration remain separate.
+No configuration file, database credentials, encryption keys, synthetic records or new unapproved runtime filenames are included. Installation does not replace school records or create unnecessary staff accounts. This package was tested locally, not installed on your hosted site.
 
-## Existing accounts and deliberate migration
+## A focused starting guide
 
-Existing employee accounts retain legacy access until reviewed. Assigning their first modular role explicitly switches their operational permissions to the reviewed assignments; add every responsibility they still need. Personal employment access and verified teaching assignments remain separate. Individual permission blocks override all role grants. Revocation and template changes take effect on later checks without requiring a fresh login.
+| Step | What makes it ready |
+|---|---|
+| Your school | School name, address, phone and email; installed workspace tables available |
+| Your classes | Classes and subjects exist; each class has a school session |
+| Your teaching team | Active school staff have current employment links; teachers have valid current-session allocations |
+| Safe access | The School Admin explicitly records the start-up access plan |
+| Your pupils | Pupil records exist and have valid classes |
+| Connect families | Pupils have verified active parent access; active family logins have verified pupil links |
 
-Adding a new specialist profile through Staff & access connects its HR record and working role. When this upgrades an existing employee with legacy responsibilities, those existing capabilities are preserved in a labelled migration template for review. Previously unrestricted legacy financial approval is preserved in that template, rather than silently expanding or withdrawing it. Review and reduce that inherited ceiling deliberately.
+The percentage counts these six saved-record checks. It is not certification that every service is configured or that the records are correct. Existing data is recognised; nobody needs to recreate a family or teacher. The access-plan acknowledgement does not approve a formal privacy register or certify legal compliance.
 
-New financial responsibilities start with an approval ceiling of **₦0**. Set a suitable ceiling before expecting that person to approve a payment. The recorder cannot independently approve their own payment, expense or refund. Manual confirmation records verified funds; it never initiates a bank transfer.
+Fees, assessment rules, calendar, email delivery and extra services appear under **What can wait?** Configure a service before using it. For example, validate assessment and report settings before publishing results, and test email delivery before relying on login emails. The full privacy and retention review remains in Reports & privacy policies.
 
-## School services and permissions
+The school-details form preserves existing colours, logo and motto. Advanced record matching in the staff form stays available under **Already have a staff record?** to avoid duplicate employee records. First-day setup does not force a school to activate all staff roles.
 
-- Activate only the optional services the school uses. Switching a service off retains records and stops delegated access. School administrators retain setup and recovery authority.
-- Build custom templates from the listed meaningful actions: viewing, adding, updating, archiving permitted completed records, approving, exporting, configuring and auditing, as applicable to the workflow.
-- Assign multiple roles to one account. Scopes and financial ceilings apply separately to each assignment; an individual block overrides every grant.
-- School Owner / School Admin privileges, subscriptions and platform administration are not employee permissions and cannot be delegated by a custom staff template.
-- Keep read-only reports separate from transaction processing. View permission alone does not grant export or payment approval.
+## Guidance and daily work
 
-## Scope boundaries
+The guide shows one active step, a compact step list and a clear next action. **Listen to this step** uses the browser/device speech facility, starts only on request and has a Stop control. It reads generic step guidance, not pupil names, balances or credentials. Available voices and sound depend on the browser and device; the same guidance always remains on screen.
 
-Class and branch scopes are enforced in the new leadership, examination, accounts, counselling, pupil-related security, review and family-contact workspaces. Department scope is supported for staff review planning and assigned staff reviews. A branch here is within the same school tenant; separate school tenants continue to use the existing approved school-group sharing process.
+The daily home contains real pupil, team and class counts, common actions, a short attention queue and a fee summary. Notifications remain compact and expandable. The optional walkthrough now explains the three-part layout. Mobile and light/dark themes retain the platform's glass appearance with quieter foreground presentation.
 
-Existing operational workspaces such as Library, HR management, Store and legacy aggregate Reports remain school-wide. They require school-wide grants; the assignment screen rejects unsupported narrower scopes instead of pretending to protect a screen whose underlying records lack that scope. Split responsibilities into separate roles when their valid scopes differ. A custom role never bypasses verified teacher/class assignments, parent/child links, driver/route assignments, independent approvals or cross-school isolation.
+## Principal access
 
-## New and extended working desks
+Principals open a leadership overview with separate pupil, fee and academic areas. Existing attendance charts, assigned teachers, published-result status and academic action notes remain connected. New fee reports show current invoices, balances, owing pupils, class/name filters, pagination and an explicitly permitted CSV export. Billed/collected/outstanding values use the shared Finance invoice records; invoice allocations are not a bank balance or profit statement.
 
-- **Principal / Head Teacher:** scoped class and pupil counts, daily attendance overview, assigned teachers, published-result status and linked academic follow-up.
-- **Examination Officer:** examination scheduling with class overlap checks; assessment setup in the existing academic records; independent mark moderation; validated publication into the existing family report-card flow.
-- **Bursar / School Accountant:** shared-ledger pupil invoices, pending receipts, independent reconciliation, expenses and refunds; record scopes, approval ceilings, actual CSV export, scoped activity history and charts. School-prepaid and surplus-credit corrections require their appropriate reconciliation rather than an unsafe cash refund.
-- **Guidance Counsellor:** encrypted support appointments and notes, appointment overlap checks, follow-up history and explicit export control. Academic leadership does not acquire counselling access merely by being a Principal.
-- **Security Officer:** visitor arrivals and departures, pupil-linked or general incidents, follow-up, completed-record archive and activity history. This is a school record system; it does not operate physical gate hardware.
-- **Review Coordinator / School Reviewer:** scoped review plans, independent assignment, reviewer findings and coordinator closure. Only the assigned reviewer receives reviewer access to a plan.
+School-wide leadership finance grants additionally see an expandable summary of confirmed collections, paid supplier expenses, paid refunds and recorded net movement. Class- and branch-scoped grants cannot see this school-wide total. Opening balances and costs outside the Finance ledger are excluded.
 
-Existing specialist roles remain connected to their existing operational modules. Review coordination additionally connects to the new review-planning workflow. Family liaison permission allows verified parents and assigned staff to communicate within the permitted pupil scope; it does not open unrestricted staff-to-student chat. Upcoming class examinations appear to linked families.
+New Principal templates include:
 
-## Practical controls
+- `principal_finance.view` — fee reports within the assignment's existing scope.
+- `principal_finance.export` — CSV export, intersected with view scope.
+- `principal_followup.create` — prepare a reviewed parent or teaching-colleague chat draft.
+- `family_contact.view` — permitted verified-parent conversations, already included in the earlier standard template.
 
-Counselling payloads are encrypted with the existing private application key. Back up that key alongside the database; installing this ZIP does not replace it. Important access changes and new workflow actions retain school-local history. Completed operational records are archived, not silently deleted from audit history. Financial records are corrected through controlled accounting workflows.
+Existing real-school roles are **not silently expanded**. School Admin → More tools → Principal financial reports offers a reviewed action for existing academic-leadership roles. It retains all existing scope and other permissions, checks the role version and records the change. Alternatively edit individual permissions under Roles & permissions. A role change affects everyone assigned that role; review it before confirming.
 
-Record lists and audit history are paginated. Pupil lookup searches return at most 20 permitted matches. Workflow totals state their bounded record range; CSV and legacy report limits remain explicit. These are stored school records, not fabricated activity or bank balances.
+These permissions do not grant payment reconciliation, spending/refund approval, payroll, subscription changes or school-owner authority. Optional module switches, individual blocks, class/branch scopes and verified contacts still apply. Custom staff permissions cannot grant School Admin identity.
 
-## Demos and validation
+## Follow-ups that stay in school chat
 
-There are 35 staff profile choices and 41 total demo identities, including family and ecosystem identities. Existing isolated demos upgrade additively; a demo-table inventory update preserves compatibility with the sandbox refresh safety checks. The 5.3.40 safe failure codes and private Demo health tools remain available.
+Fee reminders, pupil attendance checks, learning follow-ups, teacher-support checks, staff setup checks and family login-help drafts open the existing in-app chat composer. Review/edit and explicitly press Send. Preparing or opening a draft never inserts a chat message.
 
-See `SchoolOS_5.4.1_Validation.md` and `SchoolOS_5.4.1_Workflow_Matrix.md`. No hosted installation or live external payment/email was performed during testing.
+Parent messages require a current verified child link and permitted chat contact. Teaching-colleague messages require a current teaching allocation within the Principal's academic and follow-up scopes. Inactive/unrelated contacts are refused. An unmarked register is described as a check, not an accusation of absence.
 
-## Rollback after adopting modular access
+Draft URLs carry an opaque, session-bound token rather than message text. Tokens expire after ten minutes, are limited to ten per session and are bound to the actor, school and intended recipient. Opening the composer rechecks access, relationship and current balance. Paid/cancelled invoices, revoked relationships, another actor or a changed group-chat target cannot reveal the saved draft. The final composer remains editable; normal chat permissions are also enforced on explicit Send.
 
-Immediate file rollback before preparing modular access remains available. After any school prepares the new access configuration, a file-only downgrade to a release older than 5.4.1 is refused: older releases lack current access or rollback safeguards. Prefer a compatible update. Any downgrade needs a reviewed recovery with the database backup matching that older release; a database restore can remove records created after the backup. File rollback alone never reverses changes to accounts, permissions or school records.
+Find these actions in Principal → Fees & follow-ups / Pupils & follow-ups / Teaching & academic actions; School Admin → Fees overview links to balances and in-app follow-ups. Parent account cards include family login help; staff account details include staff setup help. No automatic WhatsApp, email or chat sending was introduced.
+
+## Existing demos and recovery
+
+All 41 demo picker logins were checked. Marked isolated demos upgrade additively. Only the exact old fixed demo Principal template receives the new standard demo permissions; passwords and account IDs remain unchanged. Real-school role permissions are not changed by this sandbox upgrade.
+
+The existing updater's access-aware rollback guard is unchanged. File rollback from 5.4.2 to 5.4.1 was tested with modular records present. Older incompatible file-only downgrades remain refused after modular adoption. File rollback does not reverse records or permission changes; recovery of data needs the matching database backup.
+
+See [validation](SchoolOS_5.4.2_Validation.md), [workflow map](SchoolOS_5.4.2_Workflow_Map.md) and the matching SHA256SUMS file.

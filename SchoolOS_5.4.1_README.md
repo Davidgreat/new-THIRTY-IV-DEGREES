@@ -1,3 +1,5 @@
+> A newer cumulative update is available: [SchoolOS 5.4.2 — Calm Admin and Principal follow-ups](SchoolOS_5.4.2_README.md).
+
 # SchoolOS 5.4.1 — Modular roles and connected staff workflows
 
 Cumulative update for the existing SchoolOS updater, including 5.3.40 and earlier changes. No configuration file, database credentials, private encryption keys or test records are included.
