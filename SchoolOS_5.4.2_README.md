@@ -1,3 +1,5 @@
+> A newer cumulative release and refreshed manual are available: [SchoolOS 5.4.3 — Launch audit and current guides](SchoolOS_5.4.3_README.md).
+
 # SchoolOS 5.4.2 — A calmer school start, connected leadership
 
 This cumulative update retains the modular roles and connected workflows from 5.4.1. It reorganises the School Admin home around three clear places and extends the Principal workspace with scoped financial reports and reviewed chat drafts.

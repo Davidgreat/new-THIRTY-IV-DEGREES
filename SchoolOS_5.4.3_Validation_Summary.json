@@ -1,0 +1,34 @@
+{
+  "version": "5.4.3",
+  "focused_checks": 284,
+  "focused_failures": [],
+  "initial_crawl_requests": 1284,
+  "initial_crawl_findings": 8,
+  "affected_role_recrawl_requests": 244,
+  "affected_role_recrawl_findings": 0,
+  "guide_count": 47,
+  "guide_html_pdf_pairs": 47,
+  "syntax_checks": 44,
+  "superseded_test_expectations": [
+    {
+      "suite": "Core learning/finance/integration",
+      "old_expectation": "Repeated link creation is idempotent",
+      "reason": "Legacy expectation replaced by current verified-family / reused-chat-thread checks; see current-security-results.json"
+    },
+    {
+      "suite": "Core learning/finance/integration",
+      "old_expectation": "Chat delivery is shared by linked parent/student; duplicate key posts once",
+      "reason": "Legacy expectation replaced by current verified-family / reused-chat-thread checks; see current-security-results.json"
+    },
+    {
+      "suite": "Original cross-school checks",
+      "old_expectation": "Verified unlink removes only the chosen relationship, preserving the learner",
+      "reason": "Legacy expectation replaced by current verified-family / reused-chat-thread checks; see current-security-results.json"
+    }
+  ],
+  "boundaries": [
+    "Live site requests from this audit environment returned generic 403; Chromium could not establish a trusted TLS session. Independent live-host acceptance remains required.",
+    "Provider tests are mocked/local contracts, not actual Paystack settlement/SMTP inbox arrival/LiveKit capacity.",
+    "No production load test, independent penetration-test certification or legal compliance certification."
+  ]
+}
