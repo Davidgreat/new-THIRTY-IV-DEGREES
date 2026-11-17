@@ -1,58 +1,66 @@
-# School OS 5.3.35 — School-led admissions and family access
+# School OS 5.3.36 — Existing-school family onboarding
 
-[Open the installable ZIP on GitHub](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.35_School_Led_Admissions_Update.zip)
+[Open the installable ZIP on GitHub](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.36_Family_Onboarding_Update.zip)
 
-Admissions can now register pupils directly at the school office, record the school's admission decision and prepare the right family accounts. A public application, entrance test or fabricated offer is not required for an office admission.
+Schools can onboard existing families through one reviewed form. Staff can enter a family at the office, or share the school's unique parent-registration link. Submission alone never grants access.
 
-## What changes
+## Included
 
-- **Register a pupil** is the main admissions action. Save/edit a draft, select a class/session, verify a new or existing guardian, review possible duplicates and confirm admission.
-- Phone-first family records work without email. A pupil record, guardian relationship and login remain distinct and clearly labeled.
-- Admission creates the pupil, admission number, class placement, student details, guardian relationship and activity history together. Retry protection prevents the same registration from creating a second pupil.
-- Optional private document uploads support review and replacement history. Pending/rejected uploads block admission; verified copies carry into Student Records.
-- **Family & login setup** covers new and existing pupils. Search existing guardians and parent/student logins, add a second authorized guardian, prepare access requests and see each pupil's connection checklist.
-- One verified parent account can cover siblings without changing its password. An optional student account connects to exactly one pupil.
-- School administrators approve access by default. A school administrator can explicitly delegate reviewed parent/student account approval to admissions; this does not grant administrative roles.
-- New accounts receive school sign-in IDs, a one-time printable handover and a temporary password valid for 72 hours. A new personal password is required before opening school records. Existing email sign-in continues to work.
-- The separate generic school staff-account route now also uses temporary credentials and a first-login password change. Parent/student creation and raw numeric family linking point into the verified pupil-led flow.
-- CSV imports produce reviewable drafts, up to 100 pupils per file, without activating accounts or creating invoices. A template and school class-code reference are included.
-- The overview includes a family-access donut, registration counts and pending approvals. Existing applications, offers, tests, reminders and public-form settings remain in **More admission tools**.
-- Linked office-admission parents can chat with admissions and their linked children. School/role/child restrictions remain enforced.
-- A shared routing fix keeps dashboard pagination inside the dashboard rather than opening the public website.
+- Admissions → Family onboarding: school links, staff-assisted entry, parent/child review and account handover.
+- A parent form with email, WhatsApp number and up to 10 children, with name, birth date, class/arm, admission number if known and optional student access.
+- Staff search/match existing pupils to preserve their history, or confirm a missing school record. Matches never automatically grant access.
+- Admissions prepares verified matches. School administrators approve by default; existing explicit delegation of reviewed family-account approval also applies.
+- Approve reviewed siblings together, approve individually or return one child for correction while others move forward.
+- One parent account covers siblings. Existing parent/student passwords stay unchanged.
+- New accounts receive school sign-in IDs, the login URL and single-use password-setup links valid for 72 hours. Plaintext passwords are not emailed or put in WhatsApp.
+- Automatic email attempt after approval through the configured SchoolOS platform SMTP, or an explicitly selected school SMTP service. Failure does not undo enrollment.
+- Delivery states distinguish queued, sending, SMTP accepted, failed and uncertain outcomes. Retry controls preserve accounts and personal passwords.
+- Open WhatsApp handover opens the supplied number with prepared instructions; staff review/send it themselves. Opening is not proof of sending or delivery.
+- Private parent return links support progress and corrections. Verified staff can replace a lost link and revoke its older copy.
+- Responsive glass panels, a progress donut, searchable records, school-scoped review notifications and an activity trail.
 
-The existing personal welcome, glass surfaces, light/dark themes, mobile layouts and automatic animated circles remain included.
+Existing pupil records, applications/offers, personal welcomes and animated backgrounds remain included. Staff who are also parents can receive a separate parent school-ID account without changing their staff login.
 
-## Install and prepare
+## Install and configure
 
-1. Back up the application files **and database**.
-2. Open the ZIP link above and choose **Download raw file**.
-3. Install through **Platform Super Admin → Core updates** using the existing updater.
-4. Sign in as the **school administrator**, open **Admissions → Pupil registrations**, and click **Prepare pupil registration** if shown. This additive preparation creates the new registration/access tables and prepares the existing Student Records/Experience dependencies. It keeps existing records.
-5. Admissions can then use **Register a pupil**. After confirming admission, open **Family & login setup**. The administrator reviews pending access requests there and privately hands over newly issued credentials.
-6. Refresh already-open dashboard tabs so the versioned CSS/JavaScript reloads.
+1. Back up application files, database and private encryption keys.
+2. Open the ZIP above, choose Download raw file, then install through Platform Super Admin → Core updates.
+3. As school administrator, open Admissions → Family onboarding and click Prepare family onboarding if shown. Preparation adds tables without deleting existing school records.
+4. Ensure Platform Super Admin → Setup & account has the correct canonical HTTPS installation address. Include any installation subdirectory, without /index.php. Emailed links use this trusted address, not request headers.
+5. Open Share school link & email settings. Enable family forms and generate the school link. Admissions may copy/share it; the school administrator controls availability and replacement.
+6. Choose SchoolOS platform SMTP or This school's SMTP. Platform mode uses Platform Super Admin → Integrations → SMTP Email Configuration. School mode uses its own verified sender, host, port, TLS options and credentials.
+7. Test with fictional records and an inbox controlled by the school before sharing the link widely.
 
-Schools sharing the same database need the table preparation once. Account-approval delegation and family records remain school-specific. A separately configured isolated demo database needs its own preparation; newly built demo databases include the new tables. Its existing safety rules still disable uploads and live providers.
+School SMTP supports public provider hosts on 465, 587 or 2525 with SSL/TLS or STARTTLS. The trusted platform configuration retains its existing port policy. Credentials are encrypted and never redisplayed; blank school fields preserve saved values. A selected school SMTP failure is reported rather than silently switching sender. These school settings apply to family handovers, not other modules' provider settings.
 
-## School sign-in IDs
+## Day-to-day flow
 
-Examples of formats, not real credentials:
+Share link or enter family → parent adds children → school matches and verifies → authorized approval → accounts connected → email/WhatsApp handover → personal password setup → sign in.
 
-- Parent: `P-<school ID>-<account ID>`
-- Student: `S-<school ID>-<account ID>`
-- Teacher: `T-<school ID>-<account ID>`
-- Staff: `E-<school ID>-<account ID>`
-- Admissions: `A-<school ID>-<account ID>`
+Use existing pupil records whenever available. Parent-entered details do not overwrite existing classes, fees, results or history. Verify guardian authority and ownership of email/WhatsApp contacts before approval. A matching name alone is not verification.
 
-IDs identify the account; a correct password is still required. For accounts without email, the legacy required email column holds a non-deliverable internal storage key. It is not a contact address, is not handed over as an email and is not automatically verified for external delivery. No email/SMS delivery is claimed or performed by this registration flow.
+An inactive pending parent request may be explicitly verified and approved; a deliberately disabled account is not silently reactivated. If an email belongs to a staff/other-school account, a separate verified parent account can use a school ID while that original login remains unchanged.
 
-## Scope and recovery
+## Queued-mail worker
 
-Existing pupils, accounts, passwords and application histories are not silently relinked or reset. Review existing pupils through **Family & login setup** and verify relationships before adding access. Existing public-application settings are preserved; public forms are optional, and new school form settings remain closed by default.
+Approval attempts email after the school-record transaction commits. An optional hosting cron can process remaining queued handovers:
 
-Finance invoices, actual payment confirmation and optional transport/boarding assignments remain the responsibility of their school teams. Registration does not invent payments, charge optional services or automatically allocate a bus/bed.
+```sh
+php /absolute/path/public_html/services_worker.php --family-onboarding --tenant=1 --limit=20
+```
 
-The ZIP contains 36 approved application files plus `release.json`, without configuration, credentials or fixtures. Database preparation is additive. File rollback does not remove new pupil/family records or tables. School-ID-only accounts require this version's authentication support; if rolling back, plan access recovery or restore the corresponding database backup rather than assuming the old login screen supports the new IDs.
+Use the actual school tenant ID. Failed/uncertain sends require staff review before retry; interrupted sends are not blindly repeated. SMTP acceptance does not confirm inbox delivery. Real deliverability depends on the configured mail service and sender/domain setup.
 
-[Workflow and role guide](SchoolOS_5.3.35_Admissions_Workflow.md) · [Validation](SchoolOS_5.3.35_Validation.md) · [ZIP checksum](SchoolOS_5.3.35_SHA256SUMS.txt)
+## Data and rollback
 
-Validated locally with fictional records. This release has not been installed or tested against the hosted school's production database in this session.
+The cumulative ZIP contains 36 approved application files plus release.json. Configuration, private keys, mail credentials and test data are excluded. Seven additive tables store links, family requests, child reviews, protected setup tokens, encrypted delivery bodies, events and school SMTP settings. Shared databases need preparation once; records and settings remain school-scoped.
+
+This form does not import historical results/attendance/opening balances or invent a payment, invoice, bus or boarding assignment. Existing pupils connect by their existing IDs.
+
+File rollback does not roll back database records or passwords. The new forms and setup URLs require this version. Existing school-ID sign-in remains supported by 5.3.35 once a personal password is set; plan recovery before reverting.
+
+Shared demo mode allows fictional office-assisted review, while public family links, SMTP changes, external email and WhatsApp handovers remain disabled.
+
+[Workflow guide](SchoolOS_5.3.36_Family_Onboarding_Guide.md) · [Validation](SchoolOS_5.3.36_Validation.md) · [Checksum](SchoolOS_5.3.36_SHA256SUMS.txt)
+
+Tested locally. This session did not deploy to the hosted school or use its real SMTP account.
