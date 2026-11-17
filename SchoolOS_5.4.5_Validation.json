@@ -1,0 +1,388 @@
+{
+  "version": "5.4.5",
+  "workflow_http": {
+    "suite": "test-http.py",
+    "passed": 36,
+    "failed": 0,
+    "completed": true,
+    "script_sha256": "4c6dd65bf39d496f26dbae59819348d0b99c7bf32bf15eb375672d8401b47959",
+    "evidence": "The workflow runner completed successfully with 36 HTTP workflow checks passed before the separate 68-check URL compatibility suite."
+  },
+  "url_http_checks": 68,
+  "core_checks": 14,
+  "support_visit_checks": 6,
+  "financial_correction": {
+    "void_retains_history": true,
+    "void_excluded_from_totals": true,
+    "repeated_void_refused": true
+  },
+  "downgrade": {
+    "foundation_detected": true,
+    "incompatible_downgrade_refused": true
+  },
+  "navigation_requests": 1148,
+  "navigation_findings": [],
+  "guide_pairs": 48,
+  "browser": {
+    "out": [
+      {
+        "name": "No platform error 1440 light overview",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light overview",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 light schools",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light schools",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 light money",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light money",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 light support",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light support",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 light team",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light team",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 light tasks",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light tasks",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 light partners",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light partners",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 light activity",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 light activity",
+        "pass": true
+      },
+      {
+        "name": "Maintenance layout 1440 light",
+        "pass": true
+      },
+      {
+        "name": "Advanced tools collapsed 1440 light",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark overview",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark overview",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark schools",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark schools",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark money",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark money",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark support",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark support",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark team",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark team",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark tasks",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark tasks",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark partners",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark partners",
+        "pass": true
+      },
+      {
+        "name": "No platform error 1440 dark activity",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 1440 dark activity",
+        "pass": true
+      },
+      {
+        "name": "Maintenance layout 1440 dark",
+        "pass": true
+      },
+      {
+        "name": "Advanced tools collapsed 1440 dark",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light overview",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light overview",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light schools",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light schools",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light money",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light money",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light support",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light support",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light team",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light team",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light tasks",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light tasks",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light partners",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light partners",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 light activity",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 light activity",
+        "pass": true
+      },
+      {
+        "name": "Maintenance layout 360 light",
+        "pass": true
+      },
+      {
+        "name": "Advanced tools collapsed 360 light",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark overview",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark overview",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark schools",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark schools",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark money",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark money",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark support",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark support",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark team",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark team",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark tasks",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark tasks",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark partners",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark partners",
+        "pass": true
+      },
+      {
+        "name": "No platform error 360 dark activity",
+        "pass": true
+      },
+      {
+        "name": "Responsive platform 360 dark activity",
+        "pass": true
+      },
+      {
+        "name": "Maintenance layout 360 dark",
+        "pass": true
+      },
+      {
+        "name": "Advanced tools collapsed 360 dark",
+        "pass": true
+      },
+      {
+        "name": "Partner responsive 1440 light",
+        "pass": true
+      },
+      {
+        "name": "Partner chart visible 1440 light",
+        "pass": true
+      },
+      {
+        "name": "Partner responsive 1440 dark",
+        "pass": true
+      },
+      {
+        "name": "Partner chart visible 1440 dark",
+        "pass": true
+      },
+      {
+        "name": "Bank loading gives an honest provider result 1440",
+        "pass": true
+      },
+      {
+        "name": "Partner responsive 360 light",
+        "pass": true
+      },
+      {
+        "name": "Partner chart visible 360 light",
+        "pass": true
+      },
+      {
+        "name": "Partner responsive 360 dark",
+        "pass": true
+      },
+      {
+        "name": "Partner chart visible 360 dark",
+        "pass": true
+      },
+      {
+        "name": "Bank loading gives an honest provider result 360",
+        "pass": true
+      },
+      {
+        "name": "No JavaScript exceptions",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "updater": [
+    {
+      "name": "Existing 5.4.4 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.4.5 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.4.4 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "syntax_php": 39,
+  "syntax_js": 1,
+  "boundary": "Local, isolated fictional fixtures and front-controller test router; no real transfers/emails/provider bank lookup or hosted deployment."
+}
