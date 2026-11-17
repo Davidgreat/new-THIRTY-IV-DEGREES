@@ -1,66 +1,69 @@
-# SchoolOS 5.3.38 — School administration and connected staff onboarding
+# SchoolOS 5.3.39 — Working staff profiles and branded family registration
 
-[Open the installable ZIP on GitHub](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.38_School_Admin_and_Staff_Onboarding_Update.zip)
+[Open the installable ZIP on GitHub](https://github.com/Davidgreat/new-THIRTY-IV-DEGREES/blob/main/SchoolOS_5.3.39_Staff_Workspaces_and_Branded_Family_Update.zip)
 
-The school administrator now has a connected command centre, a practical first-use setup guide and a clearer way to bring existing school staff onto SchoolOS. The Parents and Teachers placeholders have been replaced with real school-scoped directories.
+This review found that the 29 job choices in 5.3.38 were permission presets, not 29 separately developed applications. Several specialist profiles landed on an unrelated first tab; Finance Reports and HR Reports were blocked by a general reporting prerequisite. This update connects the profiles to relevant overviews and working, permission-filtered school tools.
 
-## Install and start
+## Staff dashboards
+
+- All 29 job profiles have working entry points. Teacher and Admissions retain their established role portals. The 27 profiles using the underlying Staff account type now have role-specific overview panels, current record counts, status pies, date/workflow charts and direct work links.
+- Counts come from actual, school-scoped records. Driver and warden counts are constrained to assigned work; private exports and API keys are constrained to the account. Empty schools show empty states, not invented activity.
+- Existing driver, HR, boarding, library, store and communications daily controls remain connected. Relevant menus lead into shared operational modules rather than 29 duplicate codebases.
+- Specialist module tabs now follow their permissions. Timetable staff land on timetable tools, privacy staff on privacy tools, collection staff on collection tools, and integration staff on integrations. Unrelated or unusable tabs are filtered.
+- Finance-only and HR-only reporting accounts can use their own reports and private exports without general school-report access. Each still lacks the other's private dataset.
+- Integration officer presets now include standard school aggregate reporting, needed by their read-only API workflow. Finance and HR remain separate permissions. Existing live account grants are not silently expanded: an older integration account without reporting access shows a setup prompt, and the school administrator can review and reapply its profile in Staff & access.
+- Named selectors replace manual reference numbers in key review, asset, procurement, website, timetable, privacy, report-export and collection forms. Long lists can be searched locally.
+- Timetable periods, curriculum subjects, report columns and integration scopes use selections instead of requiring users to write JSON or reference lists. Core validation and independent approval remain enforced.
+- Website content fields follow the chosen content type. A news writer does not have to fill tour, staff-profile or gallery fields.
+- Verified collection works for approved regular collectors without cancelling future authorization. A used credential cannot authorize another handover that day. Expired credentials are displayed as expired in the overview.
+- Prepaid cashiers can request funding and record permitted purchases. Bank verification remains an independent school-administrator action, and the interface now reflects that boundary.
+
+These are optional job templates. A school does not need to employ 29 people or enable every module. See the [role-by-role audit and prerequisites](SchoolOS_5.3.39_Role_Audit.md).
+
+## Complete demo coverage
+
+The login page now offers **35 searchable demo choices**: the 29 staff profiles plus School owner, Parent/guardian, Student, Partner, Platform overview and School reviewer.
+
+The existing marked, isolated demo upgrades on its next login. It adds missing role accounts, employment links and fictional example workflows; it keeps existing accounts and passwords. Fresh demo provisioning also includes all profiles. It never copies live school users, data or provider credentials.
+
+Examples connect an editor to an independent reviewer, staff purchasing to a purchase reviewer, school evidence to review, pupil-support alerts to recorded attendance, and timetable proposals to real allocations. The sandbox prepaid example uses fictional declarations and credits only. A bank declaration still needs verification by a different demo administrator before a cashier can spend it.
+
+The original Teacher and Communications demos retain their previously seeded additional capabilities. Real schools choose explicit job profiles and additional grants for their own employees. Demo access requires the platform's isolated database configuration; displaying a selector does not replace that setup.
+
+## Parent registration and school branding
+
+The form now shows the actual school name, configured logo or school initials, motto and school contact details. Its accent buttons follow the school's primary colour with automatically selected readable text. If an incomplete branding record has a blank name, the real school name is used instead.
+
+Parents follow three steps: parent details → children → check and send. They can add siblings, move back without losing entries, and review the details before submission. Phone screens use a compact introduction and expandable school contact details. Light/dark themes are supported.
+
+The existing verification workflow remains in place: public submission creates a pending family request. It does not admit pupils, issue accounts or grant access to school records. The school's existing family review, identity checks and approval are still required. The fictional preview is labelled and refuses submissions.
+
+Configure school branding under School admin → School settings → Advanced → School Branding (`?s=school_setup&view=advanced&module=branding`). The form uses the same branding source as other school documents.
+
+## Cleaner shared family links
+
+New shared links omit the visible `index.php`:
+
+- Demo preview: `https://getschoolos.com.ng/?family=preview`
+- School family link: `https://getschoolos.com.ng/?family=YOUR_SCHOOL_TOKEN`
+
+Use the generated school link from Family onboarding; do not replace its token manually. Existing `index.php?family_join=...` and `index.php?family_demo_preview=1` links continue to work. Private progress/setup links also use the installation root when generated.
+
+`index.php` is the PHP entry point, and query parameters are valid routing. This portable improvement requires no Apache/Nginx rewrite changes and supports installations in a subfolder. Completely path-based URLs such as `/family/join/...` would require compatible hosting rewrite rules. Private dashboard routes are not being advertised as path-only URLs in this release.
+
+## Install
 
 1. Back up application files and the database.
-2. Download the ZIP above using GitHub's Download raw file button. Install it through Platform Super Admin → Core updates.
-3. Refresh open tabs. Open School admin → School overview, then Setup guide.
-4. If preparation is required, expand Prepare or update installed workspaces. This prepares installed tables without deleting existing records.
-5. Follow the setup guide: school identity, operational classes/subjects/session, pupils, staff access, teacher allocations, family links and privacy. Optional checks cover assessment configuration, calendar, finance and SMTP. Configure and test external services before relying on them.
+2. Download the ZIP above using GitHub's Download raw file button.
+3. Install through Platform Super Admin → Core updates, then refresh open tabs.
+4. Open school-admin Staff & access to review profiles. New employee logins retain the connected HR/dashboard setup from 5.3.38.
+5. Sign out and reopen login to see the complete demo picker. A configured isolated demo upgrades automatically on first connection; a destructive refresh is not required for this update.
+6. Open Family onboarding and copy the newly displayed school link. Check the school branding and submit a fictional test family before sharing widely.
 
-The admin overview includes setup progress, active-account bars, pupil attendance and invoice-position charts, pending reviews and direct working links. Compact reminders appear across school-admin pages while essential records are missing. Checks report records/configuration found, not certification of accuracy or live service delivery. Past-session teacher allocations and assessments do not complete current-session checks.
+The update contains 41 approved files plus release.json. Configuration, credentials, private keys, fixtures and test scripts are excluded. It introduces no new production tables. Normal school records and existing account grants are retained; existing workspaces must already be prepared where their features are used.
 
-## Add school staff directly
+Some functions deliberately require setup or review: driver licences and route assignments, hostel assignments, current teaching allocations, school website preparation, school-group consent, prepaid activation/guardian policy, provider credentials and independent approvals. These are real controls, not simulated success buttons. File rollback does not undo later approvals, passwords or database changes.
 
-School admin → Staff & access → Add a staff member:
+[Validation](SchoolOS_5.3.39_Validation.md) · [Role audit](SchoolOS_5.3.39_Role_Audit.md) · [Checksum](SchoolOS_5.3.39_SHA256SUMS.txt)
 
-- Enter the person's name and optional email.
-- Choose their real working dashboard: teacher, admissions, HR/payroll, driver, transport, boarding, librarian, school store, communications, website work and other supported specialist profiles. There are 29 named choices, mapped to existing permissions.
-- Select an existing unlinked HR record if the employee is already recorded. Teachers can explicitly select an existing unlinked teacher directory record. Names and emails do not silently merge records.
-- For a new HR record, enter the actual employment start date. Confirm active employment only when verified; otherwise HR induction must be completed before clock-in is enabled. Existing HR status, start date and salary are retained.
-- Verify identity/employment/access, then create the connected login.
-- Privately hand over the one-time school sign-in ID and temporary password shown immediately. It expires in 72 hours. The person must choose a personal password at first login.
-
-Creation connects the login, staff directory, HR record, and chosen job permissions in one transaction. A teacher additionally receives a teacher-directory link. New salary information is left for HR; licence details, routes, hostel assignments and teaching allocations are not invented.
-
-Open View access & next steps for an existing staff member to connect their records or add another dashboard of the same account type. Existing permissions are preserved; permissions are removed through the relevant Operations, Services or Intelligence access settings. Disabled accounts are not silently reactivated. School-administrator access cannot be self-granted through these profiles.
-
-Finance reports viewer provides reporting access; fee collection and invoice administration remain school-administrator functions. Optional prepaid and school-group services still require their existing administrator setup and scope controls.
-
-## Invite existing school staff
-
-School admin → Setup guide → People & access, or Staff & access → Invite existing school staff:
-
-1. Enable staff requests. Public school listing is optional.
-2. Copy the private staff invitation and send it to your school staff. It includes this installation's Join a school URL and the school's unique code.
-3. Staff submit their name, email, job request and a school reference. No password is needed at this stage.
-4. Requests remain inactive. The school administrator checks identity and employment, chooses the approved dashboard, explicitly selects any existing HR/teacher records and approves or rejects the request.
-5. Approval connects the records and permissions and shows one-time temporary sign-in details for private handover. The staff member sets a personal password at first sign-in.
-
-The platform's member-registration setting must also permit requests. If disabled, the admin page explains the restriction; direct staff creation remains available. Invitation possession alone never grants account access.
-
-Parents and pupils continue to use the separate Family onboarding flow and the existing multi-child parent link. Staff signup cannot grant parent/pupil access or infer family authority. Legacy family requests are directed to verified Family & login setup.
-
-## Directories and maintenance
-
-- Parents & guardians shows actual parent accounts and verified child links. A separate searchable guardian-contact directory shows family records, avoiding assumed matches between a contact and a login.
-- Teachers shows directory records, linked logins and valid current-session allocations. Unlinked teacher accounts have clear connection actions.
-- Staff & access has search, pagination, employment status, dashboard labels, staff chat and clear next steps.
-- Account connections shows staff/teacher record links by name. An administrator can remove a verified incorrect directory link with an audit reason, retaining the login and HR record, then reconnect the correct record. HR links, class allocations and job permissions are reviewed separately.
-- Searchable account recovery accepts names, email or school sign-in IDs. School IDs use the correct P/S/T/E/A prefix. Verified recovery shows its temporary credential once and replaces the old password.
-
-Glass styling, personal welcomes, existing animated backgrounds and family-onboarding features remain included. Phone/desktop layouts support both themes. Existing accounts and records are read directly; installing does not grant every existing staff account new permissions. The school administrator reviews each person's actual job and links.
-
-## Package and limits
-
-Cumulative update: 36 approved files plus release.json, with no configuration, credentials, keys, test scripts or synthetic data. No new database tables are introduced by this release; required existing workspaces must be prepared where not already installed.
-
-File rollback restores files/version metadata, not staff approvals, password changes or database records created after installation. Preserve database backups and plan account handover before rolling back.
-
-Shared demo pages show existing fictional records; live staff invitation, permission changes and credential issuance remain disabled in the shared demo. Local tests used synthetic ordinary school accounts. This session did not deploy to the hosted school or test its real SMTP/payment/media providers.
-
-[Validation](SchoolOS_5.3.38_Validation.md) · [Checksum](SchoolOS_5.3.38_SHA256SUMS.txt)
+Tested locally. This session did not install the update on the hosted school or validate its real external providers.
