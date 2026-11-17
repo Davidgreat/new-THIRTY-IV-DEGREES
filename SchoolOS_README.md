@@ -1,14 +1,14 @@
-# SchoolOS 5.4.0 — Modular roles and connected staff workflows
+# SchoolOS 5.4.1 — Modular roles and connected staff workflows
 
 Cumulative update for the existing SchoolOS updater, including 5.3.40 and earlier changes. No configuration file, database credentials, private encryption keys or test records are included.
 
 ## Install and start
 
-1. Keep a database backup and install `SchoolOS_5.4.0_Modular_Roles_and_Connected_Workflows_Update.zip` through the real Platform Super Admin updater. Upload the ZIP without extracting it. The current updater can install this package in one step.
+1. Keep a database backup and install `SchoolOS_5.4.1_Modular_Roles_and_Connected_Workflows_Update.zip` through the real Platform Super Admin updater. Upload the ZIP without extracting it. The current updater can install this package in one step.
 2. Sign in as a School Admin and open **Roles & permissions**. If prompted, choose **Prepare roles & permissions**. On an existing school, services remain enabled initially to preserve availability. Choose the services the school actually uses; a small-school starting selection is provided.
 3. Add only the role templates you need, review their permissions, then use **People & access** to assign one or several responsibilities to an existing employee. Use **Staff & access** to create a new employee login and HR connection first. Search employees by name or email instead of scrolling through the whole directory.
 
-Creating a template does not create an account. The production school is never populated with all demo roles. Family identities, staff job responsibilities, partner accounts and platform administration remain separate.
+Creating a template does not create an account. Create Teacher identities through Staff & access and verify their class/subject allocations; a generic employee template does not create teaching access. The production school is never populated with all demo roles. Family identities, staff job responsibilities, partner accounts and platform administration remain separate.
 
 ## Existing accounts and deliberate migration
 
@@ -53,4 +53,8 @@ Record lists and audit history are paginated. Pupil lookup searches return at mo
 
 There are 35 staff profile choices and 41 total demo identities, including family and ecosystem identities. Existing isolated demos upgrade additively; a demo-table inventory update preserves compatibility with the sandbox refresh safety checks. The 5.3.40 safe failure codes and private Demo health tools remain available.
 
-See `SchoolOS_5.4.0_Validation.md` and `SchoolOS_5.4.0_Workflow_Matrix.md`. No hosted installation or live external payment/email was performed during testing.
+See `SchoolOS_5.4.1_Validation.md` and `SchoolOS_5.4.1_Workflow_Matrix.md`. No hosted installation or live external payment/email was performed during testing.
+
+## Rollback after adopting modular access
+
+Immediate file rollback before preparing modular access remains available. After any school prepares the new access configuration, a file-only downgrade to a release older than 5.4.1 is refused: older releases lack current access or rollback safeguards. Prefer a compatible update. Any downgrade needs a reviewed recovery with the database backup matching that older release; a database restore can remove records created after the backup. File rollback alone never reverses changes to accounts, permissions or school records.
