@@ -1,0 +1,124 @@
+{
+  "version": "5.4.4",
+  "router_checks": 263,
+  "http_checks": 68,
+  "role_requests": 438,
+  "role_findings": [],
+  "guides": 47,
+  "php_syntax": 39,
+  "javascript_syntax": 2,
+  "browser": {
+    "out": [
+      {
+        "name": "browser probe activates /",
+        "pass": true
+      },
+      {
+        "name": "nested endpoint base /",
+        "pass": true
+      },
+      {
+        "name": "styles load /",
+        "pass": true
+      },
+      {
+        "name": "mobile clean guide /",
+        "pass": true
+      },
+      {
+        "name": "browser probe activates /campus/",
+        "pass": true
+      },
+      {
+        "name": "nested endpoint base /campus/",
+        "pass": true
+      },
+      {
+        "name": "styles load /campus/",
+        "pass": true
+      },
+      {
+        "name": "mobile clean guide /campus/",
+        "pass": true
+      },
+      {
+        "name": "no browser script exceptions",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "nested_browser": [
+    {
+      "name": "librarian nested page",
+      "pass": true
+    },
+    {
+      "name": "librarian nested alerts API",
+      "pass": true
+    },
+    {
+      "name": "librarian no duplicate selected subnav",
+      "pass": true
+    },
+    {
+      "name": "teacher nested page",
+      "pass": true
+    },
+    {
+      "name": "teacher nested alerts API",
+      "pass": true
+    },
+    {
+      "name": "teacher no duplicate selected subnav",
+      "pass": true
+    },
+    {
+      "name": "parent nested page",
+      "pass": true
+    },
+    {
+      "name": "parent nested alerts API",
+      "pass": true
+    },
+    {
+      "name": "parent no duplicate selected subnav",
+      "pass": true
+    },
+    {
+      "name": "schooladmin nested page",
+      "pass": true
+    },
+    {
+      "name": "schooladmin nested alerts API",
+      "pass": true
+    },
+    {
+      "name": "schooladmin no duplicate selected subnav",
+      "pass": true
+    }
+  ],
+  "updater": [
+    {
+      "name": "Existing 5.4.3 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.4.4 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.4.3 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "boundary": "Local PHP front-controller tests; real hosting routing must pass the authenticated browser probe."
+}

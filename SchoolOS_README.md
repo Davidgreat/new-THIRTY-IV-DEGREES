@@ -1,20 +1,32 @@
-# SchoolOS 5.4.3 — Launch audit and current user guides
+# SchoolOS 5.4.4 — Clean platform addresses
 
-Cumulative 43-file core update, including 5.4.2 and earlier work. Install the ZIP unchanged through the real Platform Super Admin updater after backing up.
+Cumulative 43-file update. Install the ZIP unchanged through the real Platform Super Admin updater after backing up. It retains the existing modular permissions, school workflows and launch-audit fixes.
 
-This release fixes two reproducible mixed-collation failures affecting parent homework and class-targeted communications, removes dead operations links from specialist personal-employment pages, implements the previously empty Platform Reports page, and hardens notice-tenant and guide-input checks. It adds an operator-only launch-facts panel that clearly distinguishes detected facts from unverified live acceptance.
+## Enable once for the platform
 
-The complete guide refresh includes 47 searchable entries covering all 35 staff job profiles, owners, platform operators, families and partners. The full manual has 200 sections. Web guides support role/task filters, text search, print, PDF and offline HTML. Existing guide URLs remain available. Individual job guides explain concrete steps, permission boundaries and external-service dependencies.
+1. Install `SchoolOS_5.4.4_Clean_URLs_Update.zip` through Updates & Plugins.
+2. In the real Platform Super Admin account, open **Updates & Plugins → Clean, shareable platform links**.
+3. Select **Check server & enable clean links**. A same-origin browser request must reach a dedicated clean path and pass server-side identity/CSRF/nonce checks before activation.
+4. Browse the school, sign in, open family registration and check the services your schools use.
 
-After installation:
+Examples after activation: `/login`, `/dashboard`, `/admissions/families`, `/chat`, `/guides/owner`, `/join-family/<private-token>`. An installation in `/campus/` retains that prefix. Filters may still use query parameters. API requests, provider callbacks, signed links and file endpoints retain their existing request behaviour. Existing `index.php?...` navigation links redirect to the matching clean address.
 
-1. Open **Help / Guides → Start here** for the first school-day flow.
-2. Open **Platform → Reports** for real aggregate school/account/subscription records.
-3. Open **Updates & Plugins → Before your first live school** and complete the applicable live acceptance checks.
-4. Read `SchoolOS_5.4.3_Production_Readiness_Audit.md` before public launch. The recommendation is a supervised pilot after installation and live-host sign-off, not unconditional production certification.
+If the check fails, links stay in legacy mode. Apache/LiteSpeed needs the existing front-controller rewrite with mod_rewrite/AllowOverride enabled; Nginx needs equivalent routing configured by the host. This update does not edit server configuration or replace private-file denial rules. It cannot independently certify your production host.
 
-Fresh validation includes 284 focused checks, all 41 demo identity logins in a 1,284-request navigation sweep, a 244-request affected-role recheck with zero findings, all 47 guide/PDF pairs, mobile/desktop light/dark browser checks, 44 syntax checks and update/recovery/rollback scenarios. See the audit and evidence summary for scope and limitations.
+## Recovery
 
-The release contains no config.php, credentials, encryption keys, production records or test utilities. No database schema migration is required for these fixes. Existing configuration and records are preserved. The access-aware downgrade guard remains; file rollback does not undo database or permission changes.
+If routing stops working after a hosting change, open `https://YOUR-INSTALLATION/index.php?s=system&legacy_urls=1`, sign in as the real Platform Super Admin and choose **Restore legacy link generation**. Include the installation subfolder where applicable. Do not delete private settings or weaken hosting security. The original physical entry point remains available.
 
-The live site could not be independently validated from this audit network. Backups/restore, private-path protection, real provider delivery/payments/media and target-load capacity need operator acceptance before being relied on. Optional services can remain disabled while core school functions launch.
+The setting is stored privately in `storage/system/clean-urls.json`, bound to the verified installation base. No database migration, role change, provider configuration change or account re-creation is required. No private configuration, credentials, encryption keys, synthetic records or test utilities are included. The 5.4.1 access-aware downgrade guard remains unchanged.
+
+## Validation
+
+- 263 router/HTML/link checks; 68 HTTP checks for root/subfolder, activation, recovery, scope, callback and path handling.
+- 438 authenticated navigation requests across all 41 fictional demo identities: zero server-error findings.
+- Browser activation, nested API requests, styles, mobile layout and script errors checked; all 47 current guide/PDF pairs pass.
+- 39 PHP files and both changed JavaScript files pass syntax checks.
+- The existing 5.4.3 updater installs matching hashes without modifying configuration; interrupted install, explicit rollback, repeated version and traversal scenarios pass.
+
+These are local tests using an isolated fictional database and a PHP front-controller test router. The feature's real-host probe is required; local results are not proof of Apache/Nginx configuration, payment settlement, SMTP delivery, live media capacity or production load. The prior launch-audit live acceptance requirements still apply.
+
+Previous launch audit and complete guide refresh: [SchoolOS 5.4.3](SchoolOS_5.4.3_README.md).
