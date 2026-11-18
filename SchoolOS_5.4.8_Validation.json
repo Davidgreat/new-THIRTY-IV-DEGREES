@@ -1,0 +1,221 @@
+{
+  "version": "5.4.8",
+  "trial": [
+    {
+      "name": "Trial option selects the first available paid monthly continuation package",
+      "pass": true
+    },
+    {
+      "name": "Trial signup grants exactly one calendar month and usable school access",
+      "pass": true
+    },
+    {
+      "name": "One-month trial is explicit even when legacy trial policy requires payment",
+      "pass": true
+    },
+    {
+      "name": "Removing form flags preserves the server-bound trial choice",
+      "pass": true
+    },
+    {
+      "name": "Forging trial POST fields or URL on a paid-bound submission grants no trial",
+      "pass": true
+    },
+    {
+      "name": "Conflicting entry flags and permanent free plans cannot create trials",
+      "pass": true
+    },
+    {
+      "name": "Trial expiry restores the existing subscription payment gate",
+      "pass": true
+    },
+    {
+      "name": "Calendar month expiry handles short months and leap years",
+      "pass": true
+    }
+  ],
+  "paid_regressions": [
+    {
+      "name": "Pricing choice preselects and binds package, cycle and current price",
+      "pass": true
+    },
+    {
+      "name": "Paid pricing registration creates pending school with zero trial access",
+      "pass": true
+    },
+    {
+      "name": "Removing pricing flags from submission cannot re-enable trial",
+      "pass": true
+    },
+    {
+      "name": "Changing hidden package is refused without creating a school",
+      "pass": true
+    },
+    {
+      "name": "Changing hidden billing cycle is refused",
+      "pass": true
+    },
+    {
+      "name": "Price changes require a reviewed current selection",
+      "pass": true
+    },
+    {
+      "name": "Inactive or unsupported plan cycles are refused",
+      "pass": true
+    },
+    {
+      "name": "Configured free pricing option activates as a free plan, never a trial",
+      "pass": true
+    },
+    {
+      "name": "Direct registration preserves the existing configured trial policy",
+      "pass": true
+    },
+    {
+      "name": "Selecting another package on pricing replaces the earlier selection",
+      "pass": true
+    },
+    {
+      "name": "Malformed package input never becomes a trial registration",
+      "pass": true
+    },
+    {
+      "name": "Verified payment activates exactly the selected paid billing cycle",
+      "pass": true
+    }
+  ],
+  "browser": {
+    "out": [
+      {
+        "name": "Trial card is visible 1440light",
+        "pass": true
+      },
+      {
+        "name": "Pricing fits 1440light",
+        "pass": true
+      },
+      {
+        "name": "Trial terms follow choice 1440light",
+        "pass": true
+      },
+      {
+        "name": "Summary promises a calendar month free 1440light",
+        "pass": true
+      },
+      {
+        "name": "Registration fits 1440light",
+        "pass": true
+      },
+      {
+        "name": "Trial card is visible 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Pricing fits 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Trial terms follow choice 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Summary promises a calendar month free 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Registration fits 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Trial card is visible 360light",
+        "pass": true
+      },
+      {
+        "name": "Pricing fits 360light",
+        "pass": true
+      },
+      {
+        "name": "Trial terms follow choice 360light",
+        "pass": true
+      },
+      {
+        "name": "Summary promises a calendar month free 360light",
+        "pass": true
+      },
+      {
+        "name": "Registration fits 360light",
+        "pass": true
+      },
+      {
+        "name": "Trial card is visible 360dark",
+        "pass": true
+      },
+      {
+        "name": "Pricing fits 360dark",
+        "pass": true
+      },
+      {
+        "name": "Trial terms follow choice 360dark",
+        "pass": true
+      },
+      {
+        "name": "Summary promises a calendar month free 360dark",
+        "pass": true
+      },
+      {
+        "name": "Registration fits 360dark",
+        "pass": true
+      },
+      {
+        "name": "Browser trial signup opens actual school setup",
+        "pass": true
+      },
+      {
+        "name": "No JavaScript exceptions",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "syntax": [
+    {
+      "file": "experience.php",
+      "pass": true
+    },
+    {
+      "file": "experience_ui.php",
+      "pass": true
+    },
+    {
+      "file": "public_site.php",
+      "pass": true
+    },
+    {
+      "file": "public_guides.php",
+      "pass": true
+    }
+  ],
+  "updater": [
+    {
+      "name": "Existing 5.4.7 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.4.8 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.4.7 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "boundary": "Local isolated fictional records; no real payment/email or hosted deployment."
+}
