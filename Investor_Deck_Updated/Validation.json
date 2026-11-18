@@ -1,0 +1,233 @@
+{
+  "edition": "SchoolOS Nigeria \u2014 updated commercial model through 5.5.2",
+  "stage": "Product built; pilot launch/recruitment. No verified school/customer count, revenue, pilot outcomes or funding amount supplied.",
+  "interactive_checks": {
+    "results": [
+      {
+        "name": "Full presentation has 20 slides",
+        "pass": true
+      },
+      {
+        "name": "Founder contact remains included",
+        "pass": true
+      },
+      {
+        "name": "Keyboard navigation works",
+        "pass": true
+      },
+      {
+        "name": "Competition version retains 10 slides",
+        "pass": true
+      },
+      {
+        "name": "Overview shows the selected 10 slides",
+        "pass": true
+      },
+      {
+        "name": "Competition closing footer is renumbered",
+        "pass": true
+      },
+      {
+        "name": "Grant framing updates the visible ask",
+        "pass": true
+      },
+      {
+        "name": "Audience framing updates readable text",
+        "pass": true
+      },
+      {
+        "name": "default interactive model matches independently recalculated spreadsheet/reference",
+        "pass": true
+      },
+      {
+        "name": "no_discounts interactive model matches independently recalculated spreadsheet/reference",
+        "pass": true
+      },
+      {
+        "name": "no_referrals interactive model matches independently recalculated spreadsheet/reference",
+        "pass": true
+      },
+      {
+        "name": "double_cost interactive model matches independently recalculated spreadsheet/reference",
+        "pass": true
+      },
+      {
+        "name": "no_founding_eligible interactive model matches independently recalculated spreadsheet/reference",
+        "pass": true
+      },
+      {
+        "name": "small_cohort interactive model matches independently recalculated spreadsheet/reference",
+        "pass": true
+      },
+      {
+        "name": "Initial model shows \u20a6118.3m illustrative subscriptions",
+        "pass": true
+      },
+      {
+        "name": "Invalid school mix stops printing and explains the problem",
+        "pass": true
+      },
+      {
+        "name": "Valid mix restores printing",
+        "pass": true
+      },
+      {
+        "name": "Loss-making cost assumptions are displayed rather than hidden",
+        "pass": true
+      },
+      {
+        "name": "Mix appendix updates with model controls",
+        "pass": true
+      },
+      {
+        "name": "500-pupil example matches the implemented tariff",
+        "pass": true
+      },
+      {
+        "name": "Small-school quote applies the minimum",
+        "pass": true
+      },
+      {
+        "name": "Annual discount control recalculates the quote",
+        "pass": true
+      },
+      {
+        "name": "Above-cap count asks for a custom quote",
+        "pass": true
+      },
+      {
+        "name": "Fractional pupils disable invalid printing",
+        "pass": true
+      },
+      {
+        "name": "Valid quote restores printing",
+        "pass": true
+      },
+      {
+        "name": "Funding appendix remains interactive",
+        "pass": true
+      },
+      {
+        "name": "Notes retain the undefined funding-ask boundary",
+        "pass": true
+      },
+      {
+        "name": "Slide 11 and controls fit 1440px",
+        "pass": true
+      },
+      {
+        "name": "Slide 18 and controls fit 1440px",
+        "pass": true
+      },
+      {
+        "name": "Slide 19 and controls fit 1440px",
+        "pass": true
+      },
+      {
+        "name": "Slide 11 and controls fit 768px",
+        "pass": true
+      },
+      {
+        "name": "Slide 18 and controls fit 768px",
+        "pass": true
+      },
+      {
+        "name": "Slide 19 and controls fit 768px",
+        "pass": true
+      },
+      {
+        "name": "Slide 11 and controls fit 390px",
+        "pass": true
+      },
+      {
+        "name": "Slide 18 and controls fit 390px",
+        "pass": true
+      },
+      {
+        "name": "Slide 19 and controls fit 390px",
+        "pass": true
+      },
+      {
+        "name": "Deep link opens pricing appendix",
+        "pass": true
+      },
+      {
+        "name": "Every visible slide text stays inside the 16:9 canvas",
+        "pass": true
+      },
+      {
+        "name": "Self-contained deck works with external network requests blocked",
+        "pass": true
+      },
+      {
+        "name": "No browser runtime errors",
+        "pass": true,
+        "detail": []
+      }
+    ],
+    "errors": [],
+    "limitations": [
+      "Managed browser policy blocks file:// navigation. Direct-file opening is unverified here; documented local-server fallback is tested."
+    ]
+  },
+  "workbook_checks": [
+    {
+      "name": "default spreadsheet recalculation matches reference model",
+      "pass": true
+    },
+    {
+      "name": "no_discounts spreadsheet recalculation matches reference model",
+      "pass": true
+    },
+    {
+      "name": "no_referrals spreadsheet recalculation matches reference model",
+      "pass": true
+    },
+    {
+      "name": "double_cost spreadsheet recalculation matches reference model",
+      "pass": true
+    },
+    {
+      "name": "no_founding_eligible spreadsheet recalculation matches reference model",
+      "pass": true
+    },
+    {
+      "name": "small_cohort spreadsheet recalculation matches reference model",
+      "pass": true
+    },
+    {
+      "name": "bad_mix fails closed instead of quoting invalid economics",
+      "pass": true
+    },
+    {
+      "name": "invalid_tariff fails closed instead of quoting invalid economics",
+      "pass": true
+    },
+    {
+      "name": "Pupils above cap require a custom quote",
+      "pass": true
+    },
+    {
+      "name": "Minimum pupil quote preserves the term floor",
+      "pass": true
+    },
+    {
+      "name": "Retained-cohort year two includes assumed attrition and no first-year commission",
+      "pass": true
+    },
+    {
+      "name": "Nine sheets, three charts and input validations survive recalculation",
+      "pass": true
+    }
+  ],
+  "pdf_pages": {
+    "SchoolOS_Investor_Pitch.pdf": 20,
+    "SchoolOS_Competition_Pitch_10_Slides.pdf": 10
+  },
+  "editable_powerpoint_slides": 20,
+  "native_office_render": "Editable PowerPoint exported successfully to a 20-page PDF in LibreOffice; business-model preview visually reviewed. Microsoft PowerPoint itself was not run.",
+  "workbook_recalculation": "LibreOffice recalculated six valid cohort cases and four guard/quote cases. Cached formulas compared against independent Python and browser models. Nine sheets, three charts and input validations retained.",
+  "financial_boundary": "School counts, mix, cost/retention/collection assumptions and budget are scenarios. Contribution is not actual profit. School tuition and provider-funded services are excluded from platform subscriptions.",
+  "public_configuration_boundary": "Reference prices and offers are editable configuration, not independently fetched binding live quotes.",
+  "checks_passed": 52
+}
