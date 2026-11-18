@@ -1,0 +1,18 @@
+{
+  "duration_seconds": 90.0,
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "frames": "2700",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio_channels": 2,
+  "bytes": 10279903,
+  "sha256": "b2bf3a1c5dc44fe2756b9f686699ef9d17714fdb33754ddaeebe92ed738290ba",
+  "animation_errors": [],
+  "narration": "Synthetic en-NG-AbeoNeural voice",
+  "music": "Original synthesized instrumental bed",
+  "visuals": "Fictional SchoolOS demo screenshots and promotional interface illustrations",
+  "captions": "Burned in; separate SRT included",
+  "browser_playback_verified": true
+}
