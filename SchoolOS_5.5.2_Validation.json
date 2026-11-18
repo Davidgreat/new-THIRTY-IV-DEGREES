@@ -1,0 +1,13 @@
+{
+  "version": "5.5.2",
+  "php_syntax": "experience.php and public_guides.php passed",
+  "rendered_cycles": {
+    "monthly": "Monthly payment: ₦58,125.00; one billing term = 4 months",
+    "termly": "Termly payment: ₦232,500.00; one billing term = 4 months",
+    "annual": "Annual payment: ₦627,750.00; one billing year = 3 terms (12 months)"
+  },
+  "runtime_hashes_verified": 43,
+  "private_configuration_excluded": true,
+  "database_and_provider_calls": false,
+  "scope": "Presentation wording and guide only; no hosted installation changed."
+}
