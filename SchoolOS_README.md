@@ -1,46 +1,31 @@
-> Latest cumulative correction: [SchoolOS 5.4.6 — Partner setup routing](SchoolOS_5.4.6_README.md).
+# SchoolOS 5.4.7 — Playful website and public pricing
 
-# SchoolOS 5.4.5 — Platform command centre and connected partners
+Cumulative 43-file release. Back up and install the original ZIP through the real Platform Super Admin updater. Existing records, provider settings, private keys and clean-link mode are preserved. This release does not introduce a database schema migration.
 
-Cumulative 43-file update. Back up the matching database, application/uploads and private keys, then install the original ZIP through the real Platform Super Admin updater. This release retains clean-URL compatibility and all previous school workflows.
+## Website, with a little life
 
-## Start after installation
+The public SchoolOS pages now have moving translucent circles, soft colour changes and elastic collisions using the proven dashboard motion engine. Buttons and navigation gain a visible hover lift/glow; keyboard focus and phone tap feedback stay usable. The circles cannot intercept input. The engine pauses for hidden/print views and honours the existing accessibility behaviour, including the desktop automatic-motion fallback. Affiliate pages bind only one scene driver even though they also load dashboard controls. Light/dark and mobile layouts retain readable text and prices.
 
-1. Sign in as the real Platform Super Admin and open **Overview**. The new additive platform tables are prepared automatically on first access; the database account needs CREATE TABLE permission.
-2. Open **Schools** to search registered schools and filter paid active, free active, trial, expired/inactive, missing-plan and suspended records. Each school is counted once using its enrolment/current subscription.
-3. Open **Money** for live subscription receipts, schools with live receipts, recorded outgoings, exact chart figures and CSV export. Test payments and historical records without environment evidence stay separate. The historical evidence check reads the provider; it does not charge a school. Net recorded movement is not a bank balance or profit, and excludes school fee collections.
-4. Open **Platform team** to create verified colleagues. Check their permissions and select assigned schools. A shown-once temporary credential expires after 72 hours and requires a personal password. Share it privately. Reissue invalidates existing sessions; school staff accounts remain separate.
-5. Use **Helpdesk** for school and billing cases. Assign colleagues, reply to the school, keep private team notes, set status/priority or escalate. Schools see replies in their own support page and in-app notifications. Platform colleagues work only on assigned cases/schools unless triage access is explicitly checked.
-6. Use **Team tasks** for work with a named owner, an optional school and a due date. Colleagues record progress notes, complete work or escalate it to the Super Admin.
+## Public pricing
 
-## School support visits — enter and return
+Open `/pricing` after clean links are enabled, or `index.php?page=pricing`. Pricing appears in navigation/footer and the public website’s start buttons lead there. Monthly, termly (four months) and annual prices come from the active `saas_plans` records. Names, amounts and saved pupil/staff capacities are not invented or copied from the test fixture. Zero-price cycles on a paid package are not offered; an all-zero configured package is presented as free. Inactive packages are hidden. If no plans are ready, the page invites contact instead of inventing prices. Closed registrations display an honest contact path.
 
-Open Schools, choose the school and use **Enter school support**. A reason and the operator’s current password are required. An active School Admin must exist. A support visit lasts at most 30 minutes, is visible and audited, and returns to the original platform identity. Access changes or expiry end the visit; expired submitted actions are discarded before returning.
+The page describes shared SchoolOS capabilities and the need to activate school services/permissions. It does not invent tier-specific feature gates, promise unlimited provider capacity or include third-party credits. External messaging, payments, AI and classroom providers still need their configured services and live acceptance.
 
-Visits are **view only by default**. Platform colleagues with school.visit can visit only assigned schools and cannot edit. The Super Admin may explicitly enable limited academic setup: topics/coverage, allocations, timetable/resources, and saving classes, subjects, curricula, sessions or terms. Private chat, credentials, banking, exports, account/permission changes, grades/publication and financial actions are unavailable. This is deliberately a scoped support workflow, not unrestricted impersonation. The school’s subscription is not changed. The original platform operator is recorded on permitted setup audit events.
+Before launch, sign in as Platform Super Admin → Plans & billing tools → Public pricing packages. Review names, prices, capacities and active availability. The editor checks role, CSRF, amounts and a concurrent-change stamp. Saved school enrolment amounts are retained; use the existing subscription controls for existing schools. New packages can still be created through the existing plan-creation form.
 
-## Platform money records
+## Choose a package → create a school → pay
 
-Already-paid expenses and subscription refunds can be recorded by the Super Admin with their actual reference, date, amount and reason. No transfer is initiated. Duplicate references and future dates are refused; refunds require a verified live source and cannot exceed it. Mistaken entries can be voided with password confirmation and a reason; history remains visible, totals exclude them, and no bank movement is reversed. Keep the external receipt. Successful live partner payouts are reported separately.
+A pricing choice opens registration with the package and billing cycle preselected. Those fields are locked, with a Change package link. The server stores the package, cycle, price snapshot and registration key in the session; it does not trust a client-supplied trial flag or amount.
 
-## Partner workspace
+Pricing-origin registrations have zero trial days even when the plan’s ordinary trial setting is positive. A paid school is created as pending, behind the existing subscription/payment gate, until the provider verifies the exact charge, reference and NGN currency. Choosing a package or a browser return never proves payment. A configured free package is active as a free subscription, not a timed trial. There is no automatic renewal debit.
 
-The partner’s ordinary dashboard now opens the connected affiliate workspace. It includes referral conversion and commission charts, holding/available/paid balances, a personal share link, Nigerian bank search and provider account-name verification, withdrawal requests, cancellation of an own unprocessed request, and expandable referral/commission/withdrawal history. Repeated submission of a request form is refused. Test and live records stay separate. A changed bank account never replaces the recipient already saved on a withdrawal.
+Removing pricing fields cannot turn that selected registration into a trial. Altered package/cycle, inactive plans, unavailable cycles, malformed selections or a changed quoted price are refused before school creation. The ordinary trial policy of separate legacy registration routes is preserved; existing school subscriptions are not retroactively changed.
 
-Programme applications, rates, holding periods, payout reviews and reconciliation remain connected to the existing financial engine. Settings now use percentages and Naira. Payout initiation requires Super Admin password confirmation. Real account resolution and transfers still require working Paystack settings, provider availability/balance and normal provider approval. No live payout, real SMTP send or real bank lookup was performed during local testing.
+## Validation and boundaries
 
-## A calmer update page
+Checks use a separate ownership-marked fictional database, PHP 8.4, MariaDB and Chromium. They cover server-bound pricing selection, no-trial state, price/plan/cycle tampering, free and legacy-trial paths, exact-cycle activation with mocked verified payment, root/subfolder clean links, actual browser package selection, no-JavaScript locked controls, desktop/phone light/dark layouts, visible motion, hover glow, signed-in operator editing, all current guide/PDF endpoints and update/recovery scenarios. The test fixtures and their invented prices are not shipped.
 
-Updates & tools leads with the installed version and trusted release upload. Recovery, clean-link settings, launch/hosting checks, optional declarative packages and private-file protection remain under **Advanced tools & recovery**. They were reorganised, not removed. Update actions redirect to a fresh page to avoid re-submitting an upload on refresh.
+No real payment, provider charge, customer email or hosted deployment was performed. Publish the prices you actually intend to offer, verify your live payment/provider path and retain the previous launch acceptance checklist. This package is published for installation; installing it on the live host is still required.
 
-## Recovery and access boundaries
-
-The existing modular-access downgrade guard remains. Once platform team/support/task/outgoing records exist, file-only downgrade below 5.4.5 is also refused. A deeper recovery requires the matching database/files/keys backup; do not replace only the old entry point to bypass this guard. No configuration file, production data, credentials, private keys or synthetic fixture utilities are included in this release.
-
-Updated built-in guidance includes the new platform colleague role and the revised partner and operator workflows. The complete manual is provided as HTML, Markdown and printable PDF.
-
-## Validation scope
-
-Local testing uses PHP 8.4, MariaDB and Chromium with an ownership-marked fictional database, separate from the existing database. Results include 1,148 authenticated navigation requests across all 41 demo identities with zero findings, 36 HTTP workflow checks, 68 root/subfolder URL checks, focused permission/finance/affiliate/support tests, mobile/desktop light/dark checks, all 48 guide/PDF pairs, syntax checks and updater/recovery scenarios. See Validation.json for exact suite counts.
-
-These checks do not certify production load, a real host’s routing/security, provider settlement, SMTP arrival or live-class capacity. Continue the existing live acceptance checklist for services you offer. This package is published for installation; it was not deployed to your hosted site from this workspace.
+Previous releases: [5.4.6 routing correction](SchoolOS_5.4.6_README.md) · [5.4.5 platform workspace](SchoolOS_5.4.5_README.md).

@@ -1,0 +1,552 @@
+{
+  "version": "5.4.7",
+  "pricing": [
+    {
+      "name": "Pricing choice preselects and binds package, cycle and current price",
+      "pass": true
+    },
+    {
+      "name": "Paid pricing registration creates pending school with zero trial access",
+      "pass": true
+    },
+    {
+      "name": "Removing pricing flags from submission cannot re-enable trial",
+      "pass": true
+    },
+    {
+      "name": "Changing hidden package is refused without creating a school",
+      "pass": true
+    },
+    {
+      "name": "Changing hidden billing cycle is refused",
+      "pass": true
+    },
+    {
+      "name": "Price changes require a reviewed current selection",
+      "pass": true
+    },
+    {
+      "name": "Inactive or unsupported plan cycles are refused",
+      "pass": true
+    },
+    {
+      "name": "Configured free pricing option activates as a free plan, never a trial",
+      "pass": true
+    },
+    {
+      "name": "Direct registration preserves the existing configured trial policy",
+      "pass": true
+    },
+    {
+      "name": "Selecting another package on pricing replaces the earlier selection",
+      "pass": true
+    },
+    {
+      "name": "Malformed package input never becomes a trial registration",
+      "pass": true
+    },
+    {
+      "name": "Verified payment activates exactly the selected paid billing cycle",
+      "pass": true
+    }
+  ],
+  "http": [
+    {
+      "name": "Public pricing renders /monthly",
+      "pass": true
+    },
+    {
+      "name": "Displayed cycle matches /monthly",
+      "pass": true
+    },
+    {
+      "name": "Annual-only package follows offered cycle /monthly",
+      "pass": true
+    },
+    {
+      "name": "Public pricing renders /termly",
+      "pass": true
+    },
+    {
+      "name": "Displayed cycle matches /termly",
+      "pass": true
+    },
+    {
+      "name": "Annual-only package follows offered cycle /termly",
+      "pass": true
+    },
+    {
+      "name": "Public pricing renders /annual",
+      "pass": true
+    },
+    {
+      "name": "Displayed cycle matches /annual",
+      "pass": true
+    },
+    {
+      "name": "Annual-only package follows offered cycle /annual",
+      "pass": true
+    },
+    {
+      "name": "Selected package and cycle carried to registration /",
+      "pass": true
+    },
+    {
+      "name": "Pricing registration has clear no-trial terms /",
+      "pass": true
+    },
+    {
+      "name": "Package controls are locked without JavaScript /",
+      "pass": true
+    },
+    {
+      "name": "Inactive pricing URL shows a safe correction /",
+      "pass": true
+    },
+    {
+      "name": "Public pricing renders /campus/monthly",
+      "pass": true
+    },
+    {
+      "name": "Displayed cycle matches /campus/monthly",
+      "pass": true
+    },
+    {
+      "name": "Annual-only package follows offered cycle /campus/monthly",
+      "pass": true
+    },
+    {
+      "name": "Public pricing renders /campus/termly",
+      "pass": true
+    },
+    {
+      "name": "Displayed cycle matches /campus/termly",
+      "pass": true
+    },
+    {
+      "name": "Annual-only package follows offered cycle /campus/termly",
+      "pass": true
+    },
+    {
+      "name": "Public pricing renders /campus/annual",
+      "pass": true
+    },
+    {
+      "name": "Displayed cycle matches /campus/annual",
+      "pass": true
+    },
+    {
+      "name": "Annual-only package follows offered cycle /campus/annual",
+      "pass": true
+    },
+    {
+      "name": "Selected package and cycle carried to registration /campus/",
+      "pass": true
+    },
+    {
+      "name": "Pricing registration has clear no-trial terms /campus/",
+      "pass": true
+    },
+    {
+      "name": "Package controls are locked without JavaScript /campus/",
+      "pass": true
+    },
+    {
+      "name": "Inactive pricing URL shows a safe correction /campus/",
+      "pass": true
+    },
+    {
+      "name": "HTTP registration leads to payment gate rather than a trial",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene features",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene how-it-works",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene pricing",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene about",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene contact",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene privacy",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene terms",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene cookies",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene documentation",
+      "pass": true
+    },
+    {
+      "name": "Public page has one decorative scene affiliate",
+      "pass": true
+    }
+  ],
+  "clean_urls": [
+    {
+      "name": "Server probe /",
+      "pass": true
+    },
+    {
+      "name": "Canonical pricing URL /",
+      "pass": true
+    },
+    {
+      "name": "Clean package link preserves intent /",
+      "pass": true
+    },
+    {
+      "name": "Server probe /campus/",
+      "pass": true
+    },
+    {
+      "name": "Canonical pricing URL /campus/",
+      "pass": true
+    },
+    {
+      "name": "Clean package link preserves intent /campus/",
+      "pass": true
+    }
+  ],
+  "editor": [
+    {
+      "name": "School admin cannot edit public prices",
+      "pass": true
+    },
+    {
+      "name": "Super Admin edits actual package metadata",
+      "pass": true
+    },
+    {
+      "name": "Stale package edit is refused",
+      "pass": true
+    },
+    {
+      "name": "Invalid negative amount is refused",
+      "pass": true
+    }
+  ],
+  "editor_http": [
+    {
+      "name": "Editor POST saves and returns to package controls: Synthetic Starter Reviewed",
+      "pass": true
+    },
+    {
+      "name": "Editor POST saves and returns to package controls: Synthetic Starter",
+      "pass": true
+    }
+  ],
+  "browser": {
+    "out": [
+      {
+        "name": "No page error 1440lighthome",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440lighthome",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440lightpricing",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440lightpricing",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440lightfeatures",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440lightfeatures",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440lightcontact",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440lightcontact",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440lightdocumentation",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440lightdocumentation",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440lightaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440lightaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Bubbles move 1440light",
+        "pass": true
+      },
+      {
+        "name": "No duplicate scene driver 1440light",
+        "pass": true
+      },
+      {
+        "name": "Hover has visible glow light",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440darkhome",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440darkhome",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440darkpricing",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440darkpricing",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440darkfeatures",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440darkfeatures",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440darkcontact",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440darkcontact",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440darkdocumentation",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440darkdocumentation",
+        "pass": true
+      },
+      {
+        "name": "No page error 1440darkaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Responsive 1440darkaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Bubbles move 1440dark",
+        "pass": true
+      },
+      {
+        "name": "No duplicate scene driver 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Hover has visible glow dark",
+        "pass": true
+      },
+      {
+        "name": "Actual package click preselects annual 1440",
+        "pass": true
+      },
+      {
+        "name": "Selected registration stays mobile-friendly 1440",
+        "pass": true
+      },
+      {
+        "name": "Selection summary does not advertise trial 1440",
+        "pass": true
+      },
+      {
+        "name": "No page error 360lighthome",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360lighthome",
+        "pass": true
+      },
+      {
+        "name": "No page error 360lightpricing",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360lightpricing",
+        "pass": true
+      },
+      {
+        "name": "No page error 360lightfeatures",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360lightfeatures",
+        "pass": true
+      },
+      {
+        "name": "No page error 360lightcontact",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360lightcontact",
+        "pass": true
+      },
+      {
+        "name": "No page error 360lightdocumentation",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360lightdocumentation",
+        "pass": true
+      },
+      {
+        "name": "No page error 360lightaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360lightaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Bubbles move 360light",
+        "pass": true
+      },
+      {
+        "name": "No duplicate scene driver 360light",
+        "pass": true
+      },
+      {
+        "name": "No page error 360darkhome",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360darkhome",
+        "pass": true
+      },
+      {
+        "name": "No page error 360darkpricing",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360darkpricing",
+        "pass": true
+      },
+      {
+        "name": "No page error 360darkfeatures",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360darkfeatures",
+        "pass": true
+      },
+      {
+        "name": "No page error 360darkcontact",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360darkcontact",
+        "pass": true
+      },
+      {
+        "name": "No page error 360darkdocumentation",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360darkdocumentation",
+        "pass": true
+      },
+      {
+        "name": "No page error 360darkaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Responsive 360darkaffiliate",
+        "pass": true
+      },
+      {
+        "name": "Bubbles move 360dark",
+        "pass": true
+      },
+      {
+        "name": "No duplicate scene driver 360dark",
+        "pass": true
+      },
+      {
+        "name": "Actual package click preselects annual 360",
+        "pass": true
+      },
+      {
+        "name": "Selected registration stays mobile-friendly 360",
+        "pass": true
+      },
+      {
+        "name": "Selection summary does not advertise trial 360",
+        "pass": true
+      },
+      {
+        "name": "Desktop automatic background works with Windows animation preference",
+        "pass": true
+      },
+      {
+        "name": "No JavaScript exceptions",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "guide_pairs": 48,
+  "syntax_php": 39,
+  "syntax_js": 2,
+  "updater": [
+    {
+      "name": "Existing 5.4.6 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.4.7 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.4.6 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "boundary": "Local synthetic records and mocked payment verification; no real payment/email/host deployment."
+}
