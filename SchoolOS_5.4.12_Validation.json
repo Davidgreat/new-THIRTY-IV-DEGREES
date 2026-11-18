@@ -1,0 +1,413 @@
+{
+  "version": "5.4.12",
+  "browser": {
+    "out": [
+      {
+        "name": "Partner demo opens /legacy",
+        "pass": true
+      },
+      {
+        "name": "Visible sign-out link /legacy",
+        "pass": true
+      },
+      {
+        "name": "Signed-in root is public homepage /legacy",
+        "pass": true
+      },
+      {
+        "name": "Homepage retains signed-in workspace link /legacy",
+        "pass": true
+      },
+      {
+        "name": "Tracked homepage stays public /legacy",
+        "pass": true
+      },
+      {
+        "name": "Explicit workspace remains available /legacy",
+        "pass": true
+      },
+      {
+        "name": "Sign-out returns guest homepage /legacy",
+        "pass": true
+      },
+      {
+        "name": "No affiliate dashboard after sign-out /legacy",
+        "pass": true
+      },
+      {
+        "name": "Guest sees Log in /legacy",
+        "pass": true
+      },
+      {
+        "name": "Demo selector and active demo session cookies expire /legacy",
+        "pass": true
+      },
+      {
+        "name": "Back button cannot restore authenticated dashboard /legacy",
+        "pass": true
+      },
+      {
+        "name": "Old demo cookie cannot restore destroyed session /legacy",
+        "pass": true
+      },
+      {
+        "name": "Partner demo opens /clean",
+        "pass": true
+      },
+      {
+        "name": "Visible sign-out link /clean",
+        "pass": true
+      },
+      {
+        "name": "Signed-in root is public homepage /clean",
+        "pass": true
+      },
+      {
+        "name": "Homepage retains signed-in workspace link /clean",
+        "pass": true
+      },
+      {
+        "name": "Tracked homepage stays public /clean",
+        "pass": true
+      },
+      {
+        "name": "Explicit workspace remains available /clean",
+        "pass": true
+      },
+      {
+        "name": "Sign-out returns guest homepage /clean",
+        "pass": true
+      },
+      {
+        "name": "No affiliate dashboard after sign-out /clean",
+        "pass": true
+      },
+      {
+        "name": "Guest sees Log in /clean",
+        "pass": true
+      },
+      {
+        "name": "Demo selector and active demo session cookies expire /clean",
+        "pass": true
+      },
+      {
+        "name": "Back button cannot restore authenticated dashboard /clean",
+        "pass": true
+      },
+      {
+        "name": "Old demo cookie cannot restore destroyed session /clean",
+        "pass": true
+      },
+      {
+        "name": "Partner demo opens /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Visible sign-out link /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Signed-in root is public homepage /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Homepage retains signed-in workspace link /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Tracked homepage stays public /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Explicit workspace remains available /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Sign-out returns guest homepage /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "No affiliate dashboard after sign-out /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Guest sees Log in /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Demo selector and active demo session cookies expire /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Back button cannot restore authenticated dashboard /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Old demo cookie cannot restore destroyed session /campus/legacy",
+        "pass": true
+      },
+      {
+        "name": "Partner demo opens /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Visible sign-out link /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Signed-in root is public homepage /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Homepage retains signed-in workspace link /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Tracked homepage stays public /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Explicit workspace remains available /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Sign-out returns guest homepage /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "No affiliate dashboard after sign-out /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Guest sees Log in /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Demo selector and active demo session cookies expire /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Back button cannot restore authenticated dashboard /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Old demo cookie cannot restore destroyed session /campus/clean",
+        "pass": true
+      },
+      {
+        "name": "Normal partner sees authenticated navigation",
+        "pass": true
+      },
+      {
+        "name": "Normal partner sign-out opens guest homepage",
+        "pass": true
+      },
+      {
+        "name": "History revalidation test starts authenticated",
+        "pass": true
+      },
+      {
+        "name": "Restored history page rechecks signed-out session",
+        "pass": true
+      },
+      {
+        "name": "No browser errors",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "syntax": [
+    {
+      "file": "install.php",
+      "pass": true
+    },
+    {
+      "file": "affiliate.php",
+      "pass": true
+    },
+    {
+      "file": "audit_core.php",
+      "pass": true
+    },
+    {
+      "file": "finance_engine.php",
+      "pass": true
+    },
+    {
+      "file": "school_wallet.php",
+      "pass": true
+    },
+    {
+      "file": "experience_demo.php",
+      "pass": true
+    },
+    {
+      "file": "config.example.php",
+      "pass": true
+    },
+    {
+      "file": "public_guides.php",
+      "pass": true
+    },
+    {
+      "file": "public_site.php",
+      "pass": true
+    },
+    {
+      "file": "classroom.php",
+      "pass": true
+    },
+    {
+      "file": "operations_core.php",
+      "pass": true
+    },
+    {
+      "file": "boarding_portal.php",
+      "pass": true
+    },
+    {
+      "file": "portal_experience.php",
+      "pass": true
+    },
+    {
+      "file": "website_cms.php",
+      "pass": true
+    },
+    {
+      "file": "audit_bootstrap.php",
+      "pass": true
+    },
+    {
+      "file": "hr_payroll.php",
+      "pass": true
+    },
+    {
+      "file": "school_innovations.php",
+      "pass": true
+    },
+    {
+      "file": "parent_portal.php",
+      "pass": true
+    },
+    {
+      "file": "learning_portal.php",
+      "pass": true
+    },
+    {
+      "file": "library_manager.php",
+      "pass": true
+    },
+    {
+      "file": "governance_hub.php",
+      "pass": true
+    },
+    {
+      "file": "config.php",
+      "pass": true
+    },
+    {
+      "file": "portal_collaboration.php",
+      "pass": true
+    },
+    {
+      "file": "affiliate_worker.php",
+      "pass": true
+    },
+    {
+      "file": "experience.php",
+      "pass": true
+    },
+    {
+      "file": "transport_portal.php",
+      "pass": true
+    },
+    {
+      "file": "inventory_manager.php",
+      "pass": true
+    },
+    {
+      "file": "engagement_manager.php",
+      "pass": true
+    },
+    {
+      "file": "intelligence_reports.php",
+      "pass": true
+    },
+    {
+      "file": "system_manager.php",
+      "pass": true
+    },
+    {
+      "file": "experience_demo_refresh.php",
+      "pass": true
+    },
+    {
+      "file": "finance_view.php",
+      "pass": true
+    },
+    {
+      "file": "school_logo_handler.php",
+      "pass": true
+    },
+    {
+      "file": "experience_ui.php",
+      "pass": true
+    },
+    {
+      "file": "index.php",
+      "pass": true
+    },
+    {
+      "file": "insights_core.php",
+      "pass": true
+    },
+    {
+      "file": "schoolos_probe.php",
+      "pass": true
+    },
+    {
+      "file": "experience_admin.php",
+      "pass": true
+    },
+    {
+      "file": "academic_tools.php",
+      "pass": true
+    },
+    {
+      "file": "services_worker.php",
+      "pass": true
+    },
+    {
+      "file": "intelligence_worker.php",
+      "pass": true
+    },
+    {
+      "file": "services_core.php",
+      "pass": true
+    }
+  ],
+  "updater": [
+    {
+      "name": "Existing 5.4.11 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.4.12 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.4.11 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "boundary": "Isolated fictional databases; no hosted installation or real school/financial changes."
+}
