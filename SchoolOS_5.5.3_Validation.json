@@ -1,0 +1,685 @@
+{
+  "version": "5.5.3",
+  "changed_runtime_files": [
+    "public_site.css",
+    "public_site.php",
+    "VERSION.txt"
+  ],
+  "scope": "Pricing layout and stylesheet cache key only",
+  "live_issue_reproduced": true,
+  "phone_root_cause": "Obsolete two-column internal card grid collapsed text columns to 0px",
+  "browser_checks": {
+    "checks": [
+      {
+        "name": "320px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "320px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "320px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "320px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "320px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "320px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "320px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "320px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "320px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "320px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "320px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "320px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "320px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "320px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "360px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "360px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "360px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "360px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "360px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "360px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "360px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "360px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "360px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "360px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "360px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "360px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "360px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "360px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "390px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "390px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "390px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "390px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "390px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "390px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "390px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "390px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "390px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "390px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "390px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "390px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "390px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "390px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "430px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "430px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "430px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "430px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "430px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "430px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "430px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "430px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "430px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "430px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "430px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "430px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "430px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "430px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "460px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "460px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "460px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "460px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "460px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "460px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "460px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "460px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "460px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "460px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "460px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "460px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "460px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "460px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "461px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "461px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "461px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "461px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "461px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "461px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "461px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "461px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "461px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "461px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "461px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "461px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "461px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "461px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "600px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "600px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "600px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "600px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "600px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "600px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "600px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "600px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "600px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "600px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "600px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "600px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "600px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "600px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "680px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "680px light: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "680px light: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "680px light: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "680px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "680px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "680px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "680px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "680px dark: natural single-column cards",
+        "pass": true
+      },
+      {
+        "name": "680px dark: headings and summaries have readable width",
+        "pass": true
+      },
+      {
+        "name": "680px dark: touch-size calculator",
+        "pass": true
+      },
+      {
+        "name": "680px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "680px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "680px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "768px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "768px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "768px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "768px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "768px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "768px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "768px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "768px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "1024px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "1024px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "1024px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "1024px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "1024px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "1024px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "1024px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "1024px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "1440px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "1440px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "1440px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "1440px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "1440px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "1440px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "1440px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "1440px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "1920px light: page fits",
+        "pass": true
+      },
+      {
+        "name": "1920px light: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "1920px light: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "1920px light: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "1920px dark: page fits",
+        "pass": true
+      },
+      {
+        "name": "1920px dark: expanded details stay in card",
+        "pass": true
+      },
+      {
+        "name": "1920px dark: expanded comparisons remain contained",
+        "pass": true
+      },
+      {
+        "name": "1920px dark: price still 58,125",
+        "pass": true
+      },
+      {
+        "name": "Changing count selects Premium",
+        "pass": true
+      },
+      {
+        "name": "termly retains pupil count",
+        "pass": true
+      },
+      {
+        "name": "termly trial carries same selection",
+        "pass": true
+      },
+      {
+        "name": "annual retains pupil count",
+        "pass": true
+      },
+      {
+        "name": "annual trial carries same selection",
+        "pass": true
+      },
+      {
+        "name": "Paid link retains package, annual cycle and count",
+        "pass": true
+      },
+      {
+        "name": "Registration receives 501 pupils",
+        "pass": true
+      },
+      {
+        "name": "Registration receives annual cycle",
+        "pass": true
+      },
+      {
+        "name": "Minimum-charge note remains readable",
+        "pass": true
+      },
+      {
+        "name": "Custom quote fits and has no invalid purchase",
+        "pass": true
+      },
+      {
+        "name": "Home navigation is unaffected",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "fixed_price_stress": [
+    {
+      "width": 320,
+      "fits": true,
+      "amountFits": true,
+      "headingWidth": 210,
+      "amount": "\u20a6999,999,999.99\nper monthly cycle"
+    },
+    {
+      "width": 390,
+      "fits": true,
+      "amountFits": true,
+      "headingWidth": 271,
+      "amount": "\u20a6999,999,999.99\nper monthly cycle"
+    },
+    {
+      "width": 844,
+      "fits": true,
+      "amountFits": true,
+      "headingWidth": 674,
+      "amount": "\u20a6999,999,999.99\nper monthly cycle"
+    }
+  ],
+  "updater_checks": [
+    {
+      "name": "Existing 5.5.2 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.5.3 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.5.2 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "php_lint": "public_site.php passed PHP8.4 syntax check",
+  "runtime_hashes_verified": 43,
+  "pricing_logic_changed": false,
+  "live_site_deployed": false
+}
