@@ -1,0 +1,316 @@
+{
+  "version": "5.5.1",
+  "checks_passed": 75,
+  "checks": {
+    "recommendations": [
+      {
+        "name": "Boundary pupil counts recommend the smallest fitting school-size package",
+        "pass": true
+      },
+      {
+        "name": "One pupil shows one recommendation and clearly explains the minimum",
+        "pass": true
+      },
+      {
+        "name": "Trial and paid links carry matching recommended package, count and billing cycle",
+        "pass": true
+      },
+      {
+        "name": "No package fits: custom quote, no incorrect trial or paid selection",
+        "pass": true
+      },
+      {
+        "name": "Comparison marks undersized plans without selectable links",
+        "pass": true
+      },
+      {
+        "name": "Per-package rate differences remain authoritative",
+        "pass": true
+      },
+      {
+        "name": "Published GET views do not rewrite prices, capacities, agreements or school records",
+        "pass": true
+      },
+      {
+        "name": "Malformed count falls back safely rather than casting arrays into a one-pupil quote",
+        "pass": true
+      },
+      {
+        "name": "Disabled packages cannot be recommended",
+        "pass": true
+      },
+      {
+        "name": "Progressive financial arithmetic is unchanged",
+        "pass": true
+      },
+      {
+        "name": "Settings include saved examples and distinguish capacity from price",
+        "pass": true
+      }
+    ],
+    "browser": [
+      {
+        "name": "One clear recommendation instead of four identical price cards",
+        "pass": true
+      },
+      {
+        "name": "One pupil selects Starter and explains the minimum",
+        "pass": true
+      },
+      {
+        "name": "Calculator selects Premium at 501 pupils",
+        "pass": true
+      },
+      {
+        "name": "Annual change retains pupil count",
+        "pass": true
+      },
+      {
+        "name": "Trial carries the recommended count and annual cycle",
+        "pass": true
+      },
+      {
+        "name": "Registration opens recommended Premium with correct pupil count",
+        "pass": true
+      },
+      {
+        "name": "Registration still calculates the saved annual tariff",
+        "pass": true
+      },
+      {
+        "name": "Pricing fits 390px",
+        "pass": true
+      },
+      {
+        "name": "Open comparison fits 390px without page overflow",
+        "pass": true
+      },
+      {
+        "name": "Recommendation remains visible in dark theme 390",
+        "pass": true
+      },
+      {
+        "name": "Pricing fits 768px",
+        "pass": true
+      },
+      {
+        "name": "Open comparison fits 768px without page overflow",
+        "pass": true
+      },
+      {
+        "name": "Recommendation remains visible in dark theme 768",
+        "pass": true
+      },
+      {
+        "name": "Above published capacity displays a custom quote",
+        "pass": true
+      },
+      {
+        "name": "No undersized registration is offered",
+        "pass": true
+      },
+      {
+        "name": "Editor shows saved examples and capacity explanation",
+        "pass": true
+      },
+      {
+        "name": "Capacity edit saves through authenticated form",
+        "pass": true
+      },
+      {
+        "name": "One-pupil saved price stays unchanged after a capacity edit",
+        "pass": true
+      },
+      {
+        "name": "Settings fit a phone",
+        "pass": true
+      },
+      {
+        "name": "No browser script errors",
+        "pass": true
+      }
+    ],
+    "syntax": [
+      {
+        "file": "install.php",
+        "pass": true
+      },
+      {
+        "file": "affiliate.php",
+        "pass": true
+      },
+      {
+        "file": "finance_engine.php",
+        "pass": true
+      },
+      {
+        "file": "school_wallet.php",
+        "pass": true
+      },
+      {
+        "file": "experience_demo.php",
+        "pass": true
+      },
+      {
+        "file": "config.example.php",
+        "pass": true
+      },
+      {
+        "file": "public_guides.php",
+        "pass": true
+      },
+      {
+        "file": "public_site.php",
+        "pass": true
+      },
+      {
+        "file": "classroom.php",
+        "pass": true
+      },
+      {
+        "file": "operations_core.php",
+        "pass": true
+      },
+      {
+        "file": "boarding_portal.php",
+        "pass": true
+      },
+      {
+        "file": "portal_experience.php",
+        "pass": true
+      },
+      {
+        "file": "website_cms.php",
+        "pass": true
+      },
+      {
+        "file": "hr_payroll.php",
+        "pass": true
+      },
+      {
+        "file": "school_innovations.php",
+        "pass": true
+      },
+      {
+        "file": "parent_portal.php",
+        "pass": true
+      },
+      {
+        "file": "learning_portal.php",
+        "pass": true
+      },
+      {
+        "file": "library_manager.php",
+        "pass": true
+      },
+      {
+        "file": "governance_hub.php",
+        "pass": true
+      },
+      {
+        "file": "portal_collaboration.php",
+        "pass": true
+      },
+      {
+        "file": "affiliate_worker.php",
+        "pass": true
+      },
+      {
+        "file": "experience.php",
+        "pass": true
+      },
+      {
+        "file": "transport_portal.php",
+        "pass": true
+      },
+      {
+        "file": "inventory_manager.php",
+        "pass": true
+      },
+      {
+        "file": "engagement_manager.php",
+        "pass": true
+      },
+      {
+        "file": "intelligence_reports.php",
+        "pass": true
+      },
+      {
+        "file": "system_manager.php",
+        "pass": true
+      },
+      {
+        "file": "experience_demo_refresh.php",
+        "pass": true
+      },
+      {
+        "file": "finance_view.php",
+        "pass": true
+      },
+      {
+        "file": "school_logo_handler.php",
+        "pass": true
+      },
+      {
+        "file": "experience_ui.php",
+        "pass": true
+      },
+      {
+        "file": "index.php",
+        "pass": true
+      },
+      {
+        "file": "insights_core.php",
+        "pass": true
+      },
+      {
+        "file": "schoolos_probe.php",
+        "pass": true
+      },
+      {
+        "file": "experience_admin.php",
+        "pass": true
+      },
+      {
+        "file": "academic_tools.php",
+        "pass": true
+      },
+      {
+        "file": "services_worker.php",
+        "pass": true
+      },
+      {
+        "file": "intelligence_worker.php",
+        "pass": true
+      },
+      {
+        "file": "services_core.php",
+        "pass": true
+      }
+    ],
+    "updater": [
+      {
+        "name": "Existing 5.5.0 updater recovers every changed file after an injected mid-update failure",
+        "pass": true
+      },
+      {
+        "name": "Original updater installs the complete 5.5.1 package with matching hashes and journal",
+        "pass": true
+      },
+      {
+        "name": "Installing the same version again is refused",
+        "pass": true
+      },
+      {
+        "name": "Explicit rollback restores all original files and 5.5.0 metadata",
+        "pass": true
+      },
+      {
+        "name": "Traversal entries are refused before file changes",
+        "pass": true
+      }
+    ]
+  },
+  "boundary": "Owned fictional database and mocked/local application only. No hosted installation, real school, payment or provider changes. No rate or agreement migration.",
+  "cleanup": true
+}
