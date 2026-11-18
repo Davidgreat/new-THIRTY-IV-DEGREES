@@ -1,13 +1,25 @@
-# SchoolOS 5.4.8 — One-month free trial on Pricing
+# SchoolOS 5.4.9 — Prorated package upgrades
 
-Back up and install the cumulative 43-file ZIP through Platform Super Admin → Updates & tools. Then open Pricing. A separate **1-month free trial** card appears alongside the existing paid packages.
+Back up matching files, uploads, database and private keys, then install **SchoolOS_5.4.9_Prorated_Package_Upgrades_Update.zip** through Platform Super Admin → Updates & tools. This cumulative 43-file release retains existing school records, settings and clean-link generation. It adds two small billing tables automatically when billing/verification is used; no credentials or test fixtures are shipped.
 
-The card states the continuation package and price, carries the trial choice into registration and grants one calendar month of real school access. No payment is taken automatically. Month-end dates clamp to the next month’s last valid day (including leap years). The trial expiry is shown in the account and sign-up notice. After expiry, the existing subscription gate requires a verified paid continuation. Paying early retains the remaining trial period in the subscription expiry calculation.
+## What schools can do
 
-Paid-package choices remain payment first with no trial. Existing subscriptions and the ordinary legacy trial settings are not changed. The separate public trial is intentional even if the older general trial policy is payment-first. Trial intent, continuation package, cycle and quoted price are bound to the registration session; hidden fields cannot convert a paid-bound submission into a trial. Existing account-email uniqueness, registration CSRF, rate limits and payment verification remain.
+Open **School Admin → Start my school → Subscription**, or **My subscription & upgrades** on My school day. Choose an available compatible larger package and select **Calculate my upgrade**. The quote shows the unused paid-service credit and exact amount to pay before secure checkout.
 
-The trial uses the first active paid monthly package; if none is available, it falls back to an offered paid termly/annual cycle. Its name and price are shown before registration. Active free packages stay separate. If registration is closed or there is no paid continuation package, the card offers contact instead of creating an unusable school. Provider-dependent services retain their normal setup, permission, credit and capacity requirements; a trial does not create provider credits.
+- Active paid tier upgrades keep the same monthly, termly or annual cycle and renewal date. Only the difference for remaining paid time is charged. Example: halfway through a ₦20,000 monthly plan, upgrading to ₦30,000 costs about **₦5,000**; the following renewal is ₦30,000. Exact timestamps and kobo rounding determine the quote.
+- Unused service is time remaining, not a measure of pupil activity or a withdrawable cash balance. Verified prepaid future cycles are included. Each remaining period uses its recorded rate; credit is rounded down and its incremental upgrade charge rounded up to kobo.
+- Trial schools can select a paid package early. There is no paid trial credit: the full paid cycle is charged, and the remaining trial time is retained before that paid period. The larger package becomes available after verification.
+- An expired or configured free subscription starts a full new paid cycle, with no expired/free-service credit.
+- Schools cannot downgrade price, pupil capacity or staff capacity. Same-rate capacity increases can be accepted without a payment. Billing-cycle changes are intentionally not offered in this self-service flow.
 
-Validation uses isolated fictional records: eight trial scenarios (including expiry/month-end/leap-year and paid-intent tampering), all twelve paid-pricing regressions, desktop/phone light/dark browser selection, real browser registration opening school setup, syntax checks and updater/recovery scenarios. No real payment, email or hosted deployment was performed. The ZIP does not include credentials, private configuration, keys or test fixtures, and introduces no database schema migration.
+## Payment and recovery
 
-The cumulative package includes [the playful website and public pricing from 5.4.7](SchoolOS_5.4.7_README.md). The separate trial option above supersedes that release’s paid-only pricing entry list.
+Quotes last 15 minutes. The server checks school ownership, current saved package/rate/balance, target package and permissions again at acceptance and verification. Tampered fields cannot set price or credit. Duplicate verification is idempotent, and checkout initialization is claimed once. Subscription operations serialize per school. Payment references, NGN amount and provider environment must match verified provider evidence. Existing renewal and signed-webhook dispatch use the same upgrade verifier; affiliate commissions and platform money records use the actual upgrade payment, not the full target package price.
+
+A payment made against an expired/changed quote is recorded as paid but does not silently alter the package. The school is told **do not pay again**, and a helpdesk case is opened. Platform → Money lists these reviews. A real Super Admin can close review after completing the actual provider refund and recording the full paid refund against the source transaction. That action checks the recorded refund; it never initiates a transfer. Uncertain/abandoned pending payments must be reconciled before another quote; references are not blindly cancelled or replaced.
+
+Older subscriptions with verified full-cycle receipts can reconstruct coverage backwards from their saved renewal date. New payments record exact periods. Schools without a linked enrolment or provable paid coverage need platform review rather than an invented credit. Retain receipt evidence and matching backups. File-only rollback below 5.4.9 is refused once an upgrade payment reference is prepared; use a matching database/file recovery plan if needed.
+
+Built-in owner, complete and platform guides and Pricing FAQs are updated. Validation used isolated fictional records and simulated provider responses; no real payment, email or hosted installation was performed. A real Paystack test/live end-to-end payment remains an operator check before offering upgrades publicly.
+
+Earlier cumulative releases: [5.4.8 free trial](SchoolOS_5.4.8_README.md) · [5.4.7 website & pricing](SchoolOS_5.4.7_README.md).

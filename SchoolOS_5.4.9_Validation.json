@@ -1,0 +1,343 @@
+{
+  "version": "5.4.9",
+  "core": [
+    {
+      "name": "Half-used 20k plan upgraded to 30k charges about 5k only",
+      "pass": true
+    },
+    {
+      "name": "Foreign tenant cannot read or pay another school quote",
+      "pass": true
+    },
+    {
+      "name": "Payment checkout reuses one reference and one provider initialization",
+      "pass": true
+    },
+    {
+      "name": "Upgrade is applied once, with unchanged renewal date and new saved rate",
+      "pass": true
+    },
+    {
+      "name": "Wrong provider amount cannot apply a package",
+      "pass": true
+    },
+    {
+      "name": "Trial converts to paid package without consuming remaining trial time",
+      "pass": true
+    },
+    {
+      "name": "Lower capacity is refused even when price is higher",
+      "pass": true
+    },
+    {
+      "name": "A paid larger package cannot downgrade to the smaller tier",
+      "pass": true
+    },
+    {
+      "name": "Expired paid access has no unused credit and starts a new cycle",
+      "pass": true
+    },
+    {
+      "name": "Legacy verified full-cycle receipts can supply the prorated basis",
+      "pass": true
+    },
+    {
+      "name": "Late payment is recorded once for review without changing package",
+      "pass": true
+    },
+    {
+      "name": "Changing a target package invalidates the unpaid quote",
+      "pass": true
+    },
+    {
+      "name": "Subsequent ordinary renewal uses upgraded full rate and records a new period",
+      "pass": true
+    },
+    {
+      "name": "Integer proration rounds credit down and target cost up safely",
+      "pass": true
+    }
+  ],
+  "extra": [
+    {
+      "name": "Same-price capacity upgrade needs no checkout and applies once",
+      "pass": true
+    },
+    {
+      "name": "Prepaid future cycles are included in remaining-time upgrade difference",
+      "pass": true
+    },
+    {
+      "name": "Wrong environment and currency cannot verify upgrade",
+      "pass": true
+    },
+    {
+      "name": "Expired unpaid quote and non-admin actor are refused",
+      "pass": true
+    },
+    {
+      "name": "Refunded order remains closed on repeated provider verification",
+      "pass": true
+    }
+  ],
+  "recovery": [
+    {
+      "name": "Rollback guard detects prepared upgrade payments",
+      "pass": true
+    },
+    {
+      "name": "Review can close only after the full recorded refund, then verification stays closed",
+      "pass": true
+    }
+  ],
+  "browser": {
+    "out": [
+      {
+        "name": "Upgrade controls visible 1440light",
+        "pass": true
+      },
+      {
+        "name": "Billing fits viewport 1440light",
+        "pass": true
+      },
+      {
+        "name": "Quote shows payable and unused credit 1440light",
+        "pass": true
+      },
+      {
+        "name": "Upgrade controls visible 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Billing fits viewport 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Quote shows payable and unused credit 1440dark",
+        "pass": true
+      },
+      {
+        "name": "Upgrade controls visible 360light",
+        "pass": true
+      },
+      {
+        "name": "Billing fits viewport 360light",
+        "pass": true
+      },
+      {
+        "name": "Quote shows payable and unused credit 360light",
+        "pass": true
+      },
+      {
+        "name": "Upgrade controls visible 360dark",
+        "pass": true
+      },
+      {
+        "name": "Billing fits viewport 360dark",
+        "pass": true
+      },
+      {
+        "name": "Quote shows payable and unused credit 360dark",
+        "pass": true
+      },
+      {
+        "name": "No browser exceptions",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "syntax": [
+    {
+      "file": "install.php",
+      "pass": true
+    },
+    {
+      "file": "affiliate.php",
+      "pass": true
+    },
+    {
+      "file": "audit_core.php",
+      "pass": true
+    },
+    {
+      "file": "finance_engine.php",
+      "pass": true
+    },
+    {
+      "file": "school_wallet.php",
+      "pass": true
+    },
+    {
+      "file": "experience_demo.php",
+      "pass": true
+    },
+    {
+      "file": "config.example.php",
+      "pass": true
+    },
+    {
+      "file": "public_guides.php",
+      "pass": true
+    },
+    {
+      "file": "public_site.php",
+      "pass": true
+    },
+    {
+      "file": "classroom.php",
+      "pass": true
+    },
+    {
+      "file": "operations_core.php",
+      "pass": true
+    },
+    {
+      "file": "boarding_portal.php",
+      "pass": true
+    },
+    {
+      "file": "portal_experience.php",
+      "pass": true
+    },
+    {
+      "file": "website_cms.php",
+      "pass": true
+    },
+    {
+      "file": "audit_bootstrap.php",
+      "pass": true
+    },
+    {
+      "file": "hr_payroll.php",
+      "pass": true
+    },
+    {
+      "file": "school_innovations.php",
+      "pass": true
+    },
+    {
+      "file": "parent_portal.php",
+      "pass": true
+    },
+    {
+      "file": "learning_portal.php",
+      "pass": true
+    },
+    {
+      "file": "library_manager.php",
+      "pass": true
+    },
+    {
+      "file": "governance_hub.php",
+      "pass": true
+    },
+    {
+      "file": "config.php",
+      "pass": true
+    },
+    {
+      "file": "portal_collaboration.php",
+      "pass": true
+    },
+    {
+      "file": "affiliate_worker.php",
+      "pass": true
+    },
+    {
+      "file": "experience.php",
+      "pass": true
+    },
+    {
+      "file": "transport_portal.php",
+      "pass": true
+    },
+    {
+      "file": "inventory_manager.php",
+      "pass": true
+    },
+    {
+      "file": "engagement_manager.php",
+      "pass": true
+    },
+    {
+      "file": "intelligence_reports.php",
+      "pass": true
+    },
+    {
+      "file": "system_manager.php",
+      "pass": true
+    },
+    {
+      "file": "experience_demo_refresh.php",
+      "pass": true
+    },
+    {
+      "file": "finance_view.php",
+      "pass": true
+    },
+    {
+      "file": "school_logo_handler.php",
+      "pass": true
+    },
+    {
+      "file": "experience_ui.php",
+      "pass": true
+    },
+    {
+      "file": "index.php",
+      "pass": true
+    },
+    {
+      "file": "insights_core.php",
+      "pass": true
+    },
+    {
+      "file": "schoolos_probe.php",
+      "pass": true
+    },
+    {
+      "file": "experience_admin.php",
+      "pass": true
+    },
+    {
+      "file": "academic_tools.php",
+      "pass": true
+    },
+    {
+      "file": "services_worker.php",
+      "pass": true
+    },
+    {
+      "file": "intelligence_worker.php",
+      "pass": true
+    },
+    {
+      "file": "services_core.php",
+      "pass": true
+    }
+  ],
+  "updater": [
+    {
+      "name": "Existing 5.4.8 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.4.9 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.4.8 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "boundary": "Isolated fictional database and mocked provider evidence. No real financial transfer, email or hosted deployment."
+}
