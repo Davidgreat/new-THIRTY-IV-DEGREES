@@ -1,0 +1,210 @@
+{
+  "version": "5.4.6",
+  "http_checks": [
+    {
+      "name": "Login /platform",
+      "pass": true
+    },
+    {
+      "name": "Clean-path probe /",
+      "pass": true
+    },
+    {
+      "name": "Clean mode /",
+      "pass": true
+    },
+    {
+      "name": "Setup link is present /",
+      "pass": true
+    },
+    {
+      "name": "Actual setup link reaches partner controls /",
+      "pass": true
+    },
+    {
+      "name": "Fresh deployment offers installation button",
+      "pass": true
+    },
+    {
+      "name": "Install POST reaches affiliate handler",
+      "pass": true
+    },
+    {
+      "name": "Programme settings POST reaches existing handler /",
+      "pass": true
+    },
+    {
+      "name": "Programme remains disabled until configured /",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /guides/platform",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /guides/affiliate",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /features",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /partners",
+      "pass": true
+    },
+    {
+      "name": "Operator bank endpoint returns JSON instead of overview /",
+      "pass": true
+    },
+    {
+      "name": "Login /partner",
+      "pass": true
+    },
+    {
+      "name": "Signed-in partner can open guide /",
+      "pass": true
+    },
+    {
+      "name": "Partner bank endpoint reaches account/provider gate /",
+      "pass": true
+    },
+    {
+      "name": "Bank endpoint rejects missing CSRF /",
+      "pass": true
+    },
+    {
+      "name": "Login /routing-staff",
+      "pass": true
+    },
+    {
+      "name": "Platform staff cannot bypass assignment through public-page routing /",
+      "pass": true
+    },
+    {
+      "name": "Platform staff cannot bypass bank endpoint guard /",
+      "pass": true
+    },
+    {
+      "name": "URL recovery still works /",
+      "pass": true
+    },
+    {
+      "name": "Login /campus/platform",
+      "pass": true
+    },
+    {
+      "name": "Clean-path probe /campus/",
+      "pass": true
+    },
+    {
+      "name": "Clean mode /campus/",
+      "pass": true
+    },
+    {
+      "name": "Setup link is present /campus/",
+      "pass": true
+    },
+    {
+      "name": "Actual setup link reaches partner controls /campus/",
+      "pass": true
+    },
+    {
+      "name": "Programme settings POST reaches existing handler /campus/",
+      "pass": true
+    },
+    {
+      "name": "Programme remains disabled until configured /campus/",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /campus/guides/platform",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /campus/guides/affiliate",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /campus/features",
+      "pass": true
+    },
+    {
+      "name": "Signed-in operator public route /campus/partners",
+      "pass": true
+    },
+    {
+      "name": "Operator bank endpoint returns JSON instead of overview /campus/",
+      "pass": true
+    },
+    {
+      "name": "Login /campus/partner",
+      "pass": true
+    },
+    {
+      "name": "Signed-in partner can open guide /campus/",
+      "pass": true
+    },
+    {
+      "name": "Partner bank endpoint reaches account/provider gate /campus/",
+      "pass": true
+    },
+    {
+      "name": "Bank endpoint rejects missing CSRF /campus/",
+      "pass": true
+    },
+    {
+      "name": "Login /campus/routing-staff",
+      "pass": true
+    },
+    {
+      "name": "Platform staff cannot bypass assignment through public-page routing /campus/",
+      "pass": true
+    },
+    {
+      "name": "Platform staff cannot bypass bank endpoint guard /campus/",
+      "pass": true
+    },
+    {
+      "name": "URL recovery still works /campus/",
+      "pass": true
+    }
+  ],
+  "browser": [
+    {
+      "name": "Actual browser link opens programme settings",
+      "pass": true
+    },
+    {
+      "name": "Signed-in browser opens guide",
+      "pass": true
+    },
+    {
+      "name": "No script exceptions",
+      "pass": true
+    }
+  ],
+  "updater": [
+    {
+      "name": "Existing 5.4.5 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.4.6 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.4.5 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ],
+  "boundary": "Local isolated fictional database; no hosted deployment or real provider transfer."
+}

@@ -1,3 +1,5 @@
+> Latest cumulative correction: [SchoolOS 5.4.6 — Partner setup routing](SchoolOS_5.4.6_README.md).
+
 # SchoolOS 5.4.5 — Platform command centre and connected partners
 
 Cumulative 43-file update. Back up the matching database, application/uploads and private keys, then install the original ZIP through the real Platform Super Admin updater. This release retains clean-URL compatibility and all previous school workflows.
@@ -42,5 +44,3 @@ Updated built-in guidance includes the new platform colleague role and the revis
 Local testing uses PHP 8.4, MariaDB and Chromium with an ownership-marked fictional database, separate from the existing database. Results include 1,148 authenticated navigation requests across all 41 demo identities with zero findings, 36 HTTP workflow checks, 68 root/subfolder URL checks, focused permission/finance/affiliate/support tests, mobile/desktop light/dark checks, all 48 guide/PDF pairs, syntax checks and updater/recovery scenarios. See Validation.json for exact suite counts.
 
 These checks do not certify production load, a real host’s routing/security, provider settlement, SMTP arrival or live-class capacity. Continue the existing live acceptance checklist for services you offer. This package is published for installation; it was not deployed to your hosted site from this workspace.
-
-Previous releases: [5.4.4 clean URLs](SchoolOS_5.4.4_README.md) · [5.4.3 launch audit](SchoolOS_5.4.3_README.md).
