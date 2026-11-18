@@ -1,0 +1,151 @@
+1
+00:00:00,490 --> 00:00:01,780
+Quick question.
+
+2
+00:00:01,736 --> 00:00:04,721
+How many places does your school’s information live?
+
+3
+00:00:04,721 --> 00:00:05,843
+A notebook?
+
+4
+00:00:05,843 --> 00:00:07,089
+A spreadsheet?
+
+5
+00:00:07,089 --> 00:00:09,401
+A message someone promised to forward?
+
+6
+00:00:10,484 --> 00:00:12,867
+Now imagine they could finally work together.
+
+7
+00:00:12,825 --> 00:00:13,985
+Less chasing.
+
+8
+00:00:13,985 --> 00:00:15,314
+Fewer loose ends.
+
+9
+00:00:15,314 --> 00:00:17,402
+A clearer picture of your school day.
+
+10
+00:00:17,402 --> 00:00:19,426
+Meet SchoolOS Nigeria.
+
+11
+00:00:20,489 --> 00:00:21,945
+A family joins.
+
+12
+00:00:21,900 --> 00:00:25,909
+Your admissions team reviews their details, connects the children to their classes,
+
+13
+00:00:25,909 --> 00:00:27,579
+and gets their accounts ready.
+
+14
+00:00:27,579 --> 00:00:28,724
+One family.
+
+15
+00:00:28,724 --> 00:00:30,391
+One connected beginning.
+
+16
+00:00:31,500 --> 00:00:36,338
+A teacher marks attendance, shares an assignment and prepares a live lesson.
+
+17
+00:00:36,288 --> 00:00:40,695
+A parent checks an update, sends a message and views a published
+
+18
+00:00:40,695 --> 00:00:41,062
+report.
+
+19
+00:00:42,494 --> 00:00:45,627
+Meanwhile, the librarian records a return.
+
+20
+00:00:45,581 --> 00:00:47,857
+The driver updates a school run.
+
+21
+00:00:47,857 --> 00:00:51,740
+Your team handles the details, with tools that fit the work they
+
+22
+00:00:51,740 --> 00:00:52,388
+actually do.
+
+23
+00:00:53,489 --> 00:00:54,374
+And you?
+
+24
+00:00:54,330 --> 00:00:56,288
+You see what needs your attention.
+
+25
+00:00:56,288 --> 00:00:57,428
+Attendance.
+
+26
+00:00:57,428 --> 00:00:58,778
+Fee balances.
+
+27
+00:00:58,778 --> 00:01:00,228
+School progress.
+
+28
+00:01:00,228 --> 00:01:03,432
+Clear dashboards that help you decide what to do next.
+
+29
+00:01:04,500 --> 00:01:05,988
+Starting small?
+
+30
+00:01:05,938 --> 00:01:07,325
+Start small.
+
+31
+00:01:07,325 --> 00:01:11,355
+Choose the services you need, give your team the right access, and
+
+32
+00:01:11,355 --> 00:01:14,712
+follow your setup guide, one manageable step at a time.
+
+33
+00:01:16,485 --> 00:01:18,852
+Curious what this could look like in your school?
+
+34
+00:01:18,810 --> 00:01:20,121
+Explore the demo.
+
+35
+00:01:20,121 --> 00:01:24,191
+Then start your one month free trial at getschoolos.com.ng.
+
+36
+00:01:24,191 --> 00:01:25,914
+SchoolOS Nigeria.
+
+37
+00:01:25,914 --> 00:01:27,785
+A little less admin.
+
+38
+00:01:27,785 --> 00:01:29,402
+A lot more possibility.

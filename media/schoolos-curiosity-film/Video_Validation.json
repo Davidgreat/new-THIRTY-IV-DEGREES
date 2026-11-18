@@ -1,0 +1,15 @@
+{
+  "duration": 90,
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "frames": 2700,
+  "video": "h264",
+  "audio": "aac",
+  "voice": "British female synthetic narration: en-GB-SoniaNeural",
+  "music": "Original score with notification/click accents and a three-note finish",
+  "animation_errors": [],
+  "bytes": 8209973,
+  "sha256": "aa73d5ff494ac047d0ffaafa4cbae58d9de5b1625d501e7eb888e2e2ea092791",
+  "views": "Fictional dashboard screenshots and promotional interface illustrations"
+}
