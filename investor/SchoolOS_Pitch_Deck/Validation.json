@@ -1,0 +1,102 @@
+{
+  "presentation": "SchoolOS Nigeria \u2014 pilot launch",
+  "interactive_checks": {
+    "results": [
+      {
+        "name": "Full deck has 18 slides",
+        "pass": true
+      },
+      {
+        "name": "Founder contact is included",
+        "pass": true
+      },
+      {
+        "name": "Keyboard navigation works",
+        "pass": true
+      },
+      {
+        "name": "Competition version has 10 selected slides",
+        "pass": true
+      },
+      {
+        "name": "Competition footer renumbers selected slides",
+        "pass": true
+      },
+      {
+        "name": "Overview reveals selected slides",
+        "pass": true
+      },
+      {
+        "name": "Overview can navigate to closing slide",
+        "pass": true
+      },
+      {
+        "name": "Grant audience changes the ask",
+        "pass": true
+      },
+      {
+        "name": "Revenue scenario calculates MRR",
+        "pass": true
+      },
+      {
+        "name": "Revenue scenario calculates ARR",
+        "pass": true
+      },
+      {
+        "name": "Payback uses gross contribution",
+        "pass": true
+      },
+      {
+        "name": "Scenario detail updates with schools",
+        "pass": true
+      },
+      {
+        "name": "Funding budget model updates monthly envelope",
+        "pass": true
+      },
+      {
+        "name": "Presenter notes available",
+        "pass": true
+      },
+      {
+        "name": "Viewer fits 1440",
+        "pass": true
+      },
+      {
+        "name": "Viewer fits 768",
+        "pass": true
+      },
+      {
+        "name": "Viewer fits 390",
+        "pass": true
+      },
+      {
+        "name": "Deep link selects the requested slide",
+        "pass": true
+      },
+      {
+        "name": "Readable text view is available",
+        "pass": true
+      },
+      {
+        "name": "Readable scenario text matches the live calculation",
+        "pass": true
+      },
+      {
+        "name": "No browser runtime errors",
+        "pass": true
+      },
+      {
+        "name": "Slide text stays within 16:9 bounds",
+        "pass": true
+      }
+    ],
+    "errors": []
+  },
+  "pdf_pages": 18,
+  "competition_pdf_pages": 10,
+  "powerpoint_slides": 18,
+  "powerpoint_check": "Native objects, notes and hyperlinks structurally checked; no claim of rendering inside Microsoft PowerPoint.",
+  "workbook": "Input cells and formulas structurally checked; Excel/LibreOffice recalculates on opening.",
+  "business_boundary": "No verified pilot count, revenue or fundraising amount provided. Financial cases and pilot goals are explicitly illustrative."
+}
