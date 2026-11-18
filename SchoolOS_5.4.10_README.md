@@ -1,0 +1,11 @@
+# SchoolOS 5.4.10 — Compact pricing & editable registration choices
+
+Back up matching files/database/keys, then install **SchoolOS_5.4.10_Compact_Pricing_Registration_Update.zip** through Platform Super Admin → Updates & tools. This cumulative 43-file package includes 5.4.9 prorated upgrades and earlier work. No new schema migration is introduced by this release.
+
+Pricing now uses smaller cards, concise capacity/price summaries, tighter heading and FAQ spacing, and expandable shared feature details. Tablet cards sit side by side; narrow phones use a compact price-and-name layout with smaller detail text and full-width actions. Light/dark themes and existing animated backgrounds are retained. The one-month trial remains visible alongside paid packages.
+
+On school registration, **Your plan** and **Billing cycle** now open normally. Change either choice on the same form without losing the owner/school details. The amount summary updates immediately, and the actual selected plan, duration and current server price are saved on successful registration. Duplicate hidden fixed-choice inputs have been removed.
+
+Paid registrations remain payment-first, with no trial granted by forged trial fields or URL changes during submission. Trial entries retain exactly one calendar month free while allowing the continuation package and billing duration to change. Unsupported cycles, inactive plans, stale prices and invalid CSRF are rejected. Per-form session-held catalogue snapshots prevent a client-supplied price from setting the charge and keep concurrent form snapshots separate. Submitting after prices change requires reviewing current pricing again. Choices apply to new registrations; existing schools still use Subscription → Upgrade your package and cannot self-service downgrade.
+
+Validated with isolated fictional records: seven registration scenarios, real browser package/duration changes and successful registration, 1440/768/390/360px light/dark views, PHP syntax checks, full updater install/hash verification, injected failure recovery, repeated-install rejection and rollback. No real payment, email or hosted deployment was performed. Configuration, private keys, audit fixtures and credentials are excluded from the update ZIP. Built-in guides reflect the editable choices.
