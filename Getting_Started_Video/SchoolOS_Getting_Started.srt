@@ -1,0 +1,2159 @@
+1
+00:00:03,145 --> 00:00:08,027
+Welcome to School O S. In this walkthrough,
+we’ll take a school from its
+
+2
+00:00:08,041 --> 00:00:12,457
+first sign-in to a connected school day:
+teachers with the right access,
+
+3
+00:00:12,715 --> 00:00:17,348
+pupils in the right classes, families
+connected, and the services your school
+
+4
+00:00:17,361 --> 00:00:21,954
+actually uses ready to work. You don’t need
+to turn on every feature.
+
+5
+00:00:22,375 --> 00:00:26,886
+We’ll start with six foundations, then
+prepare fees, attendance,
+
+6
+00:00:27,144 --> 00:00:32,130
+communication and reports. Transport,
+boarding, the library
+
+7
+00:00:32,144 --> 00:00:35,079
+and the school store each have their own
+optional chapter.
+
+8
+00:00:35,514 --> 00:00:38,149
+We’re using fictional training records.
+
+9
+00:00:38,557 --> 00:00:43,136
+When you set up your school, use your
+approved school records and verify each
+
+10
+00:00:43,149 --> 00:00:45,255
+connection before sharing access.
+
+11
+00:00:45,690 --> 00:00:50,174
+You can pause at any chapter, complete that
+step, and return here.
+
+12
+00:01:00,686 --> 00:01:04,626
+Start with the access details issued for
+your own school account.
+
+13
+00:01:05,065 --> 00:01:09,644
+If you receive a password-setup link, open
+it privately and choose your own
+
+14
+00:01:09,658 --> 00:01:13,489
+password. Never share the owner’s login
+with staff.
+
+15
+00:01:13,924 --> 00:01:18,217
+After signing in, check that the school
+name and your role are correct.
+
+16
+00:01:18,639 --> 00:01:21,546
+Start my school guides the initial setup.
+
+17
+00:01:21,967 --> 00:01:24,753
+My school day brings together daily work.
+
+18
+00:01:25,160 --> 00:01:29,671
+More tools is the organised directory you
+can return to whenever you need a
+
+19
+00:01:29,685 --> 00:01:34,318
+particular service. For help with a step,
+open Show me around.
+
+20
+00:01:34,753 --> 00:01:38,815
+Where voice guidance is available, select
+Listen to this step.
+
+21
+00:01:39,250 --> 00:01:41,492
+You can stop the voice at any time.
+
+22
+00:01:41,927 --> 00:01:46,709
+If you belong to the wrong school, or your
+access link has expired, stop here and
+
+23
+00:01:46,723 --> 00:01:48,679
+ask for a corrected invitation.
+
+24
+00:01:49,070 --> 00:01:51,665
+Don’t continue inside the wrong account.
+
+25
+00:02:02,190 --> 00:02:05,206
+Let’s give this workspace its school
+identity.
+
+26
+00:02:05,618 --> 00:02:09,640
+If Prepare my school workspaces is shown,
+use it first.
+
+27
+00:02:10,075 --> 00:02:14,803
+Then enter the school’s official name,
+contact address, phone number and
+
+28
+00:02:14,817 --> 00:02:18,634
+email. Use an address the school actually
+monitors.
+
+29
+00:02:19,069 --> 00:02:23,933
+These details help families recognise your
+school and know where to ask for help.
+
+30
+00:02:24,341 --> 00:02:29,083
+In this recording, the contact details are
+controlled training details.
+
+31
+00:02:29,490 --> 00:02:34,042
+Select Save school details. Wait for the
+confirmation, then
+
+32
+00:02:34,056 --> 00:02:37,466
+reopen the step and check that the
+information is still there.
+
+33
+00:02:37,901 --> 00:02:42,846
+A click on Save is only the beginning;
+seeing the saved record again tells us the
+
+34
+00:02:42,860 --> 00:02:47,507
+change was retained. If your school has
+more than one site, keep the
+
+35
+00:02:47,520 --> 00:02:49,613
+organisation’s identity clear.
+
+36
+00:02:50,034 --> 00:02:52,996
+We’ll deal with branches and access
+separately.
+
+37
+00:03:03,526 --> 00:03:06,080
+Now let’s make the school recognisable.
+
+38
+00:03:06,492 --> 00:03:11,085
+Open Logo, colours and document branding,
+and edit the existing
+
+39
+00:03:11,098 --> 00:03:13,598
+branding record if one is already present.
+
+40
+00:03:14,033 --> 00:03:18,884
+Upload your school logo. Use a clear PNG,
+JPEG or
+
+41
+00:03:18,897 --> 00:03:21,316
+WebP file within the upload limit.
+
+42
+00:03:21,707 --> 00:03:26,626
+Choose colours that work with readable
+text, and review the motto, website
+
+43
+00:03:26,735 --> 00:03:31,207
+and contact details. Save the record, then
+open it again to
+
+44
+00:03:31,221 --> 00:03:33,177
+confirm the logo and colours.
+
+45
+00:03:33,612 --> 00:03:38,259
+Later, when we open a printable report,
+we’ll check the actual document
+
+46
+00:03:38,272 --> 00:03:42,701
+too. Saving a logo here doesn’t replace
+that final check.
+
+47
+00:03:43,092 --> 00:03:47,304
+Keep the school name consistent across the
+profile, branding and
+
+48
+00:03:47,318 --> 00:03:51,941
+documents. Families should immediately
+recognise that they are looking at their
+
+49
+00:03:51,954 --> 00:03:53,517
+own school’s information.
+
+50
+00:04:04,060 --> 00:04:08,095
+A small school shouldn’t have to operate
+like a large institution.
+
+51
+00:04:08,507 --> 00:04:12,080
+Open Roles and permissions, then School
+services.
+
+52
+00:04:12,515 --> 00:04:17,094
+If this is the first visit, prepare the
+roles and permissions workspace.
+
+53
+00:04:17,485 --> 00:04:20,474
+The small-school selection is a starting
+point.
+
+54
+00:04:20,912 --> 00:04:25,895
+Review it before saving. Keep the services
+your school needs now, and add
+
+55
+00:04:25,908 --> 00:04:30,786
+transport, boarding, a library or other
+services when they become relevant.
+
+56
+00:04:31,180 --> 00:04:35,650
+Turning a service off preserves its records
+while limiting delegated
+
+57
+00:04:35,664 --> 00:04:39,091
+use. It is not a way to delete school
+history.
+
+58
+00:04:39,512 --> 00:04:44,376
+Next, notice the difference between a role
+template and a person’s access.
+
+59
+00:04:44,811 --> 00:04:47,624
+A template describes a responsibility.
+
+60
+00:04:48,058 --> 00:04:52,923
+It does not create an employee, issue a
+login or automatically authorise
+
+61
+00:04:52,936 --> 00:04:57,895
+someone to see records. We’ll connect those
+pieces deliberately in the next
+
+62
+00:04:57,909 --> 00:04:58,507
+steps.
+
+63
+00:05:09,057 --> 00:05:13,486
+Your session, classes and subjects are the
+structure that pupils,
+
+64
+00:05:13,772 --> 00:05:16,625
+teachers, attendance and results depend on.
+
+65
+00:05:17,037 --> 00:05:21,534
+Open the SmartStart assistant and choose
+the school type and levels you actually
+
+66
+00:05:21,548 --> 00:05:26,521
+operate. For this training school, we’re
+using Primary classes, one
+
+67
+00:05:26,534 --> 00:05:31,263
+class per year group, the twenty twenty-six
+to twenty twenty-seven session, and
+
+68
+00:05:31,276 --> 00:05:36,032
+First Term. If your school uses arms,
+select the correct structure
+
+69
+00:05:36,045 --> 00:05:39,089
+instead. Select Preview my setup.
+
+70
+00:05:39,496 --> 00:05:42,377
+Read the proposed classes before approving.
+
+71
+00:05:42,811 --> 00:05:47,716
+Starter subjects are optional, editable
+examples; they are not a complete
+
+72
+00:05:47,730 --> 00:05:52,295
+curriculum for every school. Approve the
+setup and wait for the saved
+
+73
+00:05:52,309 --> 00:05:55,923
+result. Now open Manage actual classes.
+
+74
+00:05:56,315 --> 00:06:00,187
+Check that the real class records exist in
+the correct session.
+
+75
+00:06:00,624 --> 00:06:03,083
+Then check the actual subject list.
+
+76
+00:06:03,518 --> 00:06:06,928
+The assessment pattern in the assistant is
+a preference.
+
+77
+00:06:07,363 --> 00:06:11,888
+We still need to configure the actual
+assessments and report workflow before
+
+78
+00:06:11,901 --> 00:06:16,371
+issuing results. And the preview itself is
+not proof that records were
+
+79
+00:06:16,385 --> 00:06:20,692
+created: the saved confirmation and the
+reopened lists are what we
+
+80
+00:06:20,705 --> 00:06:21,398
+verify.
+
+81
+00:06:31,945 --> 00:06:36,619
+Before bringing real families into the
+system, check the school calendar and the
+
+82
+00:06:36,633 --> 00:06:41,525
+rules your team will use. Confirm the
+current academic session, term
+
+83
+00:06:41,539 --> 00:06:44,623
+dates and any calendar entries your school
+needs.
+
+84
+00:06:45,018 --> 00:06:47,219
+Use your school’s approved dates.
+
+85
+00:06:47,613 --> 00:06:50,113
+Don’t copy dates from this tutorial.
+
+86
+00:06:50,536 --> 00:06:55,210
+Review admission-number conventions and the
+assessment policies that apply to each
+
+87
+00:06:55,224 --> 00:06:59,721
+level. Some settings pages store
+configuration, while working
+
+88
+00:06:59,735 --> 00:07:04,151
+screens hold the actual classes,
+assessments or report designs.
+
+89
+00:07:04,558 --> 00:07:07,955
+We’ll verify those working records where
+they are used.
+
+90
+00:07:08,363 --> 00:07:12,928
+Also review who may access pupil
+information, why the school holds it,
+
+91
+00:07:13,227 --> 00:07:17,629
+how long it is retained and how corrections
+or consent questions are handled.
+
+92
+00:07:18,064 --> 00:07:22,045
+A saved acknowledgement is not a substitute
+for the school’s privacy
+
+93
+00:07:22,058 --> 00:07:26,905
+responsibilities. Complete that review
+before real child data is
+
+94
+00:07:26,919 --> 00:07:27,938
+brought on board.
+
+95
+00:07:38,462 --> 00:07:42,375
+Let’s add a teacher without creating
+disconnected records.
+
+96
+00:07:42,787 --> 00:07:47,257
+Enter the teacher’s full name and select
+Teacher as the working dashboard.
+
+97
+00:07:47,665 --> 00:07:52,271
+An email address is optional here because
+the school issues a sign-in ID.
+
+98
+00:07:52,705 --> 00:07:56,931
+Where email is used, verify that it belongs
+to the employee.
+
+99
+00:07:57,366 --> 00:08:02,216
+If the person already has an HR or teacher-
+directory record, connect that
+
+100
+00:08:02,230 --> 00:08:04,662
+record instead of creating a duplicate.
+
+101
+00:08:05,083 --> 00:08:09,037
+For a new employee, use the correct
+employment start date.
+
+102
+00:08:09,429 --> 00:08:14,062
+Confirm employment only when the person has
+actually been approved to work and may
+
+103
+00:08:14,076 --> 00:08:18,317
+clock in. Otherwise, leave that
+confirmation for the HR
+
+104
+00:08:18,330 --> 00:08:23,045
+process. Review the identity and access
+confirmation, then
+
+105
+00:08:23,059 --> 00:08:25,165
+create the connected staff login.
+
+106
+00:08:25,556 --> 00:08:27,825
+Check the next steps for this person.
+
+107
+00:08:28,235 --> 00:08:32,678
+Share access privately, and have the
+teacher complete their own password
+
+108
+00:08:32,692 --> 00:08:37,379
+setup. The teacher must use their own
+account; they should never borrow the
+
+109
+00:08:37,393 --> 00:08:38,629
+school owner’s login.
+
+110
+00:08:49,185 --> 00:08:54,144
+Other staff follow the same principle:
+start with a real person, then give that
+
+111
+00:08:54,158 --> 00:08:56,196
+person a reviewed responsibility.
+
+112
+00:08:56,635 --> 00:08:59,774
+Your school can activate only the jobs it
+needs.
+
+113
+00:09:00,208 --> 00:09:04,556
+One employee can hold more than one
+responsibility on one login.
+
+114
+00:09:04,964 --> 00:09:08,510
+Open the relevant role template and read
+its permissions.
+
+115
+00:09:08,945 --> 00:09:13,714
+Then find the employee in People and access
+and preview their current access
+
+116
+00:09:13,728 --> 00:09:18,588
+before adding anything. Choose whether the
+responsibility covers the whole school
+
+117
+00:09:18,602 --> 00:09:22,624
+or a supported set of classes, branches or
+departments.
+
+118
+00:09:23,035 --> 00:09:26,798
+A limited scope needs the matching scope
+records selected.
+
+119
+00:09:27,219 --> 00:09:31,798
+Some services require whole-school
+authority; don’t assume every screen
+
+120
+00:09:31,812 --> 00:09:36,594
+supports every scope. Financial approval is
+a separate decision.
+
+121
+00:09:37,016 --> 00:09:40,358
+A ceiling of zero means no financial
+approvals.
+
+122
+00:09:40,766 --> 00:09:44,434
+Give a higher amount only where the school
+has authorised it.
+
+123
+00:09:44,855 --> 00:09:48,999
+Save the reviewed responsibility, then test
+the staff account.
+
+124
+00:09:49,391 --> 00:09:52,693
+Check both what it can do and what it must
+not see.
+
+125
+00:09:53,130 --> 00:09:57,994
+A Principal can be given appropriate
+financial visibility and follow-up duties
+
+126
+00:09:58,007 --> 00:10:01,323
+without automatically receiving the owner’s
+full authority.
+
+127
+00:10:11,881 --> 00:10:16,623
+If the school already has a team, staff
+invitations can reduce repeated
+
+128
+00:10:16,637 --> 00:10:21,587
+data entry. Use the school’s staff-
+invitation flow, collect the required
+
+129
+00:10:21,600 --> 00:10:26,288
+details, and review each request against
+employment records before granting
+
+130
+00:10:26,301 --> 00:10:30,282
+access. An invitation is not employment
+approval.
+
+131
+00:10:30,717 --> 00:10:35,404
+A job title entered by an applicant is not
+permission to open confidential
+
+132
+00:10:35,418 --> 00:10:40,333
+records. Connect the verified person, their
+employment record and
+
+133
+00:10:40,347 --> 00:10:42,059
+their reviewed responsibility.
+
+134
+00:10:42,483 --> 00:10:47,443
+For multiple branches, add the branch,
+connect its classes and then review
+
+135
+00:10:47,456 --> 00:10:52,144
+staff scope. A branch name saved in school
+settings alone does not
+
+136
+00:10:52,157 --> 00:10:56,665
+isolate records. Check the actual
+permissions with separate staff
+
+137
+00:10:56,678 --> 00:11:01,627
+accounts. If your school has one site and a
+small team, you can keep this
+
+138
+00:11:01,641 --> 00:11:03,923
+simple and return to branches later.
+
+139
+00:11:14,465 --> 00:11:19,193
+A teacher login alone doesn’t connect a
+teacher to pupils or subjects.
+
+140
+00:11:19,605 --> 00:11:24,198
+Open Teacher allocation and choose the
+class, subject, academic
+
+141
+00:11:24,211 --> 00:11:28,478
+session and teacher. Save the allocation
+and check the Current
+
+142
+00:11:28,491 --> 00:11:33,423
+allocations table. Repeat this for every
+class and subject that needs a
+
+143
+00:11:33,437 --> 00:11:38,056
+teacher. One sample allocation can satisfy
+part of the startup
+
+144
+00:11:38,070 --> 00:11:41,956
+check, but it does not mean the whole
+school has been staffed correctly.
+
+145
+00:11:42,391 --> 00:11:46,983
+Next, open Timetable and place the lesson
+in the correct class, with the
+
+146
+00:11:46,997 --> 00:11:50,584
+correct teacher, day, start time and end
+time.
+
+147
+00:11:51,005 --> 00:11:54,959
+Review any conflict message instead of
+forcing an overlap.
+
+148
+00:11:55,366 --> 00:12:00,040
+Later, when the teacher signs in, we’ll
+confirm that these are the classes they
+
+149
+00:12:00,054 --> 00:12:04,262
+actually see. Keep sessions consistent
+across class records,
+
+150
+00:12:04,480 --> 00:12:09,317
+allocations, assessments and reports; a
+mismatch can make a correctly
+
+151
+00:12:09,330 --> 00:12:11,273
+saved record appear to be missing.
+
+152
+00:12:21,812 --> 00:12:26,503
+Now return to Safe access. This step
+records the school’s access
+
+153
+00:12:26,517 --> 00:12:30,552
+plan, so read it rather than treating the
+checkbox as a shortcut.
+
+154
+00:12:30,943 --> 00:12:35,291
+Confirm that people use individual logins,
+duties have been reviewed,
+
+155
+00:12:35,617 --> 00:12:40,250
+sensitive information is restricted and
+family connections will be checked before
+
+156
+00:12:40,264 --> 00:12:45,199
+access is shared. If one of those
+arrangements is not ready, leave the step
+
+157
+00:12:45,213 --> 00:12:49,859
+open and fix it. When the plan is genuinely
+in place, save
+
+158
+00:12:49,873 --> 00:12:54,493
+it. The platform’s percentage reflects
+saved setup checks.
+
+159
+00:12:54,927 --> 00:12:59,520
+It is a helpful guide, not a certificate
+that every permission, payment
+
+160
+00:12:59,533 --> 00:13:02,577
+connection or teaching workflow has been
+tested.
+
+161
+00:13:13,102 --> 00:13:15,249
+There are two different situations.
+
+162
+00:13:15,661 --> 00:13:20,131
+A pupil who already attends your school
+needs an existing-family onboarding
+
+163
+00:13:20,144 --> 00:13:24,193
+process. A new applicant needs an admission
+decision.
+
+164
+00:13:24,614 --> 00:13:29,234
+For existing families, the parent can
+complete a school registration form with
+
+165
+00:13:29,248 --> 00:13:32,902
+more than one child, or the school can add
+the family manually.
+
+166
+00:13:33,324 --> 00:13:37,114
+Staff then verify each child against the
+school register.
+
+167
+00:13:37,549 --> 00:13:42,481
+Don’t make an existing pupil apply as a new
+admission just to receive a login.
+
+168
+00:13:42,916 --> 00:13:47,332
+That can create duplicate records and
+separate the child from their history.
+
+169
+00:13:47,767 --> 00:13:52,359
+We’ll start with an existing family and
+connect two children to one verified
+
+170
+00:13:52,373 --> 00:13:57,006
+parent. If your school is bringing in many
+records, test a small
+
+171
+00:13:57,019 --> 00:14:01,612
+sample first. Use the application’s actual
+import template where
+
+172
+00:14:01,625 --> 00:14:05,769
+offered, and check classes and duplicates
+before a full import.
+
+173
+00:14:16,313 --> 00:14:20,022
+Here is the link the school can share with
+existing families.
+
+174
+00:14:20,419 --> 00:14:24,796
+Open Family onboarding. If the workspace
+needs preparation,
+
+175
+00:14:25,095 --> 00:14:28,940
+complete that first, then generate and
+enable the school link.
+
+176
+00:14:29,347 --> 00:14:32,146
+Check that the link is visible and marked
+ready.
+
+177
+00:14:32,537 --> 00:14:35,485
+Copy it and open the parent-form preview.
+
+178
+00:14:35,923 --> 00:14:40,597
+In a separate browser, confirm that it
+opens the intended school’s form with the
+
+179
+00:14:40,611 --> 00:14:45,529
+correct identity. A paused link needs to be
+enabled before families can
+
+180
+00:14:45,543 --> 00:14:49,999
+submit. Replacing a public link makes the
+old one stop accepting
+
+181
+00:14:50,013 --> 00:14:54,266
+submissions, so don’t rotate it after
+sharing without a clear reason.
+
+182
+00:14:54,701 --> 00:14:58,546
+The shared demo cannot issue a live school
+registration link.
+
+183
+00:14:58,967 --> 00:15:03,179
+For this recording we’re using an isolated
+normal training school.
+
+184
+00:15:03,614 --> 00:15:08,356
+If your real link is blank or points to the
+wrong address, ask the platform team
+
+185
+00:15:08,369 --> 00:15:11,752
+to check the installation address before
+sending it to families.
+
+186
+00:15:22,305 --> 00:15:24,316
+The form belongs to this school.
+
+187
+00:15:24,742 --> 00:15:29,565
+First, the parent enters their own name,
+email, WhatsApp number and
+
+188
+00:15:29,578 --> 00:15:31,182
+relationship to the children.
+
+189
+00:15:31,603 --> 00:15:33,899
+Then they add each child separately.
+
+190
+00:15:34,334 --> 00:15:39,103
+Here, one parent is registering two
+children, so we add the first child,
+
+191
+00:15:39,375 --> 00:15:44,144
+then the second. The details should help
+the school find each child in its
+
+192
+00:15:44,157 --> 00:15:48,750
+existing register. Before sending, check
+spelling, contact
+
+193
+00:15:48,763 --> 00:15:50,815
+details and the children listed.
+
+194
+00:15:51,236 --> 00:15:54,035
+Submit the form and read the
+acknowledgement.
+
+195
+00:15:54,456 --> 00:15:57,731
+Submission does not automatically grant
+access.
+
+196
+00:15:58,165 --> 00:16:02,812
+The school still needs to verify identity,
+guardian authority and the
+
+197
+00:16:02,826 --> 00:16:07,758
+child’s record. This protects families and
+prevents a person from claiming
+
+198
+00:16:07,771 --> 00:16:10,244
+access just by knowing a pupil’s name.
+
+199
+00:16:10,679 --> 00:16:15,570
+If a parent cannot complete an online form,
+school staff can use Add a family
+
+200
+00:16:15,584 --> 00:16:18,722
+manually and follow the same verification
+process.
+
+201
+00:16:29,281 --> 00:16:33,982
+This is the most important part of family
+onboarding: connecting people to the
+
+202
+00:16:33,996 --> 00:16:38,756
+right records. Open the family submission
+and review each child.
+
+203
+00:16:39,190 --> 00:16:43,728
+If the pupil already exists, search the
+register and use the existing
+
+204
+00:16:43,742 --> 00:16:48,060
+record. Check the admission number, class
+and other school
+
+205
+00:16:48,074 --> 00:16:51,663
+evidence. Don’t rely on a matching name
+alone.
+
+206
+00:16:52,098 --> 00:16:56,867
+If the pupil is genuinely missing, create a
+verified record in the confirmed
+
+207
+00:16:56,881 --> 00:17:01,065
+class and session, using the original
+admission date where appropriate.
+
+208
+00:17:01,487 --> 00:17:04,516
+Review possible duplicates before
+continuing.
+
+209
+00:17:04,938 --> 00:17:08,742
+Verify the parent’s authority and contact
+details.
+
+210
+00:17:09,163 --> 00:17:12,804
+Reuse the same verified parent account for
+siblings.
+
+211
+00:17:13,196 --> 00:17:17,721
+Choose a pupil login only where your school
+intends that child to have one.
+
+212
+00:17:18,131 --> 00:17:21,962
+Record the evidence and save the verified
+match for approval.
+
+213
+00:17:22,370 --> 00:17:25,454
+An authorised reviewer can then approve the
+child.
+
+214
+00:17:25,875 --> 00:17:30,794
+Repeat for every child; one approved
+sibling does not automatically verify
+
+215
+00:17:30,807 --> 00:17:35,712
+another. If something is wrong, return that
+child for correction with a clear
+
+216
+00:17:35,726 --> 00:17:39,938
+note. Matching an existing pupil preserves
+their history.
+
+217
+00:17:40,345 --> 00:17:44,693
+A parent’s submitted details should not
+silently overwrite the school’s
+
+218
+00:17:44,707 --> 00:17:46,215
+authoritative records.
+
+219
+00:17:56,726 --> 00:18:00,585
+Before sending access, check the email
+handover route.
+
+220
+00:18:01,024 --> 00:18:05,901
+The school can use the configured School O
+S sender or its own approved S M T
+
+221
+00:18:05,915 --> 00:18:10,521
+P connection. Saving credentials does not
+prove an email has arrived;
+
+222
+00:18:10,888 --> 00:18:14,978
+verify delivery to a controlled mailbox
+before inviting everyone.
+
+223
+00:18:15,385 --> 00:18:19,597
+New access is shared privately using the
+available handover.
+
+224
+00:18:20,018 --> 00:18:24,448
+New accounts receive time-limited setup
+links, and existing account
+
+225
+00:18:24,461 --> 00:18:29,420
+passwords are preserved. Do not show these
+links or passwords on screen.
+
+226
+00:18:29,855 --> 00:18:33,130
+The WhatsApp option prepares a message in
+WhatsApp.
+
+227
+00:18:33,565 --> 00:18:38,116
+A staff member must review it and press
+Send; opening a draft is not
+
+228
+00:18:38,130 --> 00:18:42,355
+delivery. Now sign in as the parent in a
+separate browser.
+
+229
+00:18:42,746 --> 00:18:47,705
+Confirm that both children appear, switch
+between them and check the correct class
+
+230
+00:18:47,719 --> 00:18:52,450
+information. If the children have student
+logins, test the permitted
+
+231
+00:18:52,464 --> 00:18:57,287
+family chat connections too. Finally,
+confirm that this parent
+
+232
+00:18:57,301 --> 00:19:00,222
+cannot open an unrelated pupil’s records.
+
+233
+00:19:00,657 --> 00:19:05,616
+We have connected a family successfully
+only when the intended access works and
+
+234
+00:19:05,630 --> 00:19:07,736
+the unintended access is blocked.
+
+235
+00:19:18,273 --> 00:19:21,643
+A genuinely new pupil follows the admission
+route.
+
+236
+00:19:22,068 --> 00:19:26,661
+Register the application or pupil draft,
+review the information and any
+
+237
+00:19:26,674 --> 00:19:31,158
+required documents, check for duplicates,
+and record the school’s admission
+
+238
+00:19:31,171 --> 00:19:36,019
+decision. Do not confuse a pending
+application with an enrolled pupil
+
+239
+00:19:36,032 --> 00:19:38,532
+who should already have unrestricted
+access.
+
+240
+00:19:38,970 --> 00:19:43,563
+After approval, verify the actual pupil
+record, class and
+
+241
+00:19:43,576 --> 00:19:48,413
+session. Then complete Family and login
+setup, checking the parent’s
+
+242
+00:19:48,427 --> 00:19:52,476
+authority and the child’s account
+connection before sharing access.
+
+243
+00:19:52,897 --> 00:19:57,313
+School staff make the admission decision;
+the software connects the approved
+
+244
+00:19:57,326 --> 00:20:01,905
+records and access workflow. For a large
+intake, agree who
+
+245
+00:20:01,919 --> 00:20:04,989
+reviews applications and who may issue
+accounts.
+
+246
+00:20:05,424 --> 00:20:09,731
+A clear handover between admissions and the
+school administrator prevents
+
+247
+00:20:09,745 --> 00:20:12,720
+unfinished records from falling between
+teams.
+
+248
+00:20:23,257 --> 00:20:27,211
+Return to Start my school and read the
+progress shown for your school.
+
+249
+00:20:27,623 --> 00:20:31,074
+Open any remaining check and see what is
+still missing.
+
+250
+00:20:31,482 --> 00:20:35,748
+A full progress bar means the six
+foundation checks are satisfied.
+
+251
+00:20:36,183 --> 00:20:40,924
+It does not prove that every subject has a
+teacher or that your payments, report
+
+252
+00:20:40,938 --> 00:20:43,261
+cards and external services are ready.
+
+253
+00:20:43,696 --> 00:20:47,093
+Those services each need their own checks
+before use.
+
+254
+00:20:47,528 --> 00:20:51,631
+Once you’re ready for daily work, choose My
+school day as your home.
+
+255
+00:20:52,066 --> 00:20:55,068
+You can still come back to setup and More
+tools.
+
+256
+00:20:55,503 --> 00:21:00,395
+Next, we’ll prepare the services most
+schools use regularly: attendance,
+
+257
+00:21:00,666 --> 00:21:03,397
+fees, communication and reports.
+
+258
+00:21:03,788 --> 00:21:08,245
+Complete the chapters that match what your
+school will actually use on its first
+
+259
+00:21:08,258 --> 00:21:08,666
+day.
+
+260
+00:21:19,217 --> 00:21:21,377
+Let’s test a normal school morning.
+
+261
+00:21:21,803 --> 00:21:26,626
+Sign in as the teacher, open pupil
+attendance and choose the correct class and
+
+262
+00:21:26,640 --> 00:21:31,219
+date. Mark the training entry, save, then
+reopen the same
+
+263
+00:21:31,232 --> 00:21:35,213
+register to verify it. Now check staff
+attendance.
+
+264
+00:21:35,634 --> 00:21:39,765
+A confirmed employee should be able to find
+their own clock-in route and
+
+265
+00:21:39,779 --> 00:21:44,762
+attendance history. HR should see the
+corresponding authorised record for
+
+266
+00:21:44,775 --> 00:21:49,738
+that date. If clock-in is missing, check
+the employment link, active
+
+267
+00:21:49,751 --> 00:21:52,795
+status, start date and account permissions.
+
+268
+00:21:53,187 --> 00:21:56,801
+Creating another account is usually not the
+right fix.
+
+269
+00:21:57,238 --> 00:22:01,599
+Make sure the school understands its
+attendance policy, approved leave,
+
+270
+00:22:01,898 --> 00:22:06,096
+non-working days and the West Africa Time
+date used by the platform.
+
+271
+00:22:06,518 --> 00:22:11,490
+Review how unmarked past days are closed
+before relying on absence reports for
+
+272
+00:22:11,504 --> 00:22:13,719
+payroll or disciplinary decisions.
+
+273
+00:22:14,126 --> 00:22:18,692
+A missing mark and a confirmed absence are
+different operational facts.
+
+274
+00:22:29,214 --> 00:22:33,562
+School fees are separate from your school’s
+subscription to School O S.
+
+275
+00:22:34,001 --> 00:22:38,580
+Here we’re setting a training tuition
+charge for pupils, not buying a software
+
+276
+00:22:38,593 --> 00:22:41,960
+plan. Create a class-specific fee plan.
+
+277
+00:22:42,370 --> 00:22:46,718
+Choose the class, charge type, clear fee
+title, amount,
+
+278
+00:22:47,017 --> 00:22:49,042
+branch where relevant and frequency.
+
+279
+00:22:49,449 --> 00:22:53,199
+Our example is seventy-five thousand naira
+per term.
+
+280
+00:22:53,634 --> 00:22:56,433
+Your school must use its own approved
+figures.
+
+281
+00:22:56,854 --> 00:23:00,509
+Save and inspect the plan before generating
+invoices.
+
+282
+00:23:00,930 --> 00:23:05,822
+Then choose the plan, enter a consistent
+billing-period label and set the due
+
+283
+00:23:05,835 --> 00:23:10,412
+date. Generate the class invoices only
+after the pupil list and
+
+284
+00:23:10,425 --> 00:23:14,952
+amounts have been checked. Open one invoice
+and verify the pupil,
+
+285
+00:23:15,210 --> 00:23:20,183
+charge, balance and status. In the parent
+account, confirm that
+
+286
+00:23:20,197 --> 00:23:25,156
+the correct family sees it. Use the same
+exact billing-period wording
+
+287
+00:23:25,169 --> 00:23:29,898
+consistently. Don’t create slightly
+different period labels as a way of
+
+288
+00:23:29,911 --> 00:23:34,721
+retrying a billing run; that can undermine
+duplicate protection and confuse the
+
+289
+00:23:34,735 --> 00:23:35,767
+school’s accounts.
+
+290
+00:23:46,308 --> 00:23:49,596
+A payment claim is not the same as verified
+money.
+
+291
+00:23:50,021 --> 00:23:54,654
+For cash, bank transfer or POS, record the
+payment with its
+
+292
+00:23:54,668 --> 00:23:57,738
+invoice, amount, channel and reference.
+
+293
+00:23:58,146 --> 00:24:02,902
+Reconcile it against the school’s
+independent evidence before confirming it
+as
+
+294
+00:24:02,915 --> 00:24:07,806
+matched. For online collection, connect the
+school’s own approved Pay
+
+295
+00:24:07,820 --> 00:24:12,752
+stack account privately. First test the
+complete flow in the provider’s
+
+296
+00:24:12,766 --> 00:24:17,603
+test environment. Opening checkout or
+returning to a success screen is
+
+297
+00:24:17,616 --> 00:24:21,094
+not enough; the server must verify the
+transaction.
+
+298
+00:24:21,529 --> 00:24:26,529
+After verification, check the receipt and
+invoice balance in the school view and
+
+299
+00:24:26,543 --> 00:24:31,312
+the parent view. Test a failed or pending
+payment too, so your team
+
+300
+00:24:31,325 --> 00:24:33,024
+knows what families will see.
+
+301
+00:24:33,445 --> 00:24:37,929
+For outstanding balances, use the available
+follow-up options.
+
+302
+00:24:38,350 --> 00:24:42,983
+Review the child, recipient, amount and
+wording before sending an in-app
+
+303
+00:24:42,997 --> 00:24:45,442
+message or opening a WhatsApp draft.
+
+304
+00:24:45,850 --> 00:24:49,206
+Only authorised staff should access these
+records.
+
+305
+00:24:49,614 --> 00:24:53,744
+A recorded refund request is also not proof
+that money has been
+
+306
+00:24:53,758 --> 00:24:54,627
+transferred.
+
+307
+00:25:05,133 --> 00:25:08,408
+Good communication starts with the right
+audience.
+
+308
+00:25:08,823 --> 00:25:13,592
+Open School chat, find a permitted person
+by name and check their identity
+
+309
+00:25:13,605 --> 00:25:18,551
+before writing. A chat is a conversation,
+so keep the message simple.
+
+310
+00:25:18,986 --> 00:25:23,198
+In this training school, we’ll send a short
+welcome and confirm it in the
+
+311
+00:25:23,211 --> 00:25:24,828
+recipient’s separate session.
+
+312
+00:25:25,220 --> 00:25:29,935
+Typing indicators and reactions are useful,
+but actual receipt is the
+
+313
+00:25:29,948 --> 00:25:34,652
+important check. Use announcements or the
+communications desk for a
+
+314
+00:25:34,665 --> 00:25:39,325
+notice to a group. Review the audience and
+preview the message before
+
+315
+00:25:39,339 --> 00:25:44,325
+publishing. A driver’s route notice, for
+example, should not require
+
+316
+00:25:44,339 --> 00:25:47,681
+unrestricted private chat access to every
+pupil.
+
+317
+00:25:48,089 --> 00:25:52,627
+In-app delivery and external email, SMS or
+WhatsApp are different
+
+318
+00:25:52,641 --> 00:25:57,543
+services. Provider setup, verified
+contacts, consent
+
+319
+00:25:57,652 --> 00:26:01,389
+and funded provider accounts may be needed
+for external delivery.
+
+320
+00:26:01,781 --> 00:26:06,333
+Check the actual status rather than
+assuming a saved notice reached every
+
+321
+00:26:06,347 --> 00:26:06,849
+phone.
+
+322
+00:26:17,382 --> 00:26:21,037
+Reports begin with the school’s approved
+assessment structure.
+
+323
+00:26:21,449 --> 00:26:26,299
+Open CA and exams and create the actual
+components for the correct class,
+
+324
+00:26:26,598 --> 00:26:30,932
+subject, session and term. Our training
+example uses a
+
+325
+00:26:30,946 --> 00:26:35,702
+continuous-assessment component worth forty
+percent and an examination worth
+
+326
+00:26:35,715 --> 00:26:40,063
+sixty percent. Each has a maximum raw mark
+of one hundred.
+
+327
+00:26:40,484 --> 00:26:45,416
+These are example school rules, not a
+requirement for every Nigerian school.
+
+328
+00:26:45,824 --> 00:26:49,574
+Enter the pupil’s raw marks against the
+correct assessments.
+
+329
+00:26:49,995 --> 00:26:54,451
+Seventy-five in the first component and
+eighty in the second give a weighted
+
+330
+00:26:54,465 --> 00:26:59,163
+result of seventy-eight. Check the
+calculation, not just the saved
+
+331
+00:26:59,176 --> 00:27:03,636
+marks. Submit and review the scores through
+moderation using the
+
+332
+00:27:03,650 --> 00:27:08,432
+authorised workflow. Before publication,
+all required components and
+
+333
+00:27:08,446 --> 00:27:13,405
+pupil scores must be complete, weights must
+total one hundred percent, and the
+
+334
+00:27:13,419 --> 00:27:15,688
+required approvals must be in place.
+
+335
+00:27:16,123 --> 00:27:18,419
+We’re demonstrating one subject.
+
+336
+00:27:18,854 --> 00:27:23,528
+Your school must complete its full intended
+curriculum before issuing a genuine
+
+337
+00:27:23,541 --> 00:27:28,378
+term report. Never add invented marks
+simply to make publication
+
+338
+00:27:28,392 --> 00:27:28,976
+pass.
+
+339
+00:27:39,502 --> 00:27:43,238
+Now let’s prepare the actual report
+families will receive.
+
+340
+00:27:43,650 --> 00:27:47,631
+Open the visual report designer and choose
+the correct school level.
+
+341
+00:27:48,039 --> 00:27:52,251
+Arrange the sections your school needs:
+identity, subjects,
+
+342
+00:27:52,455 --> 00:27:56,001
+attendance, skills, comments and
+signatures.
+
+343
+00:27:56,408 --> 00:27:59,588
+You can drag sections or use the move
+controls.
+
+344
+00:27:59,995 --> 00:28:04,669
+Set the assessment weights and grade bands
+to match the school’s approved policy
+
+345
+00:28:04,683 --> 00:28:06,884
+and the assessments already created.
+
+346
+00:28:07,305 --> 00:28:12,196
+Save the design draft. The person who
+creates it cannot approve that
+
+347
+00:28:12,210 --> 00:28:16,830
+same draft. A different authorised reviewer
+must sign in with their own
+
+348
+00:28:16,843 --> 00:28:18,691
+account and approve the design.
+
+349
+00:28:19,126 --> 00:28:23,365
+This is a genuine review step, not a reason
+to share passwords.
+
+350
+00:28:23,773 --> 00:28:28,297
+After approval, assign the school-approved
+format to the correct class.
+
+351
+00:28:28,732 --> 00:28:33,528
+A saved generic template in school settings
+is not enough; verify this
+
+352
+00:28:33,542 --> 00:28:35,294
+operational class assignment.
+
+353
+00:28:35,702 --> 00:28:40,566
+Nursery schools can use approved
+developmental observations and age-
+appropriate
+
+354
+00:28:40,580 --> 00:28:44,601
+reports instead of forcing examination
+marks onto young children.
+
+355
+00:28:45,036 --> 00:28:49,466
+The report format should reflect how that
+school actually assesses learning.
+
+356
+00:28:59,990 --> 00:29:04,691
+Publication is the final step, after the
+results and report format are
+
+357
+00:29:04,705 --> 00:29:09,570
+ready. Check the class, session and term
+carefully, then approve
+
+358
+00:29:09,583 --> 00:29:11,934
+and publish through the authorised
+workflow.
+
+359
+00:29:12,331 --> 00:29:14,614
+Open the actual printable card.
+
+360
+00:29:15,005 --> 00:29:19,176
+Check the school logo and name, pupil
+identity, class,
+
+361
+00:29:19,448 --> 00:29:22,722
+subjects, marks, comments and dates.
+
+362
+00:29:23,133 --> 00:29:27,100
+Confirm that the report weights agree with
+the assessment records.
+
+363
+00:29:27,521 --> 00:29:31,543
+Next, open the same child’s report from the
+parent account.
+
+364
+00:29:31,935 --> 00:29:36,677
+Preview printing or saving as PDF, and
+check page breaks and school
+
+365
+00:29:36,690 --> 00:29:41,446
+branding. Do not assume the administrator’s
+view proves the family view
+
+366
+00:29:41,460 --> 00:29:46,163
+works. If the report is unavailable, check
+publication, score
+
+367
+00:29:46,176 --> 00:29:50,837
+completeness, moderation, the approved
+format and the verified family
+
+368
+00:29:50,850 --> 00:29:55,562
+link. Keep the report unpublished while
+those issues are resolved.
+
+369
+00:29:55,956 --> 00:30:00,399
+Progression decisions also need the
+school’s own review; a threshold in a
+
+370
+00:30:00,412 --> 00:30:02,871
+template is not automatic promotion.
+
+371
+00:30:13,412 --> 00:30:17,746
+For transport, start with the driver,
+vehicle, route and
+
+372
+00:30:17,759 --> 00:30:22,692
+stops. Connect each participating pupil to
+the right route and verify
+
+373
+00:30:22,706 --> 00:30:26,103
+the family contacts and approved handover
+arrangement.
+
+374
+00:30:26,497 --> 00:30:28,752
+Test from the driver’s own account.
+
+375
+00:30:29,163 --> 00:30:34,041
+A recorded pickup, home-bus journey, drop-
+off or non-travel status
+
+376
+00:30:34,054 --> 00:30:36,405
+should appear in the relevant pupil
+history.
+
+377
+00:30:36,796 --> 00:30:39,432
+Check the date and child before saving.
+
+378
+00:30:39,870 --> 00:30:44,557
+A chat message is not a substitute for
+approved collection authority, and the
+
+379
+00:30:44,571 --> 00:30:48,239
+driver should use journey controls only
+while safely parked.
+
+380
+00:30:48,660 --> 00:30:53,443
+For boarding, define the hostels, rooms and
+beds, then allocate
+
+381
+00:30:53,457 --> 00:30:57,791
+pupils. Review who handles roll calls,
+leave permits,
+
+382
+00:30:58,049 --> 00:31:00,155
+visitors and welfare incidents.
+
+383
+00:31:00,576 --> 00:31:04,408
+These services hold sensitive operational
+information.
+
+384
+00:31:04,815 --> 00:31:09,530
+Give staff the duties and records they
+need, and verify the family-facing
+
+385
+00:31:09,544 --> 00:31:14,299
+information. If your school does not run
+buses or boarding, leave those
+
+386
+00:31:14,313 --> 00:31:16,446
+services off and skip this chapter.
+
+387
+00:31:26,988 --> 00:31:31,947
+For the library, begin with a few real
+catalogue records and an accurate count of
+
+388
+00:31:31,960 --> 00:31:36,774
+copies. Add the title and author, and an
+ISBN where useful.
+
+389
+00:31:37,166 --> 00:31:41,840
+Test lending and returning one book with a
+verified borrower, then check that
+
+390
+00:31:41,854 --> 00:31:43,770
+availability changes correctly.
+
+391
+00:31:44,179 --> 00:31:48,459
+For the school store, use a clear product
+image so families know what they’re
+
+392
+00:31:48,473 --> 00:31:53,079
+choosing. Select the right item group, then
+the relevant sizes,
+
+393
+00:31:53,351 --> 00:31:57,984
+colours and quantities. A uniform needs
+different details from a
+
+394
+00:31:57,997 --> 00:32:02,165
+textbook or a snack. Check stock for each
+variation.
+
+395
+00:32:02,559 --> 00:32:07,355
+Don’t count the same units twice as both
+total stock and additional variant
+
+396
+00:32:07,369 --> 00:32:12,182
+stock. Review price and family-shop
+visibility before offering the
+
+397
+00:32:12,196 --> 00:32:17,098
+item. Place a training order, verify who
+fulfils it and inspect
+
+398
+00:32:17,112 --> 00:32:21,924
+the stock history. An order is not proof of
+payment or proof that goods have
+
+399
+00:32:21,938 --> 00:32:26,883
+been collected. Your store’s approval,
+payment and handover steps should
+
+400
+00:32:26,897 --> 00:32:27,399
+agree.
+
+401
+00:32:37,924 --> 00:32:42,000
+For HR, confirm employee records, start
+dates,
+
+402
+00:32:42,217 --> 00:32:45,981
+departments, leave rules and payroll
+responsibilities.
+
+403
+00:32:46,406 --> 00:32:50,917
+Review pay figures and approvals with the
+school’s finance team before running
+
+404
+00:32:50,931 --> 00:32:55,632
+payroll. A working attendance screen alone
+does not validate salary
+
+405
+00:32:55,645 --> 00:32:59,952
+calculations. For live learning, first
+verify teacher
+
+406
+00:32:59,966 --> 00:33:02,249
+allocations and pupil access.
+
+407
+00:33:02,683 --> 00:33:07,493
+Then test a class using the approved media
+service, camera and microphone
+
+408
+00:33:07,507 --> 00:33:11,909
+permissions, and the devices and networks
+families will actually use.
+
+409
+00:33:12,344 --> 00:33:17,330
+External services may require provider
+accounts, quotas, payment
+
+410
+00:33:17,452 --> 00:33:21,800
+or technical setup. Saved keys do not prove
+capacity or
+
+411
+00:33:21,814 --> 00:33:26,678
+delivery. Website publishing, prepaid
+accounts, integrations
+
+412
+00:33:26,787 --> 00:33:31,325
+and other advanced tools can be introduced
+later with a named owner and a separate
+
+413
+00:33:31,338 --> 00:33:36,229
+end-to-end test. A calm setup is one where
+every active service has a
+
+414
+00:33:36,243 --> 00:33:38,825
+purpose and somebody responsible for it.
+
+415
+00:33:49,377 --> 00:33:54,160
+Your School O S subscription is the
+software service, separate from the fees
+you
+
+416
+00:33:54,173 --> 00:33:58,537
+charge parents. Check your actual status,
+pupil count,
+
+417
+00:33:58,836 --> 00:34:02,029
+package, billing cycle and relevant dates.
+
+418
+00:34:02,466 --> 00:34:05,278
+If you are on a trial, note when it ends.
+
+419
+00:34:05,699 --> 00:34:10,183
+Review the current quote and payment
+requirements before changing package or
+
+420
+00:34:10,197 --> 00:34:14,911
+cycle. Use the actual figures shown for
+your school; don’t copy a
+
+421
+00:34:14,925 --> 00:34:19,667
+price from an old tutorial. A quote is not
+a completed subscription
+
+422
+00:34:19,680 --> 00:34:24,259
+payment. Before inviting everyone, decide
+who will help staff and
+
+423
+00:34:24,273 --> 00:34:28,634
+families with access problems, and who will
+contact platform support.
+
+424
+00:34:29,069 --> 00:34:33,838
+Use Get help with a clear description, date
+and affected feature, without
+
+425
+00:34:33,852 --> 00:34:36,583
+sending passwords or private setup links.
+
+426
+00:34:36,990 --> 00:34:41,623
+Activity history can help an authorised
+administrator investigate what
+
+427
+00:34:41,637 --> 00:34:46,053
+changed. It supports review; it doesn’t
+replace a clear school
+
+428
+00:34:46,066 --> 00:34:46,786
+procedure.
+
+429
+00:34:57,337 --> 00:35:01,128
+Before the whole school joins, run one
+complete rehearsal.
+
+430
+00:35:01,567 --> 00:35:06,282
+Use separate accounts for the
+administrator, teacher, parent and any
+
+431
+00:35:06,295 --> 00:35:08,401
+pupil or service staff involved.
+
+432
+00:35:08,792 --> 00:35:13,262
+Check that the teacher sees the correct
+class, attendance is saved, the
+
+433
+00:35:13,276 --> 00:35:17,066
+employee can clock in and the parent sees
+only their own children.
+
+434
+00:35:17,477 --> 00:35:20,969
+Send a controlled in-app message and
+confirm receipt.
+
+435
+00:35:21,390 --> 00:35:25,956
+For every service you plan to use, finish
+its own test: a verified
+
+436
+00:35:25,969 --> 00:35:30,195
+payment and balance, a published printable
+report, or a transport,
+
+437
+00:35:30,439 --> 00:35:33,415
+library or store record that updates
+correctly.
+
+438
+00:35:33,806 --> 00:35:38,792
+Compare dashboard charts with the
+underlying records; attractive totals
+should
+
+439
+00:35:38,806 --> 00:35:43,551
+still add up. Ask the platform operator to
+confirm backups and restore
+
+440
+00:35:43,564 --> 00:35:48,483
+testing, scheduled workers, private
+storage, secure access and
+
+441
+00:35:48,496 --> 00:35:53,456
+provider readiness. Those are operator
+responsibilities, not extra
+
+442
+00:35:53,469 --> 00:35:55,942
+menus a school owner needs to guess
+through.
+
+443
+00:35:56,377 --> 00:36:01,254
+Start with a small staff and family group,
+resolve issues, then invite the
+
+444
+00:36:01,268 --> 00:36:05,952
+rest in manageable batches. Keep a record
+of what was tested and who
+
+445
+00:36:05,966 --> 00:36:10,833
+approved it. You now have a clear path from
+setup to a connected school
+
+446
+00:36:10,847 --> 00:36:15,765
+day. Start with what matters today, verify
+it with real workflows,
+
+447
+00:36:16,064 --> 00:36:18,564
+and add the next service when your school
+is ready.
