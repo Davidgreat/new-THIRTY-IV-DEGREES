@@ -1,0 +1,502 @@
+{
+  "version": "5.5.0",
+  "approved_runtime_files": 43,
+  "checks_passed": 116,
+  "checks": {
+    "pricing": [
+      {
+        "test": "Progressive band arithmetic and annual discount match published examples",
+        "pass": true
+      },
+      {
+        "test": "Existing fixed agreement cannot use unaccepted pupil checkout or silently migrate",
+        "pass": true
+      },
+      {
+        "test": "Pupil trial retains free days then activates once after exact verification",
+        "pass": true
+      },
+      {
+        "test": "Quote is tenant scoped and one checkout reference is reused",
+        "pass": true
+      },
+      {
+        "test": "Wrong NGN amount, currency and environment never apply payment",
+        "pass": true
+      },
+      {
+        "test": "Late real payment goes to support review without subscription mutation",
+        "pass": true
+      },
+      {
+        "test": "Renewal and extra seats cannot use legacy payment or upgrade bypasses",
+        "pass": true
+      },
+      {
+        "test": "More places charge unused difference and preserve paid expiry",
+        "pass": true
+      },
+      {
+        "test": "Renewal can reduce pupil places but not below active enrolled records",
+        "pass": true
+      },
+      {
+        "test": "Commercial actors reject stale passwords, support visits and staff roles",
+        "pass": true
+      },
+      {
+        "test": "New referral allowance counts paid service months; annual at 20% gives 125550 NGN",
+        "pass": true
+      },
+      {
+        "test": "Partially eligible annual renewal is prorated to remaining paid months",
+        "pass": true
+      }
+    ],
+    "founding_registration": [
+      {
+        "test": "Trial registrations do not claim founding places; unpaid quotes only reserve temporarily",
+        "pass": true
+      },
+      {
+        "test": "First verified payment awards one year, next quotes show standard renewal",
+        "pass": true
+      },
+      {
+        "test": "Pupils above founding cap do not receive introductory discount",
+        "pass": true
+      },
+      {
+        "test": "Per-pupil registration saves declared count and immutable tariff; no paid-package trial",
+        "pass": true
+      },
+      {
+        "test": "Registration refuses changed tariff snapshots rather than silently repricing",
+        "pass": true
+      },
+      {
+        "test": "Student count excludes withdrawn and alumni and counts a student once",
+        "pass": true
+      }
+    ],
+    "billing_affiliate": [
+      {
+        "test": "Future renewal retains separate paid-place counts; adding places charges only current deficit",
+        "pass": true
+      },
+      {
+        "test": "Pupil package upgrade pays unused difference without losing renewal date",
+        "pass": true
+      },
+      {
+        "test": "Extra places within the minimum price apply without creating a payment or commission",
+        "pass": true
+      },
+      {
+        "test": "Archived pupil package remains renewable for existing agreements",
+        "pass": true
+      },
+      {
+        "test": "Optional assistance creates one linked helpdesk request and never charges a subscription",
+        "pass": true
+      },
+      {
+        "test": "A new attributed school earns exactly 20% of the first paid annual subscription only",
+        "pass": true
+      },
+      {
+        "test": "Test payments do not consume live commission allowance",
+        "pass": true
+      },
+      {
+        "test": "A school with test-paid service cannot silently carry it into a live agreement",
+        "pass": true
+      },
+      {
+        "test": "Invalid package creation rolls back the package rather than leaving a partial published item",
+        "pass": true
+      },
+      {
+        "test": "Confirmed abandoned checkout can close; later money is held for review, never applied twice",
+        "pass": true
+      },
+      {
+        "test": "Pending provider checkout cannot be discarded as though it had failed",
+        "pass": true
+      }
+    ],
+    "fixed_price_regression": [
+      {
+        "name": "Half-used 20k plan upgraded to 30k charges about 5k only",
+        "pass": true
+      },
+      {
+        "name": "Foreign tenant cannot read or pay another school quote",
+        "pass": true
+      },
+      {
+        "name": "Payment checkout reuses one reference and one provider initialization",
+        "pass": true
+      },
+      {
+        "name": "Upgrade is applied once, with unchanged renewal date and new saved rate",
+        "pass": true
+      },
+      {
+        "name": "Wrong provider amount cannot apply a package",
+        "pass": true
+      },
+      {
+        "name": "Trial converts to paid package without consuming remaining trial time",
+        "pass": true
+      },
+      {
+        "name": "Lower capacity is refused even when price is higher",
+        "pass": true
+      },
+      {
+        "name": "A paid larger package cannot downgrade to the smaller tier",
+        "pass": true
+      },
+      {
+        "name": "Expired paid access has no unused credit and starts a new cycle",
+        "pass": true
+      },
+      {
+        "name": "Legacy verified full-cycle receipts can supply the prorated basis",
+        "pass": true
+      },
+      {
+        "name": "Late payment is recorded once for review without changing package",
+        "pass": true
+      },
+      {
+        "name": "Changing a target package invalidates the unpaid quote",
+        "pass": true
+      },
+      {
+        "name": "Subsequent ordinary renewal uses upgraded full rate and records a new period",
+        "pass": true
+      },
+      {
+        "name": "Integer proration rounds credit down and target cost up safely",
+        "pass": true
+      }
+    ],
+    "commercial_controls": [
+      {
+        "test": "Test-paid founding place does not consume a live place",
+        "pass": true
+      },
+      {
+        "test": "Private negotiated package is available only to the school explicitly offered it",
+        "pass": true
+      },
+      {
+        "test": "Paid review cannot close without a full recorded refund; confirmed refund closes it once",
+        "pass": true
+      }
+    ],
+    "concurrency_integrity": [
+      {
+        "test": "Concurrent exact callbacks apply one paid period and one receipt",
+        "pass": true
+      },
+      {
+        "test": "Concurrent quotes across different packages cannot overbook the last founding place",
+        "pass": true
+      },
+      {
+        "test": "Commercial schema installation refuses an open transaction",
+        "pass": true
+      },
+      {
+        "test": "Direct fixed-price signup retains its configured legacy trial policy",
+        "pass": true
+      }
+    ],
+    "recovery": [
+      {
+        "test": "A suspended school payment is recorded for review without lifting suspension",
+        "pass": true
+      },
+      {
+        "test": "Partial loss of a commercial table refuses default reconstruction and commission",
+        "pass": true
+      }
+    ],
+    "browser": [
+      {
+        "name": "Pricing calculator shows progressive 500-pupil annual amount",
+        "pass": true
+      },
+      {
+        "name": "Registration summary uses the selected pupil count",
+        "pass": true
+      },
+      {
+        "name": "Registration updates pupil price without trusting browser totals",
+        "pass": true
+      },
+      {
+        "name": "Registration cycle selector recalculates term charge",
+        "pass": true
+      },
+      {
+        "name": "Out-of-range count asks for custom quote",
+        "pass": true
+      },
+      {
+        "name": "Registration fits mobile width",
+        "pass": true
+      },
+      {
+        "name": "Super Admin package settings expose new commercial controls",
+        "pass": true
+      },
+      {
+        "name": "Package settings fit mobile width",
+        "pass": true
+      },
+      {
+        "name": "Advanced legacy tools are collapsed by default",
+        "pass": true
+      },
+      {
+        "name": "Pupil package hides unused fixed price inputs",
+        "pass": true
+      },
+      {
+        "name": "Package editor saves through the real authenticated form",
+        "pass": true
+      },
+      {
+        "name": "Pending school can create and review a billing quote through the real form",
+        "pass": true
+      },
+      {
+        "name": "Pupil billing fits a phone width",
+        "pass": true
+      },
+      {
+        "name": "School can discard an unstarted quote without payment",
+        "pass": true
+      },
+      {
+        "name": "Public cycle changes retain the pupil count in a subfolder",
+        "pass": true
+      },
+      {
+        "name": "Subfolder pricing recalculates monthly amount",
+        "pass": true
+      },
+      {
+        "name": "Dark pricing input uses a dark surface and readable light text",
+        "pass": true,
+        "details": {
+          "text": "rgb(237, 244, 231)",
+          "background": "rgb(16, 29, 26)"
+        }
+      },
+      {
+        "name": "Dark pricing fits mobile width",
+        "pass": true
+      },
+      {
+        "name": "No browser script errors",
+        "pass": true,
+        "details": []
+      }
+    ],
+    "syntax": [
+      {
+        "file": "academic_tools.php",
+        "pass": true
+      },
+      {
+        "file": "affiliate.php",
+        "pass": true
+      },
+      {
+        "file": "affiliate_worker.php",
+        "pass": true
+      },
+      {
+        "file": "boarding_portal.php",
+        "pass": true
+      },
+      {
+        "file": "classroom.php",
+        "pass": true
+      },
+      {
+        "file": "config.example.php",
+        "pass": true
+      },
+      {
+        "file": "engagement_manager.php",
+        "pass": true
+      },
+      {
+        "file": "experience.php",
+        "pass": true
+      },
+      {
+        "file": "experience_admin.php",
+        "pass": true
+      },
+      {
+        "file": "experience_demo.php",
+        "pass": true
+      },
+      {
+        "file": "experience_demo_refresh.php",
+        "pass": true
+      },
+      {
+        "file": "experience_ui.php",
+        "pass": true
+      },
+      {
+        "file": "finance_engine.php",
+        "pass": true
+      },
+      {
+        "file": "finance_view.php",
+        "pass": true
+      },
+      {
+        "file": "governance_hub.php",
+        "pass": true
+      },
+      {
+        "file": "hr_payroll.php",
+        "pass": true
+      },
+      {
+        "file": "index.php",
+        "pass": true
+      },
+      {
+        "file": "insights_core.php",
+        "pass": true
+      },
+      {
+        "file": "install.php",
+        "pass": true
+      },
+      {
+        "file": "intelligence_reports.php",
+        "pass": true
+      },
+      {
+        "file": "intelligence_worker.php",
+        "pass": true
+      },
+      {
+        "file": "inventory_manager.php",
+        "pass": true
+      },
+      {
+        "file": "learning_portal.php",
+        "pass": true
+      },
+      {
+        "file": "library_manager.php",
+        "pass": true
+      },
+      {
+        "file": "operations_core.php",
+        "pass": true
+      },
+      {
+        "file": "parent_portal.php",
+        "pass": true
+      },
+      {
+        "file": "portal_collaboration.php",
+        "pass": true
+      },
+      {
+        "file": "portal_experience.php",
+        "pass": true
+      },
+      {
+        "file": "public_guides.php",
+        "pass": true
+      },
+      {
+        "file": "public_site.php",
+        "pass": true
+      },
+      {
+        "file": "school_innovations.php",
+        "pass": true
+      },
+      {
+        "file": "school_logo_handler.php",
+        "pass": true
+      },
+      {
+        "file": "school_wallet.php",
+        "pass": true
+      },
+      {
+        "file": "schoolos_probe.php",
+        "pass": true
+      },
+      {
+        "file": "services_core.php",
+        "pass": true
+      },
+      {
+        "file": "services_worker.php",
+        "pass": true
+      },
+      {
+        "file": "system_manager.php",
+        "pass": true
+      },
+      {
+        "file": "transport_portal.php",
+        "pass": true
+      },
+      {
+        "file": "website_cms.php",
+        "pass": true
+      }
+    ],
+    "updater": [
+      {
+        "name": "Existing 5.4.12 updater recovers every changed file after an injected mid-update failure",
+        "pass": true
+      },
+      {
+        "name": "Original updater installs the complete 5.5.0 package with matching hashes and journal",
+        "pass": true
+      },
+      {
+        "name": "Installing the same version again is refused",
+        "pass": true
+      },
+      {
+        "name": "Explicit rollback restores all original files and 5.4.12 metadata",
+        "pass": true
+      },
+      {
+        "name": "Traversal entries are refused before file changes",
+        "pass": true
+      }
+    ],
+    "rollback_guard": [
+      {
+        "test": "Activated commercial foundation prevents unsafe file-only rollback below 5.5.0",
+        "pass": true
+      }
+    ]
+  },
+  "javascript": "experience.js passes node --check",
+  "cleanup": "Owned synthetic database removed, temporary private configuration/keys removed, owned test server stopped. Original installation retained.",
+  "boundary": "Fictional local accounts and mocked Paystack evidence. No hosted installation, real school record, live payment, email, payout or provider account was changed. This validates the tested implementation and package, not live-provider availability or a production certificate.",
+  "external_usage": "Provider-funded services remain separately configured. No automatic SMS/media/AI/storage metering or provider charge is claimed. Assisted setup creates a helpdesk request for agreed scope and payment arrangements."
+}
