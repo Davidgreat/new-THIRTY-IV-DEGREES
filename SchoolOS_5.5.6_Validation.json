@@ -1,0 +1,24 @@
+{
+  "version": "5.5.6",
+  "date": "2026-11-19",
+  "scope": "Isolated synthetic data and update target; no production changes.",
+  "passed": 104,
+  "groups": [
+    {
+      "group": "count-results.json",
+      "passed": 29
+    },
+    {
+      "group": "browser-results.json",
+      "passed": 70
+    },
+    {
+      "group": "updater-results.json",
+      "passed": 5
+    }
+  ],
+  "javascript_errors": 0,
+  "packaged_php_lint": "Passed",
+  "manifest_hashes": "Verified",
+  "private_files_in_archive": false
+}
