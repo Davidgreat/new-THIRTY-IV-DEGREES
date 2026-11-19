@@ -1,0 +1,23 @@
+SchoolOS 5.6.0 — Website Insights and Connections
+
+Back up files, database and private keys, then install the release ZIP using Updates & Plugins. Refresh after installation. Existing school records, pricing and affiliate payout workflows are preserved.
+
+Super Admin → Growth & insights
+Public page views, daily browser visitors, traffic and device charts, referring hosts and popular pages for 7, 30 or 90 days. Daily CSV export includes actual school registrations and verified live subscription receipts. These are not attributed website conversions, MRR, ARR or profit. Links open source capacity and finance reports. The valuation calculator uses manually entered MRR and an assumed annual revenue multiple and is illustrative only. No official global rank or company valuation is claimed.
+
+Super Admin → Website connections
+1. Enable Measure public website traffic and confirm your platform password. Basic analytics needs no third-party account. This prepares the additive measurement table. No historical traffic is backfilled.
+2. Optional: add a verification meta tag, GA4 measurement ID, Meta Pixel ID or trusted external HTTPS script URL. A single supported meta/script snippet can be parsed when PHP DOM is available; manual fields do not require DOM. No arbitrary HTML, inline JavaScript or PHP is accepted. Never insert secret API keys or passwords.
+3. Enable each desired connection and the global saved-code switch. Both switches must be on. Optional scripts only load for anonymous visitors to marketing pages after consent, and never run on login, registration, payment pages, reports or school dashboards. Ownership verification tags are public meta tags and do not need script consent. Toggle or remove saved entries as needed. Changes require active real Super Admin access, CSRF protection, password confirmation, an up-to-date revision and audit logging.
+
+Built-in measurement uses daily pseudonymous browser-session IDs; it stores no raw IP, full referrer URL or account identity. Signed-in users, known bots, DNT and GPC requests are excluded. Unknown bots and session changes can affect totals. Traffic reporting covers 90 days; older rows are pruned during website activity and insights access. Periods without activity do not run a background cleanup worker. Visitors can change optional-script choices; previously created provider cookies are managed through their browser. Update your operator privacy arrangements for any connected provider.
+
+Optional third-party services
+Google Analytics 4: deeper visitor analysis after account/property setup and consent.
+Google Search Console: ownership verification tags are supported; live search-report syncing is not implemented. Open Search Console to view clicks, impressions and average search position. No paid ranking service is required for built-in analytics.
+Meta Pixel or another trusted service: optional and controlled by the same public-page consent layer.
+
+Validation: 92 automated growth/privacy, integration lifecycle, browser consent/access/layout, CSV/CSRF/valuation, mocked payout regression and original-updater recovery checks passed, plus packaged PHP and JavaScript syntax validation. All data was synthetic. No real provider transfer, message or analytics event was sent by tests. External browser requests were intercepted.
+
+SHA256
+3705de4bf9150c720608888d1dd8031e1b8b1d02ed108b32fc18dbc96195a37e  SchoolOS_5.6.0_Website_Insights_and_Connections_Update.zip
