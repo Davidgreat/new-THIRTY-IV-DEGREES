@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-19",
+  "format": "Portrait mobile adverts",
+  "onboarding_included": false,
+  "original_audio_reused": true,
+  "preview_checkpoints": 72,
+  "preview_width_or_caption_issues": 0,
+  "exports": [
+    {
+      "film": "introduction",
+      "file": "SchoolOS_Introduction_Mobile_90s_1080x1920.mp4",
+      "duration": 90,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "frames": 2250,
+      "original_audio_packets_identical": true,
+      "original_audio_hash": "SHA256=61a400c0b8ed108bd7d2b5dfaf793f0f9ac894cb223ef07df76a8eaa3efa3570",
+      "source_video_sha256": "b2bf3a1c5dc44fe2756b9f686699ef9d17714fdb33754ddaeebe92ed738290ba",
+      "bytes": 6946063,
+      "sha256": "f9118b12480a6b31c1c63255406d7f023ba6e91ba7bd5fd7e45ca30aa2e8615f",
+      "captions_unchanged": true,
+      "complete_decode_errors": 0
+    },
+    {
+      "film": "curiosity",
+      "file": "SchoolOS_Curiosity_Mobile_90s_1080x1920.mp4",
+      "duration": 90,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "frames": 2250,
+      "original_audio_packets_identical": true,
+      "original_audio_hash": "SHA256=78157b0021e85e3336bb2dc8835bb300920bfe3acbdd6fd21b16d10c87299021",
+      "source_video_sha256": "aa73d5ff494ac047d0ffaafa4cbae58d9de5b1625d501e7eb888e2e2ea092791",
+      "bytes": 6236301,
+      "sha256": "dbbbd445a96a44d6c4158d583e71b7ebd8bd5a69686028a2cc725be98a40ea28",
+      "captions_unchanged": true,
+      "complete_decode_errors": 0
+    },
+    {
+      "film": "partner",
+      "file": "SchoolOS_Partner_Mobile_60s_1080x1920.mp4",
+      "duration": 60,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": 25,
+      "frames": 1500,
+      "original_audio_packets_identical": true,
+      "original_audio_hash": "SHA256=169cd821f19ca00e0913849ef810b4199683c7cd30a5f4415eac1e76b5ac5f35",
+      "source_video_sha256": "e42d6d8ce4438c75f37062decd5c8bb30ab313393c9021a16b57abe978379b4a",
+      "bytes": 4700254,
+      "sha256": "7619c20eb35b6ddf79b56a678fa66c95df5fae639f141e4b90ced7a639f255ec",
+      "captions_unchanged": true,
+      "complete_decode_errors": 0
+    }
+  ],
+  "browser_playback": [
+    {
+      "film": "introduction",
+      "width": 1080,
+      "height": 1920,
+      "duration": 90,
+      "playable": "probably",
+      "played": true,
+      "mobile_horizontal_overflow": false,
+      "errors": []
+    },
+    {
+      "film": "curiosity",
+      "width": 1080,
+      "height": 1920,
+      "duration": 90,
+      "playable": "probably",
+      "played": true,
+      "mobile_horizontal_overflow": false,
+      "errors": []
+    },
+    {
+      "film": "partner",
+      "width": 1080,
+      "height": 1920,
+      "duration": 60,
+      "playable": "probably",
+      "played": true,
+      "mobile_horizontal_overflow": false,
+      "errors": []
+    }
+  ],
+  "rendering": "25 exact frames per second, rendered individually; MP4 H.264 and original AAC audio"
+}
