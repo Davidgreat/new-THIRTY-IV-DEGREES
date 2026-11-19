@@ -1,0 +1,14 @@
+SchoolOS 5.5.9 — Compact Partners and Payout Charges
+
+Install the trusted release ZIP through Updates & Plugins after backing up files, database and keys. Refresh after installation. This package does not change existing programme settings or enable deductions automatically.
+
+Super Admin → Partners → Settings & charges
+Choose no service charge, fixed naira charge or percentage. Withholding tax defaults to zero; confirm applicability before enabling a nonzero rate. Saving prepares the additive breakdown table automatically. No manual SQL is needed.
+
+Payouts contains requests, filters, CSV export and saved gross/service/tax/net breakdowns. Review request reveals actions on eligible requests. Approve & transfer initiates Paystack immediately after password confirmation. It is not a separate review-only approval. Verify uncertain transfers rather than retrying them. No manual bank-transfer recording was introduced.
+
+Partners see the quote and accept deductions before submitting. New requests freeze the breakdown; later settings do not reprice old requests. Legacy requests retain their original full transfer amount. Gross commission is reserved once; Paystack receives the saved net. Provider fees are separate from your optional service charge. Tax withheld records do not automatically remit tax to the authorities.
+
+Financial safety: file-only rollback below 5.5.9 is blocked once deductions are configured or recorded. Restore only matching backups under operator supervision if a full recovery is needed.
+
+Validation: 36 simulated payout and provider-evidence checks, 18 responsive panel and quote checks, financial rollback guard, five original-updater compatibility and recovery checks, packaged PHP syntax and JavaScript syntax checks. No real transfers were initiated. Live Paystack setup and bank delivery still require operator verification.
