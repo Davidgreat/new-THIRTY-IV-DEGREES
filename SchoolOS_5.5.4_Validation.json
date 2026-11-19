@@ -1,0 +1,30 @@
+{
+  "version": "5.5.4",
+  "date": "2026-11-19",
+  "scope": "Local synthetic data. No production changes or external service calls.",
+  "passed": 117,
+  "groups": [
+    {
+      "group": "calculation-results.json",
+      "passed": 30
+    },
+    {
+      "group": "browser-results.json",
+      "passed": 71
+    },
+    {
+      "group": "live-price-results.json",
+      "passed": 8
+    },
+    {
+      "group": "updater-results.json",
+      "passed": 5
+    },
+    {
+      "group": "print-results.json",
+      "passed": 3
+    }
+  ],
+  "javascript_errors": 0,
+  "archive_hashes_verified": true
+}
