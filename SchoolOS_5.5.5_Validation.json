@@ -1,0 +1,32 @@
+{
+  "version": "5.5.5",
+  "date": "2026-11-19",
+  "scope": "Synthetic local database, sample files and isolated update target. No production records or provider calls.",
+  "passed": 96,
+  "groups": [
+    {
+      "group": "design-results.json",
+      "passed": 30
+    },
+    {
+      "group": "browser-results.json",
+      "passed": 48
+    },
+    {
+      "group": "file-results.json",
+      "passed": 9
+    },
+    {
+      "group": "print-results.json",
+      "passed": 4
+    },
+    {
+      "group": "updater-results.json",
+      "passed": 5
+    }
+  ],
+  "javascript_errors": 0,
+  "php_lint": "All packaged PHP passed",
+  "archive_manifest_hashes": "Verified",
+  "private_files_in_archive": false
+}
