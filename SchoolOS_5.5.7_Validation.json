@@ -1,0 +1,34 @@
+{
+  "version": "5.5.7",
+  "official_svg_matches_website": true,
+  "logo_layouts_verified": [
+    "390 light",
+    "390 dark",
+    "1440 light",
+    "1440 dark"
+  ],
+  "php_syntax": "Passed",
+  "package_manifest": "Verified",
+  "updater_checks": [
+    {
+      "name": "Existing 5.5.6 updater recovers every changed file after an injected mid-update failure",
+      "pass": true
+    },
+    {
+      "name": "Original updater installs the complete 5.5.7 package with matching hashes and journal",
+      "pass": true
+    },
+    {
+      "name": "Installing the same version again is refused",
+      "pass": true
+    },
+    {
+      "name": "Explicit rollback restores all original files and 5.5.6 metadata",
+      "pass": true
+    },
+    {
+      "name": "Traversal entries are refused before file changes",
+      "pass": true
+    }
+  ]
+}
