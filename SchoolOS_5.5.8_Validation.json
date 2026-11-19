@@ -1,0 +1,28 @@
+{
+  "version": "5.5.8",
+  "date": "2026-11-19",
+  "scope": "Isolated synthetic database and baseline installation. No production records, messages or payments changed.",
+  "passed": 148,
+  "groups": [
+    {
+      "group": "browser-results.json",
+      "passed": 132
+    },
+    {
+      "group": "navigation-results.json",
+      "passed": 6
+    },
+    {
+      "group": "updater-results.json",
+      "passed": 5
+    },
+    {
+      "group": "install-ui-results.json",
+      "passed": 5
+    }
+  ],
+  "javascript_errors": 0,
+  "packaged_php_lint": "Passed",
+  "manifest_hashes": "Verified",
+  "private_files_in_archive": false
+}
