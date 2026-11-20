@@ -1,0 +1,41 @@
+SchoolOS 5.6.1 — Connected School Billing and Services
+20 November 2026 · Africa/Lagos
+
+Install
+Back up files, database, uploads and private keys. Upload the trusted release ZIP under Updates & Plugins. Refresh after installation. No invoices, payments or route assignments are changed merely by installing. School Admin then opens Fees & payments → Bills & services → Prepare Bills & services. Preparation adds three tenant-scoped billing tables and prepares the existing Finance integration tables without replacing old records.
+
+School setup
+Open Charges & service offers. Choose a class, compulsory or optional policy, price, billing period and dates. Reuse an existing matching fee plan where possible. Each new published period keeps its own price; saved earlier offers and invoices are not repriced. Publishing a connected plan pauses its old recurring schedule and prevents legacy class-wide generation for that plan. Unpublished old plans keep their existing workflow.
+
+Compulsory charges
+Set individual prices or zero exemptions before issuing bills. Review the pupil list and total, confirm the preview, then Issue next class billing batch. Each run processes at most 250 pupils. Repeating skips processed children and can include children added later. Matching standard FEE invoices for the same existing plan, child and exact period are linked instead of duplicated. Mismatched, withdrawn or unrelated manual bills need school reconciliation; do not recreate a paid charge under another plan. Later invoice discounts and scholarships use the existing authorised Finance adjustment workflow.
+
+Optional services
+Parents open Optional school services, choose the child, review the quote and dates and explicitly accept. A service requiring school review creates no invoice until approval; an offer without that requirement creates its separate invoice when accepted. The parent and accountant share the same invoice record. Existing paid tuition is unchanged. Selecting a service is not an automatic debit. The school decides whether books, uniform charges or other fees are compulsory or optional. Physical shop purchases continue through stock/quantity/variant ordering to avoid treating a service fee as a dispatched item.
+
+School bus
+Publish an optional bus offer linked to a route; its existing route fee can prefill the offer price. The parent chooses an actual stop. Review checks vehicle, driver, route and capacity. Approval reserves a place until the published payment deadline and creates its bill once. Full verified settlement activates the physical route assignment on or after the service start date under a pay-first policy. Partial payments do not activate it. Approved reserves count towards capacity, manual assignment cannot bypass an open connected agreement, overlapping purchases are refused, and future non-overlapping renewals are supported. Legacy manual assignments are preserved and need school review/release before replacement. Drivers' future manifests use eligible agreements; already-started passenger snapshots are preserved.
+
+School accounts and payments
+Accounts staff open School accounts → Parent service requests & connected billing. Records and approval buttons respect assigned pupil/class access and approval ceilings. The invoice list identifies each charge, not just its reference. Catalogue publishing, concessions and class billing batches remain with School Admin. Online payments require exact provider verification, offline receipts require reconciliation and independent confirmation where recorder metadata exists, and student credit can settle the same invoice. Credit allocation is serialized to prevent concurrent overspending. Online checkout is hidden when this school's payment connection is unavailable; approved offline methods remain a school responsibility. An explicit school-credit policy can allow service before settlement, but the bill remains owed. Defaults require full payment.
+
+Exceptions and cancellations
+Late payments, changed capacity and later refunds keep the money recorded and put service into school review. Authorised recheck can activate or reinstate a reviewed settled place. Parents can withdraw an unbilled request or ask the school to review a billed cancellation. A cancellation cannot erase received/pending money or unresolved provider checkouts. Ending service does not waive debt or send a refund. Reconcile/refund separately. Closed requests remain in history; subsequent purchases need a new agreed offer. A full bus concession uses a reviewed invoice scholarship after approval. Meals, boarding, activities and goods appear in the service roster, but the responsible team still allocates beds, selects menus or fulfils goods; no automatic physical fulfilment is claimed.
+
+Date transitions
+Parents and drivers reconcile relevant approved service dates as they use their workspaces. For unattended changes, configure an operator cron:
+php /absolute/path/services_worker.php --billing-services --all-schools --limit=100
+or:
+php /absolute/path/services_worker.php --billing-services --tenant=ID --limit=100
+This advances previously approved records, creates no new invoices, sends no money and does not replace school review. The host must schedule it; uploading the update does not create a hosting cron.
+
+Recovery
+File-only rollback below 5.6.1 is blocked once connected billing offers exist, because older billing/manifest handlers do not understand these agreements. Use a compatible fix or a reviewed matching database/file recovery. Installation failure recovery remains verified.
+
+Validation
+151 synthetic checks across billing/concessions, guardian consent, invoice linkage, pricing changes, modular access, date transitions, partial/full/credit settlement, refund review, actual HTTP submissions, mobile/light/dark layouts, simultaneous last-seat approvals, concurrent credit use, future renewal, affiliate payout regression and update recovery passed. Final packaged PHP/JavaScript syntax and manifest hashes were checked. No real payment, provider transfer or message was sent. Live school payment delivery still depends on the school's real provider setup and reconciliation.
+
+Updated complete manual and School Admin, parent, finance and operator guides are included.
+
+SHA256
+dfa88b8dbd9d08729d8bc86f25ba7c7ab5b49dfcb3efc2bb8ae5877d31fa213e  SchoolOS_5.6.1_Connected_School_Billing_and_Services_Update.zip
