@@ -1,0 +1,37 @@
+SchoolOS 5.6.3 — Smart school onboarding & service choices
+20 November 2026
+
+INSTALL
+Back up matching application files, uploads, database and encryption keys. Install the trusted SchoolOS_5.6.3_Smart_School_Onboarding_and_Service_Choices_Update.zip through Platform Super Admin > Updates & Plugins. No separate SQL file is required. The additive service/access tables are prepared when registering a new school or saving School services. Private configuration is preserved. This release includes the cumulative 5.6.2 billing and service-access files.
+
+NEW SCHOOL REGISTRATION
+Four short steps replace one long form:
+1. Your school — school identity, owner name, type and state.
+2. Your services — Day, Boarding, or Day & boarding; then select the services offered today.
+3. Your package — existing package, pupil count, trial/payment and billing-cycle rules still apply.
+4. Your account — administrator contact, password and account terms.
+
+Bus, meals, library and school shop are prominent choices. Other optional services are grouped under More optional services. Teaching, pupils, staff, finance, reports, communication and school administration remain included. Boarding activates hostel tools. Bus is a separate choice, so a boarding school can enable trip transport without being forced into a daily bus service. This is service organisation, not a new package restriction or automatic staff permission grant.
+
+AFTER REGISTRATION
+The saved choices shape school menus, available staff working-dashboard choices, parent/pupil service tabs, service publishing and new service billing. Unoffered services are hidden and direct operational actions are checked on the server. Staff still need reviewed permissions and record assignments; a family still needs verified pupil links and any paid benefit still follows the existing payment/approval rules.
+
+SCHOOL SERVICES LATER
+School Admin > School services (dashboard header), or My school > More tools > School type & services. Change the attendance model or switch more services on, then save. Open the relevant setup link to add real routes, beds, menus, books or items and assign staff. Relevant readiness reminders appear for enabled services. The system does not invent school records or silently bill pupils.
+
+Existing schools are NOT silently converted to day schools or stripped of their current modules. Their current visibility stays until they review and save a service profile. Existing role permissions remain independent. The older module switch screen directs profiled schools to their unified service choices.
+
+SAFE CHANGES
+Existing bills, pupil records, journeys, staff accounts, stock and borrowing records are preserved. Deactivation never automatically refunds money, cancels an invoice, checks a child out or deletes stock. Active bus journeys and resident boarding pupils prevent the relevant service being switched off. Current/future open connected service agreements must be reviewed and closed before deactivation. Review outstanding library loans/store orders and any legacy arrangements before changing service availability; temporarily enable the service again if its historical operational tools are required.
+
+JOIN A SCHOOL
+The former empty school selector was a misleading empty state: schools are listed only after their administrator enables staff requests AND opts into public listing. The page now explains this and offers name/state search of eligible public schools or a private invitation code. It does not expose private schools just to populate a dropdown.
+
+Enter the code and choose Confirm my school to see the school name and its available staff roles. Private code lookup checks CSRF, request limits and school status. An unavailable/disabled invitation is rejected. New requests stay inactive until the school verifies and approves them. School Admin > Start my school > People & access / Staff invitations & recovery enables requests, optional listing and the private staff code. Parents/pupils use the school’s Family onboarding link instead.
+
+RECOVERY AND VALIDATION
+Once a school service profile exists, incompatible file-only downgrade below 5.6.3 is refused; use a compatible update or reviewed matching file/database recovery. Existing private settings are not replaced.
+
+Tested with synthetic records: school profiles and changes, role and tab filtering, public/private school discovery, actual HTTP staff requests and new school registration, persisted profile choices, direct-action guards, service activation, resident/journey/open-agreement safeguards, light/dark mobile/desktop forms and guided steps. Existing billing, legacy fee and affiliate payout regressions passed. PHP/JavaScript syntax, ZIP hashes, original-updater installation, interrupted-install recovery, repeat refusal, traversal rejection and prepared-profile downgrade protection checked. No live school was changed, no real payment was initiated, and no external message was sent. This ZIP is published for installation; it is not installed on your site automatically.
+
+ZIP SHA-256: 71891394acf8968d49eebe16790d1207ab5a116677bee121736dd81306636fce
