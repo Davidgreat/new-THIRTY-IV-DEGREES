@@ -1,0 +1,32 @@
+SchoolOS 5.6.2 — Smart class billing and service access
+20 November 2026
+
+INSTALL
+Back up matching application files, uploads, database and encryption keys. Install the trusted update ZIP through Platform Super Admin > Updates & Plugins. Existing private configuration is preserved. Then open School Admin > Fees & payments > Bills & services and use Prepare smart billing. Configure the school’s active academic session and terms before publishing term-based charges. Dates come from the school calendar, not an invented session.
+
+WHAT CHANGED
+Choose one, several or all current-session classes. Set a shared price or different class prices, review the combined bill preview, then issue in repeat-safe batches of up to 250 pupils. Existing pupil concessions remain respected. Earlier single-class tools and existing invoices remain available.
+
+Service type guides the period: tuition uses a saved current-session term; an excursion/event uses a one-time event date; transport, meals and boarding support term, session or custom dates. Server validation enforces the saved period. One-time goods such as extra uniforms remain payable and collectible after the issue day until the school closes the record.
+
+Bill one pupil lets authorised school staff find a pupil by name or school number and create a private digital bill, with a recorded request reason. Classmates and siblings do not inherit it. Repeated submission cannot duplicate the bill. Bus/boarding places require the appropriate approval permission and a reviewed route/stop or suitable bed.
+
+Full verified payment or an approved waiver activates eligibility; an explicitly enabled school-credit policy can also allow access. Partial payment does not silently activate a paid-only service. Future paid periods are scheduled; expired or refunded periods lose eligibility. Existing provider verification remains required; no payment is simulated in production.
+
+TRANSPORT: payment connects to real route assignments and service dates. Existing onboard journey records are retained safely.
+MEALS: paid eligibility connects to menu selection and boarding meal serving. Covered meals are not charged twice. An authorised boarding manager may record a documented welfare exception without renewing the plan.
+BOARDING: staff review a suitable bed before approval; payment activates that reviewed allocation. Occupied/reserved beds cannot be sold twice. Expiry/refund blocks new admission eligibility but never silently checks out a resident or erases physical occupancy. Staff complete a safe checkout. Paid future renewals do not cover an unpaid gap.
+EVENTS: eligible pupils appear in a scoped, printable service/event roster, with paid/scheduled status and in-app confirmation. Payment eligibility does not replace parental travel consent or safeguarding checks.
+GOODS: school/store staff still fulfil and record physical stock collection through the existing stock workflow; a bill does not automatically dispatch an item.
+
+Parent > Optional school services / Service access & events shows only linked children. Pupils have My services & events. Billing notices link to the relevant service view. Staff access remains limited by role, school and pupil/class scope.
+
+OPERATIONS
+Run the existing services_worker.php with --billing-services --all-schools --limit=100 on the server’s scheduled CLI worker for unattended date reconciliation. Relevant pages also recheck eligibility. The worker does not initiate payments or create new bills. Configure and monitor hosting schedules separately.
+
+No old tuition bill, fee rate or legacy service is automatically rewritten. Review existing paid arrangements before publishing overlapping plans. Once dated service records exist, incompatible file-only rollback below 5.6.2 is refused; use a compatible update or reviewed matching database/file recovery.
+
+VALIDATION
+Synthetic end-to-end billing, permissions, payment/refund, multi-class batching, per-class pricing, meal handlers, boarding renewal/expiry/concurrent bed reservation, event alerts, desktop/mobile light/dark pages and HTTP forms tested. Existing billing, legacy and affiliate payout regressions tested. Updater install, interrupted-install recovery, version checks, traversal rejection and prepared-record downgrade protection tested. No real funds or external messages were sent. Install and verify your configured providers and school calendar on your own deployment.
+
+ZIP SHA-256: 370119e99e6e4862e91a212bd46ea54fd757dd1b5d72d30a09c08237c7c56d89
