@@ -1,0 +1,45 @@
+SchoolOS 5.6.4 — Community survey & email insights
+21 November 2026
+
+INSTALL
+Back up matching application files, uploads, database and encryption keys. Install the trusted SchoolOS_5.6.4_Community_Survey_and_Email_Insights_Update.zip through Platform Super Admin > Updates & Plugins. Private configuration is preserved. No separate SQL import is required. This is a cumulative application update including earlier 5.6.3 workflows.
+
+OPEN YOUR SURVEY
+1. Sign in with your real Platform Super Admin account.
+2. Open Community survey in the platform sidebar, then Prepare the survey. It starts CLOSED.
+3. Confirm the canonical HTTPS installation address in Platform settings. Review Email & settings, its privacy/retention settings and your existing platform SMTP setup.
+4. Choose Open survey. The public website navigation/footer now show Share your ideas. Copy the share link from the dashboard. With clean links enabled, it is /survey, including the installation subfolder when applicable.
+5. Close survey is a prominent quick control. It hides new website invitations and rejects further submissions. Existing shared links show an ended message. Old open browser tabs cannot submit after closure. Existing responses and requested email copies are preserved.
+
+PUBLIC EXPERIENCE
+Approved general questions plus separate school-owner, teacher, parent and student questions. The interactive form uses small adaptive cards: usually one checklist or two shorter questions at a time, with progress, Back/Continue, review and submission confirmation. Mobile and light/dark themes use the website branding and existing motion. Without JavaScript all sections remain usable; respondents fill only their chosen role.
+
+Research does not create platform accounts, bills, subscriptions or school records. Names, school names, email and WhatsApp are optional. Separate unticked choices control requested email copies, research follow-up and launch news. Student respondents declaring an age under 18 have contact fields discarded server-side and cannot opt into contact or request email copies; younger pupils should complete it with a guardian. Free-text answers must not include identifying or confidential child details. This is self-reported market research, not verified identity or a representative sample of all Nigerian schools.
+
+SUPER ADMIN RESPONSE TOOLS
+Overview: actual response counts, role pie chart, leading issues, state coverage and daily submission graph. Responses: role/state/school-size/contact-consent filters, individual answers, pagination and filtered CSV. CSV includes consent columns and formula protection; exported files require separate protection/retention. Only a fresh active Platform Super Admin may access individual research responses or export them.
+
+WhatsApp drafts are available only for the respondent’s selected purpose (survey follow-up or launch contact), and only for adult contact details. Review/edit the pre-filled message, then open WhatsApp and manually send. The platform does not automatically send WhatsApp messages. Details are self-reported, not verified. A private preference link after submission/in a requested copy withdraws future contact permissions, removes saved contacts and cancels pending copies. It does not recall already sent mail. A verified privacy deletion action removes the full response and outbox entry.
+
+AUTOMATIC EMAIL COPIES
+Requested adult copies enter an encrypted queue and include the submitted research answers and future-contact choices. Use the existing PLATFORM SMTP settings (not an arbitrary school’s SMTP) in Integrations. Configure a verified sender and test a controlled inbox.
+
+Schedule on the host, every few minutes:
+php /actual/installation/path/services_worker.php --survey-mail --limit=10
+
+Use your actual PHP executable and application path. The host schedule is not installed automatically by the ZIP. Monitor job exit status and Community survey > Email & settings. A manual next-confirmation attempt is also available there. Definite failures back off and retry up to three times. Uncertain SMTP DATA outcomes stop for explicit inbox review before retry, avoiding automatic duplicates. Accepted means the SMTP server acknowledged the message, not proof of final inbox delivery. No separate third-party survey software is required.
+
+EMAIL AUTOMATION AUDIT
+SMTP and family-onboarding queues already exist, but not every platform event is universally automated. School/staff welcome emails, a universal public email-password-reset flow and subscription-success emails across every payment path were not found as generally connected automation. This update documents those gaps; it does not change authentication or payment verification to conceal them. Read SchoolOS_5.6.4_Email_Automation_Audit.txt and the in-app email audit. Survey copies ARE implemented. Live host/provider delivery still needs a controlled inbox check, sender-domain setup and a monitored worker.
+
+DATA AND RECOVERY
+Answers and optional contacts are encrypted at rest using the existing private application key. Keep that key with matching backups; a missing key cannot be silently replaced while saved survey records exist. No optional third-party website tracking scripts load on survey pages. Request limits, CSRF, server-side role/choice/consent validation and repeat-safe submission protect the form.
+
+Default retention is 180 days, configurable from 30 to 730. Removal runs through admin reporting and the scheduled worker; reducing retention can remove older responses on the next run. No claims of instant deletion at an exact time are made without the host worker. Backups/exports and provider-side records require their own protection and retention processes.
+
+An open survey or saved responses blocks incompatible file-only downgrade below 5.6.4. Use a compatible update or reviewed matching database/file recovery. Existing unrelated school records and earlier settings remain preserved.
+
+VALIDATION
+Synthetic role submissions, under-18 privacy, choice limits, CSRF, idempotency, closure during submission, retention, contact withdrawal, consent-specific WhatsApp redirects, safe exports and response access tested. Adaptive mobile/desktop light/dark pages, keyboard navigation, clean root/subfolder paths and existing public/account pages tested. Local TLS/STARTTLS SMTP acceptance/rejection/uncertain outcomes and UTF-8/header handling tested; queue tests used mocked mail only. Existing billing, legacy fee and affiliate payout regressions passed. Original-updater installation, interrupted-install recovery, repeat-version refusal, traversal rejection and prepared-survey downgrade protection passed. No real external messages, live payments or live school records were used.
+
+ZIP SHA-256: bc51b00eb47421403bcd7d35f3a5ddb347ddcc99b0cc59e7e42091ccaeb49f02

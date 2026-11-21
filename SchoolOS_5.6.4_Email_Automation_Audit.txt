@@ -1,0 +1,27 @@
+SchoolOS email automation source audit — 21 November 2026
+
+This is a source review and isolated protocol test result, not certification of live host or inbox delivery.
+
+IMPLEMENTED AND CONNECTED
+• Survey: consenting adult requests a copy -> encrypted survey outbox -> platform SMTP -> accepted / failed / unknown status. Definite failures back off, up to three attempts. An uncertain SMTP DATA outcome stops for explicit inbox review before retry. Closing the survey does not cancel copies respondents already requested.
+• Family onboarding: verified family approval -> secure setup instructions -> encrypted delivery queue -> school-selected SMTP or shared platform SMTP. Existing per-school family-onboarding worker is required.
+• School campaigns: separate School Services provider/consent/credit-aware delivery worker; not the same as platform survey receipts.
+• Platform SMTP configuration and a manual test-email tool already exist in Integrations.
+
+NOT UNIVERSALLY AUTOMATED IN THE AUDITED FLOWS
+• New school registration / welcome email: no general automatic welcome-email trigger found.
+• Staff account creation: verified temporary credential handover, not a universal automatic staff welcome email.
+• Password recovery: administrator-verified temporary credential flow; no universal public self-service email reset flow found.
+• Successful school subscription payments and upgrades: verification and records exist; a general success-email queue covering every subscription path was not found.
+
+These gaps were documented rather than changing authentication or financial verification as part of the survey update. Never assume every email is automated merely because SMTP values are saved.
+
+SURVEY OPERATION
+1. Configure platform SMTP with a verified sender in Platform Super Admin > Integrations.
+2. Community survey > Email & settings shows configuration-format status and delivery attempts. Format validation is not a connection test.
+3. Schedule: php /actual/installation/path/services_worker.php --survey-mail --limit=10
+4. Test a controlled mailbox. Check inbox/spam, sender domain SPF/DKIM/DMARC, provider limits and cron monitoring.
+5. Accepted means the SMTP server acknowledged the message. It is not proof of final inbox delivery.
+
+ISOLATED VALIDATION
+A local synthetic SMTP server tested TLS, STARTTLS, accepted/rejected/uncertain DATA outcomes, UTF-8 content and header-injection rejection. Worker tests used synthetic recipients and mocked delivery. No real funds, external messages or live school records were used.
