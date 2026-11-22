@@ -1,0 +1,18 @@
+SchoolOS Nigeria 5.7.5 — Clear stipend setup and empty-chart correction
+22 November 2026 (WAT)
+
+An empty Recent payouts dataset previously called PHP max() with one integer, interrupting the remainder of Sponsors & stipends. This update handles empty, one-row and multiple-row histories safely.
+
+Install the cumulative release ZIP through Platform Super Admin → Updates & Plugins after taking a matching backup. Publishing this package does not install it on your live website. No database migration is required for this correction.
+
+Training Admin → Sponsors & stipends → Set up sponsor & stipends.
+The new action appears above the charts and opens cohort settings.
+Enter the sponsor, tick This cohort includes stipends, configure amounts and criteria, then Save cohort support.
+
+The shared training demo already prepares sponsorship/stipend tools automatically. Therefore it does not show the one-time Enable sponsorships & stipends preparation button. That button appears only on installations where the tools have not yet been prepared.
+
+Sponsor-only cohorts do not need the stipend checkbox. To make a fully sponsored programme free, set its Admissions course fee to zero; sponsor naming does not change existing fee quotes or the centre subscription.
+
+Existing wallet balances, earnings, bank details, documents and payment records are preserved. Accountants retain payment review and cannot edit cohort financial rules.
+
+Validated: complete page rendering with empty/single/multiple payout datasets; setup above charts; setup link expands the cohort form; admin-only financial-rule controls; desktop/mobile checkbox and save visibility; no horizontal overflow. Existing updater installation/recovery, repeated-version and path-traversal checks also run in an isolated target. No live-site installation or real transfer performed.
