@@ -1,0 +1,53 @@
+SchoolOS 5.7.2 — Cohort pricing, placement letters and five training demos
+22 November 2026 • Africa/Lagos
+
+INSTALL & PREPARE
+Back up matching files, database, uploads and private encryption keys.
+Install the trusted ZIP through Platform Super Admin → Updates & Plugins.
+Then open Training centres → Prepare training upgrade.
+This adds cohort licences, placement responses and letter records. Existing centre access dates are preserved as legacy cohort allocations; existing learners and school records are not deleted.
+
+PRICING — DEFAULT ₦500, NOT ₦300
+Platform Super Admin → Training centres → Simple cohort pricing.
+Edit the monthly learner rate here. The default is ₦500. The later ₦300 example in the request was treated as a conflicting example; the rate remains editable.
+A centre owner opens Payments & plan, chooses an intake, learner seats, and 1, 3, 6 or 12 months. The preview calculates seats × monthly learner rate × months.
+Examples at the default rate:
+300 learners × ₦500 × 1 month = ₦150,000
+300 learners × ₦500 × 3 months = ₦450,000
+No volume tiers, annual discount or automatic recurring debit is added.
+A verified live platform payment activates the cohort and its purchased seats. Renewals extend from the current paid end date, or today if expired. Published rate changes do not rewrite paid receipts. New intake subscriptions use this cohort model; learner course fees received by the training centre remain separate.
+Use the existing platform Paystack setup. Learner fee collection still uses the centre’s own gateway. Test payments cannot unlock production access.
+
+WHEN A SUBSCRIPTION ENDS
+Resources, live rooms and new assessments for that cohort pause. Starting a new training cohort requires new subscribed seats. Centre setup, financial/record review and suitable graduate placement follow-up remain available.
+Trainees retain My records: their own enrolments, recorded assessment results, reviewed attendance, certificates and placement history. An expired subscription does not delete these records. Account security and cross-user privacy checks remain enforced.
+Seats are counted per cohort. A historical enrolment is not erased to reuse a purchased seat. Create a new intake for a new training group.
+
+BRANDED INTERNSHIP LETTERS
+Centre owner → Centre settings → Internship letter branding.
+Enter the centre contact details, authorised signatory and letter message. Upload the logo and authorised signature once (JPG or PNG, under 1 MB each). Supported browsers convert PNG to JPEG for the native PDF. The uploaded logo also supplies public application branding.
+Keep {student} and {programme} in the letter. Other supported fields: {admission_no}, {company}, {starts_on}, {ends_on}, {centre}.
+A trainee proposes an organisation; the centre checks and approves it. The trainee can then View placement request letter, Download PDF, or Print letter. The programme, learner, centre, company and dates fill automatically.
+Issued letters keep their original wording and branding. The PDF is generated on the server without a third-party PDF service; the print view is also available.
+
+ORGANISATION RESPONSES
+After centre approval, the trainee records placement successful or organisation did not accept, with a reason/update. A successful response may include a PDF/JPG/PNG offer or acceptance letter up to 5 MB.
+A declined placement closes that request so a replacement organisation can be proposed for centre approval. Logbook entries require confirmed successful placement. Previously issued letters and evidence stay scoped to authorised users.
+
+FIVE CONNECTED TRAINING DEMOS
+/training/login → Explore five connected training demos:
+1. Training Admin
+2. Accountant
+3. Trainer
+4. Trainee
+5. Staff — assigned interview, follow-up, attendance and placement duties
+The main SchoolOS login also lists these roles; search training.
+These use the existing configured, owned isolated sandbox. Missing training accounts and fictional records are prepared automatically on demo connection; existing passwords are not reset. If no isolated sandbox has been configured, the real Platform Super Admin must configure it through the existing demo setup.
+The fictional centre includes a cohort, trainer/trainee relationship, course material, quiz, reviewed attendance, interview applicant, sample receipt and approved placement with a fictional branded letter. No production organisation is seeded. Uploads, real gateway configuration/payments and external email remain disabled in shared demos.
+Accountant permissions focus on learner billing. Staff can receive individual checklist duties, including Interview, Applicant follow-up, and Placement oversight. Follow-up-only access does not expose screening documents or grant final admissions decisions.
+
+VALIDATION & RECOVERY
+Synthetic cohort calculations, duplicate verification, expiry, record access, placement decline/replacement, native PDF parsing, logo conversion, protected evidence uploads/downloads, five real demo sign-ins, mobile/theme layouts and existing school billing/affiliate regressions were checked. No real payment or external email was sent.
+The ZIP is published for installation; it is not installed automatically on your live site. Test a real configured gateway transaction, email delivery and provider callbacks in your deployment before opening paid enrolment.
+Keep matching backups. Once the cohort foundation is prepared, file-only downgrade below 5.7.2 is blocked because older code does not enforce the new access/record rules.
+Updated guide: /guides/training and the complete user manual.
