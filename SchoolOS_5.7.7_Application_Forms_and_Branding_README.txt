@@ -1,0 +1,56 @@
+SchoolOS Nigeria 5.7.7 — Professional forms, age eligibility, reuse and logo upload
+22 November 2026 (WAT)
+
+INSTALL
+Back up matching files, database, uploads and private encryption key.
+Upload SchoolOS_5.7.7_Professional_Forms_Age_Eligibility_and_Logo_Upload_Update.zip in Platform Super Admin → Updates & Plugins.
+This is a cumulative 45-file package. Publishing the ZIP does not install it on your live website. No additional database table preparation is required for these changes.
+
+COMPACT APPLICATION BUILDER
+Training Admin → Admissions → Application forms → choose a programme cohort → Open form.
+Application settings hold title, welcome message, fee, availability and the 18+ rule.
+Screening questions use compact numbered summaries showing answer type and required/optional status. Only one question editor opens at a time.
+Add question is a fixed-size toolbar button; its height no longer stretches with the question list.
+Edit, move up/down, remove with Undo and choose Done editing. Save application commits the form. Up to 30 questions are supported. Choice fields appear only for choice questions and require 2–20 choices separated by semicolons.
+Required validation opens the relevant question/settings section. Existing applicant answers remain snapshots and are not rewritten when a form changes.
+
+REUSE AND EDIT A PREVIOUS FORM
+Choose the DESTINATION intake, then Reuse an existing form → select a previous form from your centre → Load editable draft.
+Questions, title, welcome text, fee and age requirement load into an editable draft. Loading changes neither the target nor the source in storage.
+The target keeps its own application deadline and accepting/not-accepting state. Shared-intake deadlines still come from Programmes & intakes.
+Review and edit, then Save application to commit to the target. Its source and old applicant responses stay unchanged.
+Existing saved forms can be reopened and edited through the same builder.
+
+NO PARENT/GUARDIAN SECTION IN TRAINING APPLICATIONS
+Current training applications collect applicant details and age group without a parent/guardian section or guardian-permission checkbox. Ordinary school-family workflows are unchanged.
+Old encrypted guardian records are preserved privately for historical continuity; they are not displayed as the current training-application workflow.
+
+18+ ELIGIBILITY
+Application settings → This programme accepts applicants aged 18+ only → Save application.
+The rule applies to that programme cohort; institutions accepting under-18s leave it off.
+Under-18 applicants may submit for review, but the application clearly explains the 18+ requirement. Admins see the age badge and cannot select an ineligible record for an interview/offer batch.
+Admissions has All age groups / 18 or older / Under 18 / Age not recorded filters.
+Age is reported by the applicant; it is not independent proof. Older records without age stay unknown. Historical guardian markers identify older under-18 records without exposing their parent details.
+Use Review applicant age group to record a checked age band, check confirmation and review note. Only authorised admissions staff/admins can do this.
+Server checks enforce the rule for shortlisting, qualification, interview/offer batches and new offer acceptance. A forged or mixed ineligible batch rolls back without partial invitations.
+Queued interview/offer mail is checked again before SMTP. Age-ineligible mail is held as failed with an Age eligibility hold explanation; resolve the record/policy before retrying.
+Existing accepted learners keep their current account handover and records. This update does not automatically reject, unenrol or message minors.
+
+DIRECT LOGO UPLOAD
+Training Admin → Centre setup → Centre logo.
+Upload JPG, PNG or WebP under 1 MB and within 4096 × 4096 pixels. Preview before saving; replace or remove later.
+The uploaded image appears in the centre workspace, application form, offer page and certificate print view. The optional HTTPS logo URL remains available as an alternative.
+Only the centre owner can upload/remove branding. Image MIME/type/dimensions are checked. SVG/executable content is rejected. Assets are scoped to the centre.
+The shared demo does not accept real logo uploads. Use your live centre for upload; demo branding remains fictional.
+Internship letter branding remains separate, preserving already-issued letter snapshots.
+
+VALIDATION
+Passed existing training lifecycle checks; server age-policy and stale-form validation; underage/unknown filtering; mixed-batch rollback; authorised age review; queued-mail hold; offer/acceptance gates with existing accepted-account compatibility.
+Actual browser checks cover desktop/mobile light/dark, compact button height with 5 and 30 questions, edit/reorder/remove/Undo, choice validation, persisted questions, draft reuse and independent target edits, correct target deadline/closed state, direct PNG upload, invalid SVG rejection, uploaded public branding, under-18 filtering and a real local under-18 submission without parent fields.
+Tenant logo/form scope and historical answer preservation were checked. Updater installation/recovery, repeated-version/path traversal refusal and the real PDO policy-aware downgrade guard were checked.
+No live-site install, real external email, bank lookup, payment or broadcast was performed. Existing SMTP schedules and gateway requirements remain unchanged.
+
+ROLLBACK
+Once new age policies/age records or uploaded centre branding exist, file-only downgrade below 5.7.7 is refused because older handlers ignore these controls. Use compatible code or matching reviewed backups.
+
+ZIP SHA-256: 27f3ebc3e437fe0e09a8e695cd4d7232109ac85755be35465934210e0480cbcf
