@@ -1,0 +1,49 @@
+SchoolOS 5.7.3 — Role workspaces, guided setup and centre notices
+22 November 2026 • Africa/Lagos
+
+INSTALL
+Back up matching files, database, uploads and private encryption keys. Install the trusted ZIP through Platform Super Admin → Updates & Plugins, not Plugin manager.
+Sign out and back into the training demo to see the new first-use guide. The existing configured, owned sandbox prepares its training noticeboard and fictional examples automatically. Existing passwords are not reset.
+For a live centre, Training Admin → Noticeboard → Enable noticeboard if prompted. This is a one-time additive preparation; no notice is published automatically in live centres. Existing cohort subscriptions and learner records are preserved.
+
+A CLEARER WORKSPACE
+Desktop: grouped sidebar, current-page heading, role badge, menu search and persistent guide access.
+Mobile: Home, learning/payments, Notices, Messages and More. The full menu opens as an accessible panel with search, keyboard focus handling and Escape to close. Navigation remains available without JavaScript; chat enhancements still require JavaScript.
+Menu search also understands interview, subscription, logo, sign-in and related terms. Roles see only their assigned workspaces. Existing backend permission checks remain in force. Demo settings and billing pages no longer stop rendering when the sandbox lacks a live canonical URL; live URL validation stays unchanged.
+
+FIVE ROLE DASHBOARDS
+Training Admin: real learner/cohort/application/course counts, data-based setup percentage, optional settings, application-stage pie, sign-in chart, upcoming sessions and centre notices.
+To create an accountant, People & access → add Staff and grant payment-review responsibility.
+Accountant: recorded learner receipts, accepted offers still unpaid, pending verification, monthly receipt chart, payment links and permitted conversations. These are recorded figures, not a bank balance.
+Trainer: assigned courses, upcoming sessions, reviewed/pending attendance, learner counts, publishing status and messages.
+Trainee: accessible courses, course sign-offs, reviewed attendance, certificates, upcoming sessions and personal records.
+Staff: tiles follow assigned interview, follow-up, attendance, record or placement duties. Supervisor accounts retain assigned-placement and logbook scope. Unassigned admin tools are not added to their menus.
+Chart figures are available as text, with clear empty states. No business traction or live operational data is fabricated; shared demos are labelled fictional.
+
+SETUP THAT RESPONDS TO YOUR CENTRE
+The admin path checks saved identity, programme, dated intake, trainer, cohort access and published course records.
+When online applications are enabled, the form and sender configuration become checks. When a programme requires internships, letter branding becomes a check.
+Completed core steps fold away. Extra settings remain easy to find. Saving an email sender is not proof of delivery; test an operational email through Admissions → Email delivery.
+
+ROLE WALKTHROUGHS
+Show me around opens the appropriate guide for each role, with real workspace links. First home visits offer it automatically. Reopen it anytime from the sidebar or home header.
+Completion is scoped to the user and role. Shared demos keep preferences within the visitor session, so one visitor does not dismiss the guide for everyone.
+Read aloud uses an available browser voice after the user chooses it. No paid speech service is required. Text remains available when speech is unsupported.
+
+CENTRE NOTICEBOARD
+Only the Training Admin publishes general or important centre-wide notices in this edition. The audience is the active admin/staff/trainers/trainees in that centre when published, including active learners without a current teaching subscription. No other school or training centre receives the notice.
+Recipients explicitly acknowledge a requested notice. Simply opening it never records acknowledgement. Duplicate submissions preserve the first receipt time.
+The admin can view recipient details, download the full receipt CSV, and archive notices while retaining evidence. Audience membership is captured at publication; later joiners are not retroactively added.
+Published notice text is not silently edited after acknowledgement. Publish a new notice for a revised update.
+In-app notice counts refresh periodically while the workspace is visible. Notices are not automatically emailed or sent through WhatsApp.
+
+MESSAGES THAT CONNECT TO WORK
+The contact directory displays permitted training contacts with role labels. Private/group chat, typing and delivery behaviour reuse the existing conversation system.
+Suggested messages fill the composer, including its new-conversation form, and never send automatically. Review the draft before sending. Notice questions can carry the notice title as context. Admins can open a private reminder draft from a pending receipt, then review and send it.
+Centre, teaching, active cohort, support, finance and placement relationships still determine contacts. The redesigned interface does not grant cross-centre access. School bus/library service-notice controls are excluded from training chat.
+
+VALIDATION
+Synthetic role/menu/mobile/theme checks, first-use guides, saved guide preferences, notice audience isolation, explicit acknowledgement, receipt export privacy, CSRF refusal, real two-account chat delivery and update recovery were tested. Existing school billing and affiliate payout regressions were also checked.
+No real external email, WhatsApp message, payment or media broadcast was sent in tests. This ZIP is published for installation and is not automatically installed on your live site.
+Once notice records exist, file-only rollback below 5.7.3 is blocked to preserve compatible acknowledgement handling. Keep matching database/files/keys for reviewed recovery.
+Updated guide: /guides/training and the complete user manual.
