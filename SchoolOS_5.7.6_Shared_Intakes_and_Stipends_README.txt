@@ -1,0 +1,52 @@
+SchoolOS Nigeria 5.7.6 — Shared intakes and clear stipend choices
+22 November 2026 (WAT)
+
+INSTALL
+Back up matching application files, database, uploads and the private encryption key.
+Upload SchoolOS_5.7.6_Shared_Intakes_and_Smart_Stipend_Choices_Update.zip in Platform Super Admin → Updates & Plugins.
+This cumulative package contains 45 approved files. Publishing it does not install it on your live website.
+
+CREATE ONE INTAKE WITH SEVERAL PROGRAMMES
+Training Admin → Programmes & intakes.
+Enable shared intakes once if prompted. Shared training demos prepare this automatically.
+Add reusable programmes, then Create an intake: enter its name, training dates and shared application closing date. Check one or several programmes and set a learner capacity for each.
+Open the shared intake to add another programme, update its shared application deadline, or change the enrolment window for all included programmes.
+Programme search keeps a long programme list manageable.
+
+EXTEND AN INTAKE YOU ALREADY CREATED
+Programmes & intakes → Existing single-programme intakes → open the intake → Add programmes to this intake.
+It becomes a shared intake without moving students, replacing admission numbers, rewriting historical certificates, or changing its existing subscription/support records.
+Open that shared intake → Add another programme.
+Unconverted single-programme intakes continue working as before. This update does not merge different existing paid intakes or move their records automatically.
+
+WHAT IS SHARED / WHAT STAYS SEPARATE
+Shared: intake name, training dates, application deadline, subscription seat pool, enrolment-window controls and an optional intake notice audience.
+Separate per programme: learner capacity, applications/questions/fees, courses, trainers, teaching attendance, results, certificates, sponsorship/stipend rules and internships.
+The existing centre application link remains the entry point. Applicants choose the programme/intake. Application forms still need to be configured/enabled for each programme; the shared deadline applies automatically.
+Noticeboard → Publish a notice → choose everyone or one shared intake. An intake notice reaches enrolled trainees across its programmes plus active centre staff/trainers. Recipients are saved at publication; opening a notice does not acknowledge it.
+
+SUBSCRIPTION SEATS
+Fees & subscriptions presents one checkout per shared intake, not a separate charge per included programme.
+A learner account enrolled in two included programmes counts once against the shared purchased seats. Historical enrolments retain the seat-use protection; duplicate accounts are distinct accounts and must be reviewed by the centre.
+Each programme still enforces its own learner capacity. Configuring/adding a programme does not purchase seats or automatically increase capacity. Top up the intake allocation when needed.
+The existing centre platform rate and duration choices still determine the quote. Learner course fees remain separate from the centre subscription.
+Teaching access/expiry follows the shared subscription; own historical records and stipend wallets remain available according to existing access rules.
+
+STIPEND SETUP
+Sponsors & stipends → Set up sponsor & stipends, or open a programme in a shared intake → Sponsor & stipend rules.
+Enter that programme cohort’s sponsor and enable stipends when applicable.
+Training stipend: choose No training stipend, Weekly training stipend OR Fixed training stipend. Only the selected amount box opens; the other is disabled and ignored server-side. Weekly and fixed cannot both be enabled for new terms.
+Internship stipend: independently check Monthly internship stipend to open its amount and required approved log-day fields.
+Required documents: select NIN — National Identification Number; LASRRA — Lagos State Residents Registration Agency number; both; or neither. Required evidence must pass review before payment.
+Bank detail setup remains after successful enrolment/login, never in the public application form. Existing conventional-bank restrictions, document privacy, payment review, scheduled exports, manual settlement and Paystack verification remain in place.
+A shared intake can have a different sponsor and stipend arrangement for each programme.
+Existing terms with earned balances remain locked, including older weekly+fixed arrangements. You can update the sponsor or pause new earnings without changing those financial commitments. Use new cohorts for new financial terms.
+Fully sponsored free courses still require a zero course fee in Admissions; sponsor naming does not rewrite old fee quotes or waive centre subscription costs.
+
+VALIDATION AND LIMITS
+Passed existing training lifecycle checks; shared multi-programme creation and later addition; distinct-learner seat counts; cross-programme course denial; shared application windows; separate programme sponsors; stipend selection/document validation; notice audience boundaries; conversion of an existing intake with subscription/certificate preservation; earned-term locks; expiry/renewal and staff link permissions.
+Actual browser checks covered desktop/mobile, light/dark, weekly/fixed exclusivity, optional monthly fields, decimal amount persistence, document selections, multi-programme creation, single shared billing option and notice audience selection. Five demo roles and repeat-safe demo preparation passed.
+Update installation/recovery, repeated-version and unsafe-path refusal were checked. File-only downgrades below 5.7.6 are blocked once shared intakes exist, because older handlers do not understand shared seat pools.
+No live-site installation, real payment, bank lookup, email or broadcast was performed. Existing SMTP, gateway, transfer and media requirements still apply.
+
+ZIP SHA-256: c5d89607b9fc0d5094015e75001ea08fd857ea6d2d5162a6c4ba508e8647744d
