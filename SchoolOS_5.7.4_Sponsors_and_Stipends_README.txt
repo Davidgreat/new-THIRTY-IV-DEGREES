@@ -1,0 +1,75 @@
+SchoolOS Nigeria 5.7.4 — Sponsored cohorts & stipend wallets
+22 November 2026 · WAT
+
+INSTALL
+Back up matching application files, database, uploads and private encryption key.
+Upload SchoolOS_5.7.4_Sponsored_Cohorts_and_Stipend_Wallets_Update.zip in Platform Super Admin → Updates & Plugins.
+This is a cumulative 45-file update. Publishing the ZIP does not install it on your website.
+Sign in as Training Admin → Sponsors & stipends → Enable sponsorships & stipends once if prompted.
+Existing training memberships, cohorts, payments and school records are preserved.
+Five training demos gain a fictional sponsor/cohort stipend example through owned-sandbox preparation. No real bank details or identity uploads belong in demos.
+
+COHORT SETUP
+Open Sponsors & stipend rules → select an intake.
+Add the sponsor name. Enable stipends only when the cohort offers them.
+Configure weekly training, monthly internship and/or once-only training completion amounts. Use 0 for support that does not apply.
+Set required reviewed present/late attendance percentage and minimum scheduled sessions per earning period.
+For monthly internship support, set minimum supervisor-approved log days per period. A centre-approved placement and confirmed organisation acceptance must cover the full period.
+Set withdrawal cadence: every 7 or every 28 days. Add comma-separated required document names, e.g. NIN, LASRRA.
+Only enrolled trainees see bank setup; the public application form never asks for stipend account details.
+A named sponsor appears on the trainee home and public cohort application page. A sponsor-only cohort need not offer stipends.
+Sponsorship does not rewrite fee quotes: set Admissions application course fee to 0 for a fully sponsored free programme. Existing quoted/paid fees and centre subscriptions remain separate.
+
+EARNING RULES
+Weekly periods anchor to intake start. Monthly internship periods anchor to placement start. Once-only completion support checks the intake’s full training period after it ends.
+Periods must be closed and the trainee enrolled for the full period. No scheduled sessions, pending attendance, or unapproved logs do not qualify.
+Reviewed present/late attendance counts; daily sign-in alone does not prove training attendance.
+Final shorter periods use the configured full weekly/monthly amount, provided their minimum evidence criteria are met. This policy is shown in the interface; there is no hidden proration.
+Financial terms freeze after the first earning to protect history. Use a new intake for new financial terms. Sponsor wording and new-earning enable/disable remain editable.
+Disabling new earnings preserves existing wallet credits and withdrawal access.
+Changed attendance/placement evidence holds unpaid earnings for review without deleting history. Previously paid money is not silently undone by an attendance edit.
+
+BANKS AND DOCUMENTS
+A server-side curated conventional-bank allowlist excludes mobile-money, payment-service and microfinance providers, including OPay/Palmpay. Provider availability still applies; the list may require maintenance as bank licences/codes change.
+With a configured working centre Paystack gateway, Resolve & save fetches the account name. With no gateway configured, details await explicit accountant verification. A provider lookup failure must be resolved before saving through that configured gateway.
+Bank resolution confirms provider account details; it does not independently establish legal ownership. Centre staff must follow their account-ownership/guardian policy.
+Required PDF/JPG/PNG documents up to 5 MB are encrypted using the existing private key. Only authorised centre admins/accountants can download/review them. Uploading does not approve a document.
+Stipend requests retain their original encrypted bank snapshot; later bank edits affect future requests.
+
+PAYMENT FLOW
+Trainee: available balance → request stipend.
+Admin/accountant: review current eligibility, bank and required documents → schedule or reject with reason.
+A request reserves credits. Rejection or confirmed failure releases credits. Successful payment consumes the reservation. Duplicate requests cannot spend the same credits twice.
+Use Sponsored cohorts to track trainees, admission numbers, sponsor, earned/available/paid figures and evidence.
+
+MANUAL BULK PAYMENT
+Download scheduled-only Excel-compatible UTF-8 CSV with trainee, cohort/sponsor, bank, account number/name, amount and request reference. Leading zeroes are preserved as text; the file contains private bank information.
+Pay using your bank’s approved bulk-transfer process. This CSV is not a promise of any bank-specific import format.
+Select successful requests only, add settled bank reference/note, confirm settlement and mark paid. Select unsuccessful ones separately and mark failed with reason.
+Bulk actions report individual failures; a failed row does not silently mark other rows paid.
+Filter Failed/Rejected and open each trainee’s private message draft. Messages require review and a deliberate send.
+
+ONLINE PAYMENT
+Online sending is available per scheduled request with password confirmation and explicit consent. Manual bulk settlement remains separate.
+Uses the training centre’s own LIVE Paystack gateway, funded provider transfer balance and permitted recipient. It never spends platform subscription funds.
+A request has one immutable reference, amount, bank snapshot and gateway fingerprint. Unknown/timeout outcomes remain reserved in sending/pending; use Verify online, never submit another transfer for the same request.
+OTP, when required, must be authorised in the centre’s Paystack dashboard, then verified here.
+Only exact provider verification confirms paid/failed/reversed state. Provider fees remain separate; the update does not invent tax deductions or net off statutory amounts.
+Configure the centre webhook to your existing installation endpoint: https://YOUR-HOST/INSTALL-PATH/index.php?tx_webhook=1
+Signed transfer success/failure/reversal events are signature-checked then reverified with Paystack. Unsigned events cannot settle a stipend. Verify online remains available if webhooks are delayed.
+If the gateway changes while a transfer is outstanding, reconcile with the original provider account; the new key cannot settle old evidence.
+
+AUTOMATIC EARNING CHECKS
+Wallet and trainee dashboard visits recalculate eligible closed periods; admin/accountant also has Update earned stipends.
+For continuous background checks configure a server cron every five minutes:
+php /absolute/installation/path/services_worker.php --training-stipends --limit=100
+Optionally add --tenant=ID. It cycles through wallets and NEVER initiates payments.
+Teaching-subscription expiry does not erase the trainee’s own stipend records or wallet access.
+Back up the matching private key with the database. File-only rollback below 5.7.4 is refused once sponsorship/stipend rules exist.
+
+VALIDATION
+Passed local synthetic checks covering existing training lifecycle, sponsor/earning rules, attendance changes/holds, bank exclusions, document privacy, duplicate/cooldown protection, bulk/manual settlement, simulated online timeout/pending/success/reversal, forged webhook denial, five demo roles, mobile/light/dark layouts and the actual browser bank → document → review → request → schedule → CSV → payment flow.
+Update recovery, repeat-version/path traversal refusal and the actual PDO data-aware rollback guard passed. Background worker was checked to send no money.
+No live website installation, real transfer, external bank lookup, email or broadcast was performed. Test live provider funding, bank lookup, OTP/webhook and settlement before sending real stipends.
+
+ZIP SHA-256: 43b7cfab8b327e77a8cf2e5b60f6ab2fdcd92e82584806646bbc8f68c13a9d2a
