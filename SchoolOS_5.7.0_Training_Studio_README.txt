@@ -1,0 +1,32 @@
+SchoolOS 5.7.0 — Training Studio
+22 November 2026 • Africa/Lagos
+
+INSTALL
+Back up matching application files, database, uploads and private encryption keys.
+Sign in as the real Platform Super Admin. Open Updates & Plugins, upload the trusted 5.7.0 ZIP, confirm its source and install. Do not upload this archive through Plugin manager.
+Then open Training centres in the platform navigation and choose Prepare training workspaces. This adds the training tables. No existing school is converted.
+
+START
+The public website has a Training Studio link: /training.
+Organisation request: /training/register. Sign in: /training/login.
+The platform team reviews the organisation request and approves explicit access expiry and learner/staff limits. This is an access decision, not a payment or automatic subscription transaction. Agree training-centre commercial terms separately; school pupil pricing is not reused.
+The owner signs in with the email/password chosen during application. Create a programme, dated intake, trainer and courses. Publish materials and assessments. In Centre settings, open learner applications and copy the private centre application link.
+Review learner identity and guardian authority, then approve. Learners use the password they selected when applying. Manual staff/learner accounts use generated temporary passwords, forced change and expiry; hand over credentials securely. Do not expect an automatic welcome email from this new module.
+
+WORKFLOWS
+Distinct owner, selected-duty staff, trainer, learner and assigned internship-supervisor views. Glass panels, charts, mobile navigation and light/dark themes.
+Programmes, durations, successive intakes, capacity checks, admission numbers and enrolment states.
+Protected course resources: supported uploads up to 8 MB per file or HTTPS links.
+Timed four-option quizzes/exams, saved answers, server deadlines, bounded attempts and completion requirements.
+Scheduled sessions and integrated live rooms, using the existing configured platform media service. Test camera/microphone permissions, real networks and media capacity before delivery. Local tests did not broadcast a real class.
+Daily sign in/out; session check-in is pending until an authorised reviewer confirms attendance. Admin CSV exports cover session attendance and daily clocks.
+Learner-proposed or institution-created internship placements; centre approval; assigned supervisors; dated electronic logbooks, return/correction, reviews and final evaluation.
+Course sign-off and certificate eligibility checks; branded printable certificates, verification links, learner public-detail choice and revocation. No external accreditation is implied.
+In-app chat follows active intake, staff duty and placement relationships. Training accounts are separate from school pupil records.
+
+GUIDE AND SECURITY
+The updated complete manual includes a Training Studio chapter. Dedicated guide: /guides/training.
+Training preparation and access management require Platform Super Admin. Centre staff grants are owner-controlled. Expired/paused organisations and inactive members lose protected access. After requests or centres exist, file-only rollback below 5.7.0 is refused; use reviewed matching backups if recovery is necessary.
+
+VALIDATION
+Synthetic lifecycle, authorisation, shared chat/live helper, temporary-password change, HTTP upload/download/export, role/theme/mobile browser and cumulative updater checks were run. Existing billing and affiliate payout regressions were also checked. No live school records, provider payments, external email or actual video broadcast were used. This package is not automatically installed on your live website.
