@@ -1,0 +1,37 @@
+SchoolOS Nigeria 5.7.8 — Built-in date of birth and automatic training age
+22 November 2026 (WAT)
+
+INSTALL
+Back up matching application files, database, uploads and private key.
+Upload SchoolOS_5.7.8_Built_In_DOB_and_Automatic_Age_Update.zip in Platform Super Admin → Updates & Plugins.
+This cumulative 45-file package includes the previous forms, reuse, branding, shared-intake and stipend updates. Publishing it does not install it on your live site.
+No extra table preparation, custom question or background worker is needed for this addition. Refresh application pages already open before the update.
+
+WHAT CHANGED
+Date of birth is now a required standard field on every training application, including forms reused for a new intake.
+It is separate from custom screening questions and does not use one of the 30 custom question slots. The builder explains that DOB is already included.
+Applicants no longer choose their own age group. The form previews age automatically; the server independently validates the date and derives the age band.
+Missing, impossible, future and pre-1900 dates are rejected. Forged age-band fields are ignored on new submissions.
+
+18+ ELIGIBILITY
+Existing per-programme 18+ settings now use the recorded birth date whenever available.
+Age badges, admin filters, shortlisting, interview/offer checks, new acceptance and queued-invitation eligibility use the same calculation.
+Age is evaluated against the current date in Africa/Lagos. An applicant becomes 18 on the 18th-birthday boundary; birthday and leap-day cases were checked.
+DOB is applicant-supplied information, not independent identity proof. Institutions can check it against their records as needed.
+
+EXISTING APPLICANTS
+Existing records are retained without inventing a birth date. Older confirmed/reported age bands remain the fallback when no DOB exists.
+Admissions → open applicant → Review date of birth & age lets authorised admissions staff add/correct the DOB after confirming the record check and entering a note.
+Once DOB exists, a band-only update cannot override its calculation. Existing accepted accounts, historical answers, form reuse and guardian-field removal remain unchanged.
+Birth dates are not added to routine application confirmation emails or public offer branding. Reviewer access remains centre/role scoped.
+
+VALIDATION
+Passed existing training lifecycle and age-policy regression checks; calendar validation, exact 18th birthdays, leap-day boundaries, PHP/SQL filter agreement and authorised review tests.
+Actual desktop/mobile browser checks confirmed the built-in required field, automatic age preview, absence of the old age selector and parent fields, native future-date blocking, direct missing/future-date server rejection and successful public submission.
+A forged adult value submitted alongside an under-18 birth date was ignored; persisted DOB, admin filtering and the interview gate all agreed. Update recovery, version/path checks and DOB-aware downgrade refusal were verified in an isolated target.
+No live-site install or real external message/payment was performed.
+
+RECOVERY
+Once training DOB records exist, file-only rollback below 5.7.8 is blocked to prevent older handlers from ignoring birthday-based eligibility. Use compatible code or matching reviewed backups.
+
+ZIP SHA-256: 950ee0a78b72ededb2767574e0f3ea1e745de73d99b14e6b5e426a9db2640900
