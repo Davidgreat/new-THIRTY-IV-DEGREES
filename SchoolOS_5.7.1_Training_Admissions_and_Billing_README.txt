@@ -1,0 +1,59 @@
+SchoolOS 5.7.1 — Training applications, offers, billing and route fixes
+22 November 2026 • Africa/Lagos
+
+INSTALL FIRST
+Back up matching files, database, uploads and private encryption keys. Install the trusted ZIP through Platform Super Admin → Updates & Plugins, not Plugin manager.
+Then open Platform Super Admin → Training centres → Prepare training upgrade.
+This adds the new tables without converting existing schools or training centres. Do this before reopening applications. It also prevents old direct applications from bypassing the new screening process.
+
+WORKING PUBLIC LINKS
+/training — product page
+/training/register — training-centre registration request
+/training/login — centre, staff and learner sign-in
+/training/apply?centre=PRIVATE_CENTRE_TOKEN — centre application link
+/training/offer?token=PRIVATE_OFFER_TOKEN — individual private offer
+Use the links generated inside the system rather than typing private tokens. Root domains, clean links and installation subfolders are supported. The Training Studio sparkle mark was removed.
+
+1. SET SCHOOL OS SUBSCRIPTIONS FOR TRAINING CENTRES
+Platform Super Admin → Training centres → Training subscription packages.
+Create/edit the name, naira price, duration in months, learner capacity and staff capacity. Configure the platform’s live Paystack credentials in existing Integrations/Setup.
+Review a centre request and grant its initial access dates/capacity. Centre owner → Payments & plan shows published training packages. A verified live payment extends access; it does not lift an administrative pause.
+There is no automatic recurring debit. Package receipts keep their original price snapshot. Training subscriptions are included in platform money totals and have a separate receipt view. Learner fees are excluded from platform income.
+A zero-price centre package requires an explicit platform access grant. Training renewal does not implement school-plan proration; its displayed purchase is a full extension period.
+
+2. SET FREE OR PAID LEARNING
+Centre owner → Payments & plan → Your learner payment gateway.
+Save that centre’s Paystack secret; fees go to its Paystack account, not the SchoolOS subscription account. Add the displayed signed-webhook URL to the same Paystack account.
+Applications → Application forms → choose an intake. Enter its full programme fee, closing date, welcome note and custom questions. Use 0 for a free programme. The fee covers that intake’s courses. Changes affect new applications; submitted applications retain their original fee.
+Test payments are recorded as tests and never unlock production access. Live payments are rechecked for exact amount, NGN currency, reference, account, email and environment. Signed notifications and returning-payer verification are supported.
+Billing-authorised staff can record a settled bank transfer with a unique reference and review note. Do not record unconfirmed money. The full programme fee is recorded; instalments, refunds and tax deductions are not implied.
+
+3. CREATE THE BRANDED APPLICATION
+Centre settings → set the centre name and HTTPS logo URL, and enable learner applications.
+Applications → Application forms gives a visible private share link and Preview button.
+The editor supports short/long answers, yes/no, one choice, several choices, confirmation checkboxes and documents. Questions fold away for a compact view. Applicants get a three-step form. Name, email, WhatsApp and guardian checks are included automatically.
+PDF, JPG, PNG and DOCX uploads: maximum 5 MB each, 15 MB combined, subject to your PHP host’s lower upload limits. Documents require an authorised reviewer login. If the form or fee changes while being filled, the applicant must refresh and review the new version.
+
+4. SCREEN, INTERVIEW, OFFER
+Applicants arrive in Applications. Shortlist suitable candidates.
+Create staff in People & accounts and grant Review assigned interviews. Select up to 50 shortlisted applicants, choose an interviewer, date/time and joining instructions, then queue invitations.
+After the interview time, assigned interviewers record qualified/not-qualified with reasons. Admissions staff review these outcomes. Only the centre owner can override unmet interview requirements using an explicit special-consideration reason; the override is audited.
+Select qualified candidates, set an offer deadline and queue congratulations/offer emails. WhatsApp offer buttons open the correct number with a prefilled private link; the staff member reviews and sends in WhatsApp.
+
+5. ACCEPTANCE AND ENROLMENT
+The private offer page shows the exact programme and fee. Acceptance creates the learner account and generated temporary password. Credentials are shown once and queued to the applicant’s email; password change is required at first login and the temporary password expires in 3 days.
+Existing active learners in the same centre keep their existing login. Free programmes enrol on acceptance. Paid programmes unlock after verified payment. If capacity/access changes after settlement, the receipt is retained and the centre can retry enrolment after fixing the issue. Never ask the learner to pay twice.
+
+6. TURN ON AUTOMATIC EMAIL DELIVERY
+Centre settings → Email sender selects SchoolOS platform SMTP or the centre’s own SMTP. Configure and verify the chosen provider.
+Set a hosting cron to run every minute:
+php /absolute/installation/path/services_worker.php --training-mail --limit=30
+Optional: add --tenant=ID for one centre. Replace the path with the real installation path.
+Applications → Email delivery shows queued, SMTP-accepted, failed, uncertain and interrupted states. Send next 5 allows an authorised operator to process a small batch. Confirmed failures can be retried; check provider logs before resending uncertain messages. Expired/replaced temporary credentials are omitted from delayed email.
+Queueing or saving SMTP is not proof of inbox delivery. Test a real recipient before launch.
+
+VALIDATION AND RECOVERY
+Synthetic application/interview/offer, generated-password, free/paid access, provider-verification, duplicate prevention, bank receipt, capacity recovery, protected upload/download, clean-route/subfolder, mobile/theme, SMTP-queue, updater recovery and school billing/affiliate regression checks were run.
+No real provider payment, external email or live class was sent during tests. The ZIP is published for installation; it has not been installed automatically on your live site.
+File-only rollback below 5.7.1 is blocked once the new application/payment configuration or records exist. Keep matching database/files/encryption keys for recovery.
+Updated guide: /guides/training and the complete user manual.
