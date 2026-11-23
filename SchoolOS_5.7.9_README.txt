@@ -1,0 +1,73 @@
+SchoolOS Nigeria 5.7.9 — Officer-led attendance, clearance and midnight sign-out
+23 November 2026 (WAT)
+
+INSTALL AND ACTIVATE
+Back up matching application files, database, uploads and private key.
+Upload SchoolOS_5.7.9_Officer_Attendance_Clearance_and_Automatic_Signout_Update.zip in Platform Super Admin → Updates & Plugins.
+This is a cumulative 45-file release. Publishing the package does not install it on your live site.
+Training Admin → Attendance → Enable attendance desk. This prepares the additive attendance tables; existing records are retained.
+Select the programme cohort → Rules & calendar. Save its effective date, scheduled weekdays, arrival window, grace time, absence allowance and repeated-lateness alert settings.
+People & access → give the responsible staff member Attendance officer duty. Admins can also operate the desk. A trainer does not receive attendance-officer access automatically.
+The desk is opt-in by programme. Other training programmes retain their existing verified-session attendance workflow.
+
+AUTOMATION: HOSTING CRON REQUIRED
+Ask the hosting operator to run every minute:
+* * * * * /path/to/php /absolute/installation/path/services_worker.php --training-attendance --limit=100
+Use the host's real PHP CLI binary and actual installation path. Run alongside, not instead of, existing separate mail/stipend schedules.
+The worker uses Africa/Lagos time, closes prior-day open records at 00:00 WAT, catches up scheduled absences and records a heartbeat on the Attendance screen. It sends no messages or payments.
+Without this job, subsequent attendance-related requests catch up, but unattended midnight processing is not guaranteed. At scale, monitor the heartbeat and processing backlog; increase scheduling capacity when required.
+
+PERSONAL QR AND REGISTRATION FALLBACK
+A logged-in trainee opens Attendance and shows a personal QR. It expires in 90 seconds, is bound to the account/programme/day and is single-use. Refresh invalidates the old code.
+The officer verifies the person's identity against their name/admission number before scanning. A successful scan is confirmed immediately; routine attendance does not await trainer review.
+No shared daily secret is needed. A QR screenshot is not biometric proof; physical identity verification remains essential.
+Camera decoding and QR generation are self-hosted, with no external QR service or uploaded camera frames. Camera use requires HTTPS, browser permission and a supported device.
+Registration-number lookup provides a two-minute, trainee-bound check-in grant, or direct officer-recorded entry for a person without a smartphone. The grant time determines lateness, and revoked officers cannot authorise its completion.
+Concurrent scans cannot consume the same token twice. Legacy daily/session actions cannot bypass a scheduled officer-managed entry day.
+
+LATE, ABSENT AND EXCUSED
+Defaults: desk opens 08:00, class starts 09:00, grace ends 09:30, check-in closes 10:00 and training ends 15:00 WAT. Configure the centre's actual hours before use.
+Arrival after grace is Late. Normal entry closes at the saved cutoff. A documented after-window request can be approved by an officer after confirming physical arrival; it remains Late.
+Prior/future reported absence requests may be approved as Excused, not Present.
+Unexcused absences are counted only after check-in closes on configured training days, starting prospectively from the saved effective date and trainee enrolment date. Cancelled/non-training days do not count.
+Recurring hours/weekdays and the treatment of late attendance for stipends are locked once records exist, preserving published attendance evidence. Calendar cancellation remains available with a reason.
+Repeated-lateness alerts provide named records and a permitted private follow-up draft. A person reviews and sends the message; it is not automatically sent.
+
+SIGN-OUT
+Trainees sign themselves out without officer approval, including while on attendance hold.
+Forgotten sign-outs close at next-day 00:00 WAT with an automatic flag, enabling the next day's entry.
+Self-declared exit and administrative midnight closure are not proof of full-day participation or presence until midnight.
+
+ABSENCE LIMIT AND CLEARANCE
+A limit of 2 permits two unexcused absences; the third triggers the hold. A limit of 0 triggers on the first.
+The dashboard shows the reason and a clearance request. Learning, new sign-in, chat and new stipend actions are blocked server-side until authorised clearance.
+Existing sign-out, notices and permitted historical records remain available. Earned balances and old attendance records are not deleted. Days spent on hold do not add new absence penalties.
+The authorised officer/admin records why continuation is allowed. Clearance starts a fresh allowance without rewriting history.
+Only the centre administrator can screen out or restore the programme, with a recorded reason. Officers cannot reinstate a screened-out programme.
+
+STIPENDS AND EXPORTS
+New full officer-managed training periods use confirmed scheduled attendance days. Late days count only if the published rule permits. Older/mixed periods retain existing session evidence; internship confirmation rules remain separate.
+Holds pause new stipend requests/scheduling/payment, preserving earned credit. Already-settled manual transfers can still be truthfully reconciled after checking their original evidence.
+Register CSV downloads are Excel-readable and scoped to the selected centre, programme and date. Visible registers show up to 1,000 trainees; exports and totals include the full roster.
+
+VALIDATION
+40 existing training lifecycle checks, 47 officer-attendance checks and 15 finance/history/hold edge checks passed in an isolated fictional database.
+Additional checks covered expired grants, revoked-officer permissions, worker execution/heartbeat and a genuinely concurrent one-token scan race (one consumed, one refused).
+13 browser checks exercised the real bundled QR encoder/decoder and scanner loop using a simulated camera stream, immediate register updates, registration grants, self sign-out and desktop/mobile light/dark layouts.
+6 HTTP checks verified held learning/chat/stipend routes, private chat API denial, permitted records and self sign-out during a hold.
+Updater tests verified complete installation hashes, injected-failure recovery, repeat-version/traversal refusal, rollback and real-database refusal of incompatible downgrade once attendance rules exist.
+No live website installation, physical-phone camera test or real external message/payment was performed. After installation, verify officer/trainee flow on your target phones and monitor the scheduled task.
+
+DEPENDENCIES AND LICENCES
+Self-hosted QR libraries are bundled in portal_experience.js with full upstream licence text.
+qrcode-generator: MIT, https://github.com/kazuhikoarase/qrcode-generator
+Source: https://raw.githubusercontent.com/kazuhikoarase/qrcode-generator/master/js/dist/qrcode.js
+SHA-256: 79ec86f82856005b1c887905cfccfcfbec3821ca61c7fd5a952faa5f778f791c
+jsQR: Apache-2.0, https://github.com/cozmo/jsQR
+Source: https://raw.githubusercontent.com/cozmo/jsQR/master/dist/jsQR.js
+SHA-256: 3325b0888fa4745c4e6940897d8c4f426fbaae76901fcbfe1871a04e90a51655
+
+RECOVERY
+File-only rollback below 5.7.9 is refused while attendance policies/records requiring these safeguards exist. Use compatible files or matching reviewed backups; do not delete attendance records to bypass the guard.
+
+ZIP SHA-256: aa09888eef3bb1632e11b8095fb77ba4332679c298acf35b708bd4be6f4ddabc
