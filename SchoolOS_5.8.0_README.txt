@@ -1,0 +1,77 @@
+SchoolOS Nigeria 5.8.0 — Email automation, account recovery and background-job monitoring
+23 November 2026 (WAT)
+
+INSTALL
+Back up matching application files, database, uploads and private encryption key.
+Upload SchoolOS_5.8.0_Email_Automation_Recovery_and_Background_Jobs_Update.zip in Platform Super Admin → Updates & Plugins.
+This cumulative 45-file release includes 5.7.9 attendance and earlier releases. Publishing it does not install it on your live website.
+The next real Super Admin request prepares additive email/recovery/job-monitoring tables. Open Email & background jobs in the Super Admin sidebar. This is not available to school admins or platform staff.
+Normal school registration also prepares the email foundation before its registration transaction if required. No historic welcome/payment messages are automatically backfilled.
+
+EMAIL SETUP
+Platform Super Admin → Integrations: save your real authorised SMTP host, port, TLS/SSL mode, username/password and From address.
+Platform setup: save the canonical HTTPS installation URL. Confirm SPF/DKIM/DMARC with your email provider.
+Lifecycle welcomes, setup/recovery links and school subscription receipts use platform SMTP.
+Training Admin → Centre setup → Email sender selects platform SMTP or the centre's own SMTP.
+School Admissions → Family onboarding retains school-selected or shared platform SMTP for approved family handovers.
+A saved SMTP configuration is not proof of SMTP connectivity or inbox delivery.
+
+TWO MAIN CRON COMMANDS
+Run both every minute. Leave Run at reboot unchecked. Confirm the PHP CLI binary with HostAfrica; /usr/local/bin/php is a suggestion, not verified remotely.
+For the installation path shown in your file-manager screenshots:
+/usr/local/bin/php /home/getschoo/domains/getschoolos.com.ng/public_html/services_worker.php --mail --limit=30
+/usr/local/bin/php /home/getschoo/domains/getschoolos.com.ng/public_html/services_worker.php --training-attendance --limit=100
+The dashboard generates script paths from its actual installation folder, supporting subfolder installations too.
+--mail covers lifecycle, training, family handover and survey email queues. The limit applies per channel, not the combined total; survey is capped at 20 per pass. Configure sending volume for your provider's limits.
+After verifying --mail, remove redundant separate --training-mail, --survey-mail and per-school --family-onboarding schedules. Existing individual modes remain supported and monitored.
+Keep unrelated campaign/provider-credit, HR, school-service-period and stipend-accrual schedules as required; --mail does not replace them or send money.
+Optional connection-only command: services_worker.php --cron-check. This only records a CLI/database heartbeat and sends nothing. It does not prove that email or attendance jobs work.
+
+WHAT IS NOW CONNECTED
+• New school registration → one welcome email with the sign-in address and next steps.
+• Training-centre request → acknowledgement; platform approval → centre-owner welcome.
+• Verified staff creation and verified administrator-assisted recovery → private password-setup email where a routable email exists. Platform-team creation/recovery is included. Existing shown-once temporary handover remains available.
+• School subscription purchases, renewals and upgrades → one receipt per successful verified live transaction. Wrong/unverified/test payments do not create a production receipt. A receipt does not claim a pending allocation review is complete.
+• Email password recovery → secure reset instructions; successful reset/initial password selection → password-change security notice.
+• Existing training application confirmations, selected bulk interview invitations, qualified-candidate offers, accepted-offer access instructions and training payment receipts remain in the connected training queue.
+• Existing approved family setup instructions and requested survey response copies are processed by the combined email worker.
+Administrators still choose/approve eligible interview and offer recipients. Automation delivers the result of authorised decisions; it does not automatically qualify applicants.
+
+SECURE ACCOUNT RECOVERY
+School and training sign-in pages now include Forgot your password.
+Enter the account's existing email or school sign-in ID. The response does not reveal whether an account exists.
+Only active, eligible accounts with a routable registered email can receive a link. Accounts without email retain verified administrator recovery.
+Recovery links are 30-minute, random, hashed in storage, account/email/password-version bound and single-use. Verified setup links expire after 24 hours.
+The mail cron must deliver before expiry; otherwise request a fresh link. GET previews do not consume a link. Requests are rate-limited.
+Password changes require 12–72 characters, invalidate other outstanding links and invalidate previous sessions on their next authenticated request.
+Recovery does not change roles, school relationships, application approval, programme access or suspension/subscription status. It does not automatically sign the person in.
+
+MONITOR AND TEST
+Open Super Admin → Email & background jobs.
+Check configuration validates database access, canonical URL and saved SMTP values. It does not connect to SMTP or claim a scheduled run.
+Queue a test email sends a test into the outbox for an inbox you control. Wait for the mail cron, refresh the monitor and check both delivery status and the recipient inbox/spam.
+Recent successful CLI timestamps prove that the actual command reached this database. A queue may be empty and still run successfully.
+The page shows last success, last failure, running/failed/stale states and delivery counts. A healthy job can still have failed messages; inspect both.
+Old individual cron jobs appear after their next run on this release. Demo databases remain separate; a live cron does not prove a demo job ran.
+Only Super Admin sees platform recipient metadata. Bodies, credentials and reset links are never displayed on the monitor.
+
+RETRIES AND PRIVACY
+Lifecycle bodies are encrypted, then removed after SMTP acceptance. Accepted/cancelled metadata is retained for 90 days.
+Definite lifecycle failures retry up to three times, five minutes apart. Uncertain or interrupted sends stop automatic retries; check inbox/provider logs before a controlled retry.
+Expired security messages are cancelled; request fresh recovery/setup links instead of retrying old ones.
+Existing training/family/survey queues keep their own explicit failure/retry rules, exposed on their existing delivery pages.
+SMTP acceptance is not proof of inbox placement. Back up the matching private key and database; missing-key protection refuses to silently generate a replacement over protected records.
+
+VALIDATION
+Passed 40 existing training lifecycle checks, 33 lifecycle/outbox/recovery/receipt/permission checks and 6 real registration/subscription hook and replay checks with a synthetic gateway.
+Passed 14 subscription-upgrade/proration/renewal regression checks, concurrent reset consumption (one accepted, one refused), initial-password notice and missing-key refusal checks.
+Actual CLI tests verified connection-only heartbeat, legacy attendance failure/recovery history, combined email execution and the distinction between a healthy worker and failed delivery.
+Browser checks verified private monitor access, configuration-only checks, actual queued test submission, generic known/unknown recovery responses, expired/consumed-token rejection, password reset completion, school/training login links and desktop/mobile light/dark layouts.
+Isolated TLS/STARTTLS SMTP protocol tests verified accepted, rejected and uncertain outcomes, UTF-8 subjects/body and header-injection refusal.
+Update tests verified complete file hashes, injected-failure recovery, repeat-version/path refusal and email-aware incompatible downgrade protection.
+No live installation, real external recipient delivery or real payment was performed. Test your own live mailbox after installing/configuring cron.
+
+RECOVERY
+File-only rollback below 5.8.0 is refused once lifecycle emails, recovery tokens or monitored jobs exist. Use compatible files or matching reviewed backups.
+
+ZIP SHA-256: 5194f2582d08e1927a3d6f3d6f29aa20acc6a0edf297e5010e3a290fb33eb01c
